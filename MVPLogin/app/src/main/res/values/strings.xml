@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MVPLogin</string>
+    <string-array name="users">
+    </string-array>
+    <string name="username_error">Username cannot be empty</string>
+    <string name="user_already_exists">Username cannot be empty</string>
+    <string name="password_error">Password cannot be empty</string>
+</resources>

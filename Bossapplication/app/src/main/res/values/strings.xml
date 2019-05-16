@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Boss application</string>
+    <string name="buttonValue">Get my best employees</string>
+    <string-array name="employees"></string-array>
+</resources>
