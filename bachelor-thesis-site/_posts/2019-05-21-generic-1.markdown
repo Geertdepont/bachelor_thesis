@@ -1,0 +1,50 @@
+---
+layout: post
+title: "Decouple components and explicitly inject/manage the dependencies among them"
+short_description: "Decouple components"
+guideline_id: 1
+date:   2019-05-21 01:00:41 +0200
+categories: Generic
+---
+<h3>Why?</h3>
+While not strictly necessary, utilizing a dependency injection framework
+can drastically simplify the management of dependencies between Android architectural components. 
+This supports a clean decoupling of architectural components and avoids unnecessary boilerplate for connecting them.
+ Doing so not only improves the maintainability of the app, but also improves its testability by providing the possibility 
+ to inject mock implementations. The Dagger framework is commonly recommended to inject dependencies and solve problems 
+ afflicting reflection-based solutions.
+
+<h3>Introduction</h3>
+Dependency injection is a technique whereby one object supplies dependencies of another object.
+So let's say I'm a chef in a kitchen. And I need to make meals for the customers.
+But if I don't have the tools to create my dishes, nothing happens. I crash.
+So we need someone to supply the tools, which is <b>Dagger</b>.
+
+<b>Dagger</b> tells where all the dependencies are, and tells the objects not to worry. Because Dagger will provide the 
+dependencies. To perform this dependency injection, dagger uses the following annotation:
+
+<ul>
+  <li><b>@Module and @Provides:</b> These classes provide the dependencies.</li>
+  <li><b>@Inject: </b> The field which will be injected, this can be a field, a constructor or a method.</li>
+  <li><b>@Component:</b> Which uses the selected modules, and performs the dependency injection.</li>
+</ul>
+
+
+
+<h3>Example</h3>
+MVPLogin
+We create a simple MVP login. 
+
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
+Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/

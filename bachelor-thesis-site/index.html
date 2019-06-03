@@ -1,0 +1,71 @@
+---
+layout: default
+---
+
+ <div class="container docs-container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="sidebar hidden-print" role="complementary">
+            <div id="navigation">
+              <h1>Guidelines</h1>
+              <ul class="nav sidenav">
+                {% for category in site.categories %}
+                  {% capture category_name %}{{ category | first }}{% endcapture %}
+                  <!--<li>{{ category_name }}</li>-->
+                <li><a href="#category_{{ category_name }}">{{ category_name }}</a></li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9" role="main">
+          <div class="panel docs-content">
+            <div class="wrapper">
+              <div class="home">
+                {% for category in site.categories %}
+                  {% capture category_name %}{{ category | first }}{% endcapture %}
+                  <h2 id="category_{{category_name}}">{{category_name}}</h2>
+                  {% for post in site.categories[category_name] %}
+                    <ol class="breadcrumb">
+                    <li><span>Guideline {{ post.guideline_id}}</span> &raquo; <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+                    </ol>
+                  {% endfor %}
+
+
+
+
+                <!--<ol class="breadcrumb">-->
+                  <!--<li><span>{{ post.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>-->
+                <!--</ol>-->
+
+                    <!--{% if forloop.first %}-->
+                      <!---->
+                      <!--<h2 id="month_{{this_year}}_{{this_month}}">{{this_month}}</h2>-->
+                      <!--<ul>-->
+                    <!--{% endif %}-->
+
+
+                  <!--<div class="archive-group">-->
+                    <!--{% capture category_name %}{{ category | first }}{% endcapture %}-->
+                    <!--<div id="#{{ category_name | slugize }}"></div>-->
+                    <!--<p></p>-->
+
+                    <!--<h3 class="category-head">{{ category_name }}</h3>-->
+                    <!--<a name="{{ category_name | slugize }}"></a>-->
+                    <!--{% for post in site.categories[category_name] %}-->
+                    <!--<article class="archive-item">-->
+                      <!--<h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>-->
+                    <!--</article>-->
+                    <!--{% endfor %}-->
+                  <!--</div>-->
+                  {% endfor %}
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
