@@ -36,10 +36,22 @@
         <entry file="file://$PROJECT_DIR$/_posts/2019-05-21-generic-1.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="78">
-                <caret line="34" selection-start-line="34" selection-end-line="34" selection-end-column="93" />
+              <first_editor relative-caret-position="196">
+                <caret line="40" selection-start-line="40" selection-end-line="43" selection-end-column="9" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-107">
+              <caret line="25" column="83" selection-start-line="25" selection-start-column="83" selection-end-line="25" selection-end-column="83" />
+              <folding>
+                <element signature="e#1223#1230#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,12 +80,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2019-05-21-generic-3.markdown" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2019-05-21-generic-3.markdown" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2019-05-21-generic-3.markdown">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="517">
-                <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+              <first_editor relative-caret-position="294">
+                <caret line="21" selection-start-line="21" selection-end-line="21" selection-end-column="16" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2019-05-21-generic-4.markdown" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2019-05-21-generic-4.markdown">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="449">
+                <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
               </first_editor>
               <second_editor />
             </state>
@@ -119,10 +143,8 @@
         <option value="$PROJECT_DIR$/_posts/2019-05-21-the_data_produced_by_the_models_should_be_reliable_and_of_high_quality.markdown" />
         <option value="$PROJECT_DIR$/_posts/2019-05-21-mvp-28.markdown" />
         <option value="$PROJECT_DIR$/_posts/2019-05-21-generic-16.markdown" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/_includes/banner.html" />
         <option value="$PROJECT_DIR$/_config.yml" />
-        <option value="$PROJECT_DIR$/_posts/2019-05-21-generic-4.markdown" />
         <option value="$PROJECT_DIR$/_posts/2019-05-21-generic-5.markdown" />
         <option value="$PROJECT_DIR$/_posts/2019-05-21-generic-6.markdown" />
         <option value="$PROJECT_DIR$/_posts/2019-05-21-generic-9.markdown" />
@@ -167,6 +189,8 @@
         <option value="$PROJECT_DIR$/_posts/2019-05-21-generic-1.markdown" />
         <option value="$PROJECT_DIR$/_posts/2019-05-21-generic-2.markdown" />
         <option value="$PROJECT_DIR$/_posts/2019-05-21-generic-3.markdown" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/_posts/2019-05-21-generic-4.markdown" />
       </list>
     </option>
   </component>
@@ -284,12 +308,12 @@
       <workItem from="1559306761206" duration="343000" />
       <workItem from="1559307205026" duration="10704000" />
       <workItem from="1559321262843" duration="3443000" />
-      <workItem from="1559553595526" duration="4462000" />
+      <workItem from="1559553595526" duration="6302000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18952000" />
+    <option name="totallyTimeSpent" value="20792000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="765" extended-state="0" />
@@ -392,16 +416,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="56">
             <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-05-21-generic-4.markdown">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="56">
-            <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
           </first_editor>
           <second_editor />
         </state>
@@ -768,31 +782,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="42" column="37" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="37" />
-          <folding>
-            <element signature="e#1223#1230#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-05-21-mvvm-32.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="322">
             <caret line="23" selection-start-line="23" selection-end-line="28" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-05-21-generic-1.markdown">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="78">
-            <caret line="34" selection-start-line="34" selection-end-line="34" selection-end-column="93" />
           </first_editor>
           <second_editor />
         </state>
@@ -808,11 +802,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-107">
+          <caret line="25" column="83" selection-start-line="25" selection-start-column="83" selection-end-line="25" selection-end-column="83" />
+          <folding>
+            <element signature="e#1223#1230#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-05-21-generic-3.markdown">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="517">
-            <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+          <first_editor relative-caret-position="294">
+            <caret line="21" selection-start-line="21" selection-end-line="21" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-05-21-generic-1.markdown">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="196">
+            <caret line="40" selection-start-line="40" selection-end-line="43" selection-end-column="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-05-21-generic-4.markdown">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="449">
+            <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
           </first_editor>
           <second_editor />
         </state>
