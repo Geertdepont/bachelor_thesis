@@ -6,22 +6,57 @@ guideline_id: 3
 date:   2019-05-21 01:00:39 +0200
 categories: Generic
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+<h3>Why?</h3>
+Android
+Activities should ideally contain exclusively logic handling the
+user interface (UI) and operating system interactions. Nevertheless, a common architectural issue consists of delegating too
+many functionalities and responsibilities to a single Activity.
+This leads to Activities slowly becoming god-classes. As the
+Android framework does not support the reuse of methods
+implemented in activities, code tends to be directly copied into
+other ones, increasing code duplication and impacting negatively the app’s maintainability. Additionally, testing might
+become a challenging task, as complex business logic could
+reside in Activities, which by themselves result arduous to unit
+test. Finally, as activities are kept in memory at runtime, “godactivities” can lead to the deterioration of apps’ performance.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+<h3>Example</h3>
+We created a simple [MVP login Application][MVP-Login]. 
 
-Jekyll also offers powerful support for code snippets:
+Too counter the tendency of Activities to grow too big. We let activities only be the visual 
+aspect of our application. Our LoginActivity implements the LoginView class.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+<script src="https://gist.github.com/Geertdepont/93684c21bc51c4b7379f18ff47596791.js"></script>
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+Our LoginActivity has two text fields:
+<ul>
+<li>Email field <b>(edit_email)</b></li>
+<li>Password field <b>(edit_password)</b></li>
+</ul>
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+And two buttons:
+<ul>
+<li>Create new user <b>(buttonAddUser)</b></li>
+<li>Login button <b>(btnLogin)</b></li>
+</ul>
+
+<script src="https://gist.github.com/Geertdepont/f46beeeb2ee18b532d02fbadf38cd237.js"></script>
+
+The event diagram of the Login Application:
+<figure>
+  <img src="/assets/MVPLogin_event_diagram.png" alt="Login Event diagram" width="700">
+</figure>
+
+We do not want our LoginActivity to create a database, and store and retrieve all the users.
+We want to share as much responsibilities to another layer as possible. 
+
+Our LoginActivity only does what our presenter tells it to do. So our LoginActivity does not become a God class. This also makes it easier to test our views and presenter.
+
+Our interactor checks if the password given matches the password of the gotten user.
+This is a simplistic example and in real life applications, passwords would have been checked with hashing.
+
+
+
+<br>
+Check out the [Github page][MVP-Login] to view the complete repository.
+
+[MVP-Login]: https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin

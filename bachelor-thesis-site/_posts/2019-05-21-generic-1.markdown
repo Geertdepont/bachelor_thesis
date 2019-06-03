@@ -32,19 +32,39 @@ dependencies. To perform this dependency injection, dagger uses the following an
 
 
 <h3>Example</h3>
-MVPLogin
-We create a simple MVP login. 
+We created a simple [MVP login Application][github-page]. The event diagram of the MVP login:
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+<figure>
+  <img src="/assets/MVPLogin_injection.png" alt="Login Injection" width="700">
+</figure>
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+The lifecycle of our components:
+<figure>
+  <img src="/assets/Component_lifecycle.png" alt="Login Injection" width="500">
+</figure>
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+As you can see the AuthComponent gets added to the App component after the validation of the credentials.
+
+We will now focus on the AuthComponent.
+The AuthComponent uses the AuthModule. And allows two components to be added to this component: 
+<ul>
+<li>The GreetComponent</li>
+<li>The ViewUserComponent</li>
+</ul>
+
+<script src="https://gist.github.com/Geertdepont/b5216a57b6975424936c21f1a3f639df.js"></script>
+
+The AuthModule provides whatever the AuthComponent needs. In this case the AuthComponent only needs to provide the credentials.
+So a provideCredentials method is added.
+
+<script src="https://gist.github.com/Geertdepont/533cae68ef7bbfc49a45cde4b8cd30d6.js"></script>
+
+When the validation of the login has succeeded, the AuthComponent gets added to the AppComponent.
+Also the credentials from the AuthComponent are being set with the given username.
+
+<script src="https://gist.github.com/Geertdepont/b1509c2930f9f4a6d472329fd8aefffa.js"></script>
+
+Check out the [Github page][github-page] to view the complete repository.
+
+[github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin
+

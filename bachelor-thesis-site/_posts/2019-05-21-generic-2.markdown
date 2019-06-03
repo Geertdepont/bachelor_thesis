@@ -6,22 +6,48 @@ guideline_id: 2
 date:   2019-05-21 01:00:40 +0200
 categories: Generic
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+<h3>Why?</h3>
+ As also remarked by two
+interviewees, a recurrent problem arises when common functionalities 
+are not provided in base classes. This often leads to
+duplicated code, reducing the maintainability and testability of
+the app. Ideally, components should be independent from each
+other and their business logic should be clear and explicitly
+separated. By quoting one of the data points “your architecture
+should scream the purpose of the app”. Decoupled components
+make it easier to focus on app functionalities and their issues,
+without dealing with bloatware. Additionally, this enables a
+higher testability of the core logic of the app by making components 
+unit-testable (ideally without requiring an emulator).
+Finally, by decoupling the business logic from frameworks,
+more emphasis is put on the business logic, making an app
+more testable, maintainable, and of low technical debt.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+<h3>Example</h3>
+We created a simple [Boss Application][boss-application] which retrieves users from a dummy API. 
 
-Jekyll also offers powerful support for code snippets:
+The three main components from the BossApplication are:
+<ul>
+<li>Model</li>
+<li>Presenter</li>
+<li>View</li>
+</ul>
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+The event diagram of the Boss Application:
+<figure>
+  <img src="/assets/BossApplication_lifecycle.png" alt="Login Injection" width="700">
+</figure>
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+Each component can be easily tested. Since the MainPresenter has no actual reference to the MainActivity the 
+MainPresenter is Android-independent making this presenter testable without an emulator.
+The MainPresenter is also not able to call methods from the MainActivity which are not specified in the MainView.
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+<script src="https://gist.github.com/Geertdepont/f028365580bd4d1543d08da070774860.js"></script>
+
+Which has a reference to the MainView.
+
+<script src="https://gist.github.com/Geertdepont/608af87f6a302b6d5f66da2582dd5b0c.js"></script>
+
+Check out the [Github page][boss-application] to view the complete repository.
+
+[boss-application]: https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication
