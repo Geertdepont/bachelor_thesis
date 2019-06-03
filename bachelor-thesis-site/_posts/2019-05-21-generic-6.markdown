@@ -6,22 +6,44 @@ short_description: "Organize packages"
 date:   2019-05-21 01:00:36 +0200
 categories: Generic
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+<h3>Why?</h3>
+When organizing your packages and files by layer or by feature, it becomes easier for 
+programmers to find the code which performs a certain aspect of your application.
+By layer or by feature both have their advantages. However when packaging by layer, 
+whenever a feature has to be changed, multiple files in different packages need to be changed. 
+As however in packaging by feature this is less the case.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+<h3>Example</h3>
+Our [MVVM-example][MVVM-example] somehow needs to reflect that it uses this architecture.
+<figure>
+  <img src="/assets/Rxjava_packages.png" alt="Rxjava packages" width="300">
+</figure>
 
-Jekyll also offers powerful support for code snippets:
+As you can see there are three main packages:
+<ul>
+<li>Service</li>
+<li>View</li>
+<li>ViewModel</li>
+</ul>
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+In the service package everything with data preparation is taken care of.
+E.g. fetching data from the server. Putting the fetched data into mutableLiveData.
+The ViewModel exposes methods which help maintain the view.
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+Our [MVP][github-page] also somehow needs to reflect it's architecture.
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+<figure>
+  <img src="/assets/MVP_packages.png" alt="MVP packages" width="300">
+</figure>
+
+As you can see there are three main packages:
+<ul>
+<li>View</li>
+<li>Model</li>
+<li>Presenter</li>
+</ul>
+
+Check out both the [MVVM example][MVVM-example] and the [MVP example][github-page] on these links.
+
+[MVVM-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/RxjavaRetrofitGithub
+[github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin

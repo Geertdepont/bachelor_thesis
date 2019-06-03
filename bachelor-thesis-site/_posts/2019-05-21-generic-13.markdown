@@ -7,22 +7,25 @@ short_description: "Lifecycle of android components"
 date:   2019-05-21 01:00:29 +0200
 categories: Generic
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+<h3>Why?</h3>
+Each android component has a lifecycle. Without taking them in consideration, your app might crash, or unexpected activities might occur. 
+Also since activities are constantly being destroyed, referencing them could lead to memory leaks. 
+Using lifecycle aware components reduces much of this complexity. 
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+<h3>Example</h3>
+For this example we will look at the [Book example][Book-example].
+Whenever we flip our phone, our Activity gets destroyed.
+	This means that any reference to this activity needs to be destroyed as well.
 
-Jekyll also offers powerful support for code snippets:
+<figure>
+  <img src="/assets/PresenterLifeCycle.png" alt="MVVM depicted" width="300">
+</figure>
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+So this is most important otherwise we get memory leaks.
+	So in our BookListActivity we override the onDestroy() method.
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+<script src="https://gist.github.com/Geertdepont/4346b4cad88dc70c8a6babdd165fa75f.js"></script>
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+<script src="https://gist.github.com/Geertdepont/635410e638efae37801dc53927e2acb1.js"></script>
+
+[Book-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/BookApplication

@@ -2,26 +2,53 @@
 layout: post
 title: "Locally cache data for supporting offline-first experience."
 guideline_id: 8
-short_description: "Cache data""
+short_description: "Cache data"
 date:   2019-05-21 01:00:34 +0200
 categories: Generic
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+<h3>Why?</h3>
+Using a cache to store data, enhances the user’s experience. Activities are destroyed 
+constantly. Retrieving data from the server every time an activity would be destroyed, 
+would be a waste of mobile data and a bad user experience. 
+A synchronization of a local database and the webservice can solve this problem. 
+Whenever the local database is empty, or the data is not valid, retrieve data from the web server.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+<h3>Example</h3>
+We created a simple [application][github-page] which retrieves employees from this url: http://dummy.restapiexample.com/api/v1/
 
-Jekyll also offers powerful support for code snippets:
+If the employees were already retrieved within 5000 milliseconds, the repository returns the 
+cache instead of making a new API request.	
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+<figure>
+  <img src="/assets/BossApplication_lifecycle.png" alt="Rxjava packages" width="600">
+</figure>
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+In the mainActivity when the button is clicked, the function showEmployees is called from the 
+MainPresenter. 
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+<script src="https://gist.github.com/Geertdepont/64ab029fdf46c051eae227887eec24cf.js"></script>
+
+The MainPresenter then asks the repository to show the users with the getList(this) function, 
+which it will listen to with using the onSuccess or onError function. 
+
+<script src="https://gist.github.com/Geertdepont/e8e9996406425a39462b5f03ec0896ff.js"></script>
+
+The repository contains a EmployeeService and a EmployeeCache. 
+The EmployeeService makes API requests.
+
+<script src="https://gist.github.com/Geertdepont/6ecccdffb113b1b2e581775384f4bc6c.js"></script>
+
+When the getList() function from the Repository is called.
+It checks if the cache is still valid. That is if the data was recently updated and not null.
+
+<script src="https://gist.github.com/Geertdepont/e484aa2688cac63a9284cc156da2a000.js"></script>
+
+If not, then a new listener is created. Which is used during the API request.
+Using a cache results in a faster response.
+	
+When using online services, do not forget to add the <uses-permission> in the 
+AndroidManifest.xml
+
+Check out the [Github page][github-page] to view the complete repository.
+
+[github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication
