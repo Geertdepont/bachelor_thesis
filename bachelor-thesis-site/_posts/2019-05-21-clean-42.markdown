@@ -6,22 +6,35 @@ short_description: "The UI thread "
 date:   2019-05-21 01:00:00 +0200
 categories: Clean
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+<h3>Why?</h3>
+In accordance to guidelines CLEAN-1
+and CLEAN-2, presenters residing in the outer layers of
+apps modeled through clean architecture principles should
+be kept lightweight. In fact, Presenters should be composed
+with interactor components, i.e., use cases residing in the
+business logic layers, which are responsible for executing tasks
+outside the main UI thread of the app. Once the task are
+finished, the Views are updated through a callback with the
+processed data. Besides callback-based communication among
+components, other techniques used in order to keep the UI
+thread lightweight rely on the inversion of control principle
+and intent-based communication.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+<h3>Example</h3>
+We created a simple [MVP login Application][github-page]. The event diagram of the MVP login:
 
-Jekyll also offers powerful support for code snippets:
+Each presenter in our MVP Login example contains an interactor. And performs the job in a 
+new thread, and comes back using a callback.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+<figure>
+  <img src="/assets/MVPLogin_injection.png" alt="Login Injection" width="700">
+</figure>
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+
+This keeps the UI thread lighter than when the MainActivity would perform the request from 
+the database.
+
+Check out the [Github page][github-page] to view the complete repository.
+
+[github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin

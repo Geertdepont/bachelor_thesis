@@ -6,22 +6,41 @@ short_description: "Models should be evolvable/testable"
 date:   2019-05-21 01:00:12 +0200
 categories: MVVM
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+<h3>Why?</h3>
+Well-designed ViewModels should completely decouple Views from Model
+classes. In such way, by strictly adhering to the MVVM
+pattern, Models and Views can evolve independently and be
+tested with ease. Additionally, by applying the inversion of
+control principle and implementing ViewModels decoupled
+from the Android framework, it is possible to test ViewModels
+via unit tests. In contrast, if the binding between the MVVM
+components is too complex and intertwined, testing and debugging Android apps can become a cumbersome challenge.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
-Jekyll also offers powerful support for code snippets:
+<h3>Example</h3>
+We created a simple [MVVM example][architecture-example].
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+This is our current model:
+<script src="https://gist.github.com/Geertdepont/e62a8bc6a6a32d822af397e6bee8fdc1.js"></script>
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+We evolve this model, by adding a new feature:
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+<script src="https://gist.github.com/Geertdepont/7f3501254b6d2be8b46a0a787a818625.js"></script>
+
+Since Room cannot convert Date value, we need to write our own converter.
+
+<script src="https://gist.github.com/Geertdepont/fa15aa9ffa53d5d3c4710608cade33c6.js"></script>
+
+The <b>@TypeConverters(DateConverter.class)</b> has been added to the top of the Note model.
+
+We change the version of our database from 1 to 2.
+And we need to write a migration.
+
+We can now restart the app, and the database has been updated.
+Maybe this is a bad example, but when we create a new feature for our model.
+We can evolve our model and test it without creating a new view.
+
+
+Check this [page][architecture-example] to view the complete repository.
+
+[architecture-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExample

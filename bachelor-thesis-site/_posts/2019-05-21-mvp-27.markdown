@@ -6,22 +6,23 @@ short_description: "Retain fragments for avoiding memory leaks"
 date:   2019-05-21 01:00:15 +0200
 categories: MVP
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+<h3>Why?</h3>
+Fragments are destroyed and recreated with their parent Activity.
+The setRetainInstance in a fragment, allows us to skip this cycle.
+The fragment is then retained. This is used to avoid memory leaks.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
-Jekyll also offers powerful support for code snippets:
+<h3>Example</h3>
+Due to time issues, I did not create an example for retaining fragments, but here is a good example.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+<script src="https://gist.github.com/Geertdepont/d86d93767d2f95073716f3c926720d5a.js"></script>
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+<script src="https://gist.github.com/Geertdepont/9f0fd8ea570f16fcc05df5c091fd7873.js"></script>
+
+If the fragment already started before, then it does not have to be created. 
+
+
+Check this [page][github-page] to view the complete repository.
+
+[github-page]: https://www.androiddesignpatterns.com/2013/04/retaining-objects-across-config-changes.html

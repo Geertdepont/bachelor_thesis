@@ -7,22 +7,34 @@ short_description: "Views should always know about changes after ViewModels"
 date:   2019-05-21 01:00:10 +0200
 categories: MVVM
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+<h3>Why?</h3>
+Adhering to this guideline implies that all the logic
+in the Views should be moved to the ViewModels. While the
+purpose of ViewModels is to pre-process data to be ready
+to use by Views, it might be tempting to implement minor
+operations in Views. Nevertheless, adhering to this guideline
+guarantees a higher level of consistency and reliability of all
+the components which are based on the ViewModels.
+4) Clean Architecture Android Guidelines: While rather a
+set of architectural practices than a pattern, clean architecture
+results to be a common theme in Android architecture literature.
+ In total, 28 practices on this theme are collected and
+synthesized into the following 5 architectural guidelines
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
-Jekyll also offers powerful support for code snippets:
+<h3>Example</h3>
+We created a simple [MVVM example][architecture-example].
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+Our viewModel provides all the data for the View.
+When a new note is added to the model, the list of notes has been changed, and a new stream from the model to the viewModel is passed.
+The View observes this changed list and updates the view.
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+<script src="https://gist.github.com/Geertdepont/06e30ce3516c8ad36134543c9cbfe036.js"></script>
+
+<script src="https://gist.github.com/Geertdepont/0cf01c5b3504ad226e946d261908cf44.js"></script>
+
+
+Check this [page][architecture-example] to view the complete repository.
+
+[architecture-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExample

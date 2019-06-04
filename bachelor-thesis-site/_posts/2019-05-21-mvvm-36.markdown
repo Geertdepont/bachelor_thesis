@@ -6,22 +6,26 @@ short_description: "The data produced by the Models should be reliable and of hi
 date:   2019-05-21 01:00:06 +0200
 categories: MVVM
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+<h3>Why?</h3>
+Store the data retrieved from the web into Observables.
+ Also check whether the data received from the web, is equal as the specified model or create a new model with the received data. 
+ This results into less unexpected code.
+  Also creating tests checking whether the received data matches the model, allows programmers to see if the model from the web has changed.
+<h3>Example</h3>
+We created a simple [MVVM example][architecture-example].
 
-Jekyll also offers powerful support for code snippets:
+The data we receive from the NoteDao, is how our ViewModel wants it, which is <b>LiveData</b>
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+<script src="https://gist.github.com/Geertdepont/7948e84b49e916b563251edcd71fabdd.js"></script>
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+<script src="https://gist.github.com/Geertdepont/da7b1a5c33afcbeb0ef314ed71cfb6ee.js"></script>
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+So in this case there is not soo much changing to be done.
+Our NoteRepository contains all the notes.
+If however we receive data from a webservice, we need to make sure our data is valid.
+
+
+Check this [page][architecture-example] to view the complete repository.
+
+[architecture-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExamples

@@ -6,22 +6,27 @@ short_description: "Inject dependencies to Presenters into the Views"
 date:   2019-05-21 01:00:17 +0200
 categories: MVP
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+<h3>Why?</h3>
+Injecting presenters using Dagger reduces null checks and setPresenter() methods. 
+Whenever an activity is used, Dagger couples the view with the Presenter.
+ Which ultimately results into clearer code.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
-Jekyll also offers powerful support for code snippets:
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+<h3>Example</h3>
+We created a simple [MVP login Application][github-page].
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+The ViewUserModule provides the ViewUserComponent with the ViewUserPresenter.
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+<script src="https://gist.github.com/Geertdepont/bb5770a60eff27f2da993c3f46a140d0.js"></script>
+
+This ViewUserPresenter gets initialized with the viewUsersView. Which is added when the 
+module is instantiated.
+
+<script src="https://gist.github.com/Geertdepont/6bfd1948147766a44579173049aaa979.js"></script>
+
+Which happens in the viewUsersActivity.	So whenever a new Presenter is created, the Presenter always has a relationship with a view. So this is never null.
+
+Check out the [Github page][github-page] to view the complete repository.
+
+[github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin

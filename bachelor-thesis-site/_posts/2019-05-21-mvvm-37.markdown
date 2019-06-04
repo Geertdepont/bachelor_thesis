@@ -6,22 +6,47 @@ short_description: "Networking or data access functionalities should be performe
 date:   2019-05-21 01:00:05 +0200
 categories: MVVM
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+<h3>Why?</h3>
+Performing data functionalities by models, results into smaller ViewModels/Views. 
+It also makes testing the whole architecture easier. 
+Since each component can be tested separately. 
+Instead of asserting that a View needs to behave after a certain retrieval from the model, the model now can be tested independently.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
-Jekyll also offers powerful support for code snippets:
+<h3>Example</h3>
+We created a simple [MVVM example][architecture-example].
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+We use for this example Rxjava in combination with retrofit.
+	Sometimes it is necessary to have nested callbacks.
+Like in this example, where we want to find the contributors of our repository.
+We need to know which repositories there are before we can look up, the contributors of the repository.
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+<script src="https://gist.github.com/Geertdepont/8c25c0bd952d904f8619eb50ead4a9d2.js"></script>
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+Our methods getRepositories() and getContributors(String repo), both return observable 
+Values. Which means that this values can be viewed by an Observer, which we need to 
+Implement.
+
+<script src="https://gist.github.com/Geertdepont/376c0d8f6049cc1597f5d5ef4a150fa0.js"></script>
+
+We then create a Retrofit class, which returns a Retrofit instance, which will perform our API 
+requests to “”https://api.github.com/”” 
+
+In our repository, we will return our A Single object. Which either emits one value, or an error 
+message. 
+
+<script src="https://gist.github.com/Geertdepont/8232872ba1dcfb6d7b81bb50114c3dd1.js"></script>
+
+This getContributorList() performs for each Repository a new request.
+Repo -> myApi.getContributors(repo.getName())
+It then sorts all the results and puts them in a List.
+
+<figure>
+  <img src="/assets/RXJava_depicted.png" alt="RxJava depicted" width="700">
+</figure>
+
+The repository is the only module which performs <b> Networking </b> functionalities.
+
+Check this [page][MVVM-example] to view the complete repository.
+
+[MVVM-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/RxjavaRetrofitGithub

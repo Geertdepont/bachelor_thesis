@@ -6,22 +6,46 @@ short_description: "Lifecycle of Presenters"
 date:   2019-05-21 01:00:22 +0200
 categories: MVP
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+<h3>Why?</h3>
+By having callbacks related to the Activity lifecycle in Presenters, Presenters
+become tightly coupled to Activities lifecycle. This can have
+a negative impact in terms of maintainability. From an architectural perspective, 
+Presenters should not be responsible for
+data-related tasks. It is hence advised not to retain Presenters.
+An alternative solution would be to use a caching mechanism
+to retain data, keep Presenters stateless, and destroy Presenters
+when their corresponding Views are destroyed. 3) 
+MVVM-specific Android Architecture Guidelines: 
+Another recurrent theme identified in the practices regards the
+MVVM pattern. In total, 24 practices are collected and synthesized in the following 10 MVP-specific guidelines.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+<h3>Example</h3>
+We created a simple [MVP login Application][github-page]. 
 
-Jekyll also offers powerful support for code snippets:
+After the login is successful, the AuthComponent gets added to the AppComponent. 
+With the <b>plusAuthComponent()</b> method.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+<script src="https://gist.github.com/Geertdepont/547535c79f8dd210c7f580de3acd4429.js"></script>
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+When the GreetActivity and the ViewUserActivity are created. Their respective component is 
+being set up and added to the AuthComponent.
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+<script src="https://gist.github.com/Geertdepont/6bfd1948147766a44579173049aaa979.js"></script>
+
+<script src="https://gist.github.com/Geertdepont/533cae68ef7bbfc49a45cde4b8cd30d6.js"></script>
+
+Our ViewUserPresenter has a one-to-one relationship with viewUsersView. 
+This is injected when the ViewUserActivity is created.
+
+<script src="https://gist.github.com/Geertdepont/3cceed203537b7fc29f1cd7a712a2109.js"></script>
+
+Which is provided in our ViewUsersModule.
+
+When the view is added to the module a new ViewPresenter is provided with this	ViewUserView. 
+When this view is removed the presenter is removed as well.
+
+<script src="https://gist.github.com/Geertdepont/bb5770a60eff27f2da993c3f46a140d0.js"></script>
+
+Check out the [Github page][github-page] to view the complete repository.
+
+[github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin
