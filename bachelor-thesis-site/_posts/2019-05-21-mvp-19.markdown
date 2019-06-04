@@ -6,22 +6,45 @@ short_description: "Clearly define contracts between Views and Presenters."
 date:   2019-05-21 01:00:23 +0200
 categories: MVP
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+<h3>Why?</h3>
+Before starting to develop a new app feature,
+a good architectural practice consists in writing a contract
+documenting the communication between the View and the
+Presenter. The contract should document for each event in
+the View which is the corresponding action in the Presenter.
+By implementing contract interface classes, the source code
+of apps become more understandable, as the relation between
+the View and the Presenter is explicitly documented.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+<h3>Example</h3>
+For this example we will look at the [Book example][Book-example].
 
-Jekyll also offers powerful support for code snippets:
+Our BookListContract:
+<script src="https://gist.github.com/Geertdepont/303ada3a2b720dea0bf534313bf4a845.js"></script>
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+Our BookListPresenter implements the Presenter interface and our BookListActivity 
+implements the View interface.
+This contract helps to design how the communication between our BookListActivity and our 
+BookListPresenter will be.
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+The Presenter will look the books, and the View will present the books.
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+At a certain moment our BookListActivity will request the Presenter to loadBookList();
+
+<script src="https://gist.github.com/Geertdepont/47b39d34691a8d07a7c3e73db46b5681.js"></script>
+
+This Presenter will then ask the client by calling the getBookList with its callback object as parameter.
+
+<script src="https://gist.github.com/Geertdepont/b02b82c58ae3a1e63e84f634e9ca88c7.js"></script>
+
+If the request is succesfull, the callback will call the showBookList() with the List<Book> as its 
+parameter. If not, it will show the error message.
+
+<figure>
+  <img src="/assets/BookApplication_eventDiagram.png" alt="Login Injection" width="600">
+</figure>
+
+
+Check out the [Github page][Book-example] to view the complete repository.
+
+[Book-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/BookApplication

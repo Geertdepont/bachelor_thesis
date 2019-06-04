@@ -6,22 +6,49 @@ short_description: "Provide views with data"
 date:   2019-05-21 01:00:26 +0200
 categories: MVP
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+<h3>Why?</h3>
+The view layer of Android apps tends to become
+bloated with responsibilities, and hence becomes harder to
+maintain. In order to alleviate such problem, Activities and
+Fragments can be provided with preprocessed data ready
+to be displayed. This can be achieved by delegating data processing tasks to one or more dedicated components. 
+In such manner, Activities and Fragments are relieved from the task
+of transforming and filtering domain-specific data, potentially
+improving the testability and usability of the app.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+<h3>Example</h3>
+We created a simple [MVP login Application][github-page].
+Let us take a look at the ViewUsersActivity which implements the ViewUsersView. 
 
-Jekyll also offers powerful support for code snippets:
+<script src="https://gist.github.com/Geertdepont/c026944fc859a456ba6edbc7dccc2a3a.js"></script>
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+The only responsibility of the view is too show the data.
+	Which is set in the view function.
+	Whenever the ViewUsersActivity is start up, it asks the ViewUserPresenter to show the users.  
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+<script src="https://gist.github.com/Geertdepont/7f1bddfb7def8c483b524f92cab10366.js"></script>
+
+The ViewUserPresenter asks the ViewUserInteractor to get the users.
+	If the ViewUserInteractor can find it, the users will be returned. 
+	Otherwise the <b>onError()</b> method from the ViewUserPresenter is invoked.
+
+<script src="https://gist.github.com/Geertdepont/8ffeed7e2ae3abdc0d0114e75484ab30.js"></script>
+
+Our DataManager then asks the helper to return the users. 
+<script src="https://gist.github.com/Geertdepont/4f94708f38f2698e755b030eecaa492d.js"></script>
+
+In our DbHelper we return the data in which the view it was specified. 
+Which is a List<User>.
+<script src="https://gist.github.com/Geertdepont/d32cf2eb0d298e7d543634dcfdf8006a.js"></script>
+
+The presenter then just provides the showUsers function from the ViewUsersView with the 
+List<User>
+
+<figure>
+  <img src="/assets/MVPLogin_showUsers.png" alt="MVVM depicted" width="700">
+</figure>
+
+Check out the [Github page][github-page] to view the complete repository.
+
+[github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin

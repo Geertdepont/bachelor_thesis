@@ -6,22 +6,14 @@ short_description: "Permissions"
 date:   2019-05-21 01:00:27 +0200
 categories: Generic
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+<h3>Why?</h3>
+Android apps must require permissions before accessing specific data or certain system activities, like accessing the Internet.
+ All these permission need to be specified in the  AndroidManifest.xml.
+  And the certain system feature can then only be used if the user allows it.
+  
+<h3>Example</h3>
+Since we use the internet in our [MVP BossApplication][boss-application] we need to specify this permission in our AndroidManifest.xml file.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+<script src="https://gist.github.com/Geertdepont/014777b09a63414769b0489d30aa80da.js"></script>
 
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+[boss-application]: https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication

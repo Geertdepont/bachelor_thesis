@@ -3,7 +3,7 @@ name: Bachelor Thesis site
 email: geertdepont@yahoo.com
 author: Geert de Pont
 url: ""
-github: https://github.com/geertdepont/
+github: https://github.com/Geertdepont/bachelor_thesis
 baseurl: ""
 description: This website is created for my bachelor thesis. In my bachelor thesis I describe 42 guidelines
  for creating good Android applications. These guidelines are formed in the https://robertoverdecchia.github.io/papers/ICSA_2019.pdf paper.
