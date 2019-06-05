@@ -8,8 +8,8 @@ categories: Generic
 ---
 <h3>Why?</h3>
 Using a cache to store data, enhances the user’s experience. Activities are destroyed 
-constantly. Retrieving data from the server every time an activity would be destroyed, 
-would be a waste of mobile data and a bad user experience. 
+constantly. Retrieving data from the server whenever an activity is destroyed, 
+is a waste of mobile data and a bad user experience. 
 A synchronization of a local database and the webservice can solve this problem. 
 Whenever the local database is empty, or the data is not valid, retrieve data from the web server.
 
@@ -34,7 +34,7 @@ which it will listen to with using the onSuccess or onError function.
 <script src="https://gist.github.com/Geertdepont/e8e9996406425a39462b5f03ec0896ff.js"></script>
 
 The repository contains a EmployeeService and a EmployeeCache. 
-The EmployeeService makes API requests.
+The EmployeeService makes API requests and in the EmployeeCache the Employee is saved from the last request.
 
 <script src="https://gist.github.com/Geertdepont/6ecccdffb113b1b2e581775384f4bc6c.js"></script>
 
@@ -43,7 +43,9 @@ It checks if the cache is still valid. That is if the data was recently updated 
 
 <script src="https://gist.github.com/Geertdepont/e484aa2688cac63a9284cc156da2a000.js"></script>
 
-If not, then a new listener is created. Which is used during the API request.
+If not, then a new listener is created which talks to the <b>MainPresenter</b> which in the getList() function has the name <b>callback</b>. 
+Whenever the new the service request has an error the onError method from the listener is called, and in return calls the onError method from the MainPresenter.
+Whenever the new the service request is successful the onSuccess method from the listener is called, and in return calls the onSuccess method from the MainPresenter.
 Using a cache results in a faster response.
 	
 When using online services, do not forget to add the <uses-permission> in the 

@@ -14,18 +14,20 @@ Using lifecycle aware components reduces much of this complexity.
 
 <h3>Example</h3>
 For this example we will look at the [Book example][Book-example].
-Whenever we flip our phone, our Activity gets destroyed.
-	This means that any reference to this activity needs to be destroyed as well.
+Whenever we flip our phone, our BookListActivity gets destroyed.
+	This means that any reference to the BookListActivity needs to be destroyed as well.
 
 <figure>
   <img src="/assets/PresenterLifeCycle.png" alt="MVVM depicted" width="300">
 </figure>
 
-So this is most important otherwise we get memory leaks.
-	So in our BookListActivity we override the onDestroy() method.
+This is most important otherwise we get memory leaks.
+So in our BookListActivity we override the onDestroy() method.
 
 <script src="https://gist.github.com/Geertdepont/4346b4cad88dc70c8a6babdd165fa75f.js"></script>
 
 <script src="https://gist.github.com/Geertdepont/635410e638efae37801dc53927e2acb1.js"></script>
+
+Check out the [Book-example][Book-example] to view the complete repository.
 
 [Book-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/BookApplication

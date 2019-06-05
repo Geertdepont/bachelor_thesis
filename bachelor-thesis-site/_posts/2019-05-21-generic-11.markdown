@@ -7,9 +7,13 @@ date:   2019-05-21 01:00:31 +0200
 categories: Generic
 ---
 <h3>Why?</h3>
-Using well-defined coding standards is necessary when collaborating. When non-logical variable or function names are used, it becomes harder for others to understand the code.
-Therefore use coding standards.
-https://github.com/ribot/android-guidelines/blob/master/project_and_code_guidelines.md
+Coding standards are guidelines that all developers follow in a project follow to improve collaboration.
+When non-logical variable or function names are used, it becomes harder for others to understand the code. 
+Which results in time loss.
+There also exists coding standard files which can be linked to your AndroidStudio project. 
+This is often used because whenever a line of code does not match the coding standard this is automatically shown.
+An example coding standard file can be found <a href="https://github.com/ustwo/android-coding-standards">here.</a>
+Which follows the official Android coding standards: https://source.android.com/setup/contribute/code-style
 
 <h3>Example</h3>
 We created a simple [application][github-page] which retrieves employees from this url: http://dummy.restapiexample.com/api/v1/
@@ -28,4 +32,4 @@ For more coding standards read this [link][coding-standards]:
 
 
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication
-[coding-standards]: https://github.com/ribot/android-guidelines/blob/master/project_and_code_guidelines.md
+[coding-standards]: https://source.android.com/setup/contribute/code-style

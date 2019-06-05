@@ -52,7 +52,7 @@ We want to share as much responsibilities to another layer as possible.
 Our LoginActivity only does what our presenter tells it to do. So our LoginActivity does not become a God class. This also makes it easier to test our views and presenter.
 
 Our interactor checks if the password given matches the password of the gotten user.
-This is a simplistic example and in real life applications, passwords would have been checked with hashing.
+This is a simplistic example and in real life applications, the validation of passwords would have been done differently.
 
 
 

@@ -16,17 +16,18 @@ For example we do not want the user to wait forever when a network error occurre
 
 <h3>Example</h3>
 We created a simple [MVP login Application][github-page]. 
-Our ViewUser presenter asks the ViewUserInteractor to show the Users.
+Our ViewUserPresenter asks the ViewUserInteractor to show the Users with the <b>mViewUserInteractor.showUsers(this);</b> method.
+Which takes as parameter the ViewUserPresenter. 
 
 <script src="https://gist.github.com/Geertdepont/f6ab7f5dd5fea041ce3b6af93a583db7.js"></script>
 
-Either it will get all the users, or there will be an exception.
-Either way, the Presenter needs to know that the process has finished.
+Either the ViewUserInteractor will get all the users, or there will be an exception.
+Either way, the ViewUserPresenter needs to know that the process has finished.
 Otherwise the User will not know if something has happened or not.
 
 <script src="https://gist.github.com/Geertdepont/8ffeed7e2ae3abdc0d0114e75484ab30.js"></script>
 
-It is important that our background-tasks do not run forever.
+It is important that our background-tasks do not run forever and that the user knows that this task has finished.
 
 Check out the [Github page][github-page] to view the complete repository.
 

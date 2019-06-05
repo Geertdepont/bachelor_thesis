@@ -43,7 +43,7 @@ The lifecycle of our components:
   <img src="/assets/Component_lifecycle.png" alt="Login Injection" width="500">
 </figure>
 
-As you can see the AuthComponent gets added to the App component after the validation of the credentials.
+As you can see the AuthComponent gets added to the AppComponent after the validation of the credentials.
 
 We will now focus on the AuthComponent.
 The AuthComponent uses the AuthModule. And allows two components to be added to this component: 
@@ -63,6 +63,20 @@ When the validation of the login has succeeded, the AuthComponent gets added to 
 Also the credentials from the AuthComponent are being set with the given username.
 
 <script src="https://gist.github.com/Geertdepont/b1509c2930f9f4a6d472329fd8aefffa.js"></script>
+
+After this the GreetComponent gets added to the AuthComponent in the GreetActivity with the <b>setupComponent</b> method. 
+And the GreetActivity is injected into the GreetComponent. 
+Now everything the GreetActivity needs is taken care of in the greetModule.
+
+<script src="https://gist.github.com/Geertdepont/304f78a0318d31cb565566e7c0adbcb2.js"></script>
+
+Now the only job of the GreetPresenter is to greet the user with it's username, by calling the <b>mGreetView.showMessage(mCredentials.getPersonalizedGreeting()) </b>
+method. We do not have to check if the username is set, because Dagger has provided the credentials.
+
+<script src="https://gist.github.com/Geertdepont/7e57da2825201c7246ad8599e9fb9abd.js"></script>
+
+Without Dagger, each component has to specify all its dependencies. 
+And multiple null-checks have to be made before using that dependency..
 
 Check out the [Github page][github-page] to view the complete repository.
 

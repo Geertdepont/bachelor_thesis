@@ -12,7 +12,7 @@ Using too many callbacks leads to unreadable code.
 These callback hells often arise when multiple server requests need to be performed for one activity. 
 For example, showing the details of users. 
 First you need to know which users exist, and with each username you can request the details. 
-Using the RxJava library we can simplify our code. 
+The RxJava library can simplify our code. 
 
 <h3>Example</h3>
 
@@ -22,28 +22,36 @@ Sometimes it is necessary to have nested callbacks.
 Like in this example, where we want to find the contributors of our repository.
 We need to know which repositories there are before we can look up, the contributors of the repository.
 
-<script src="https://gist.github.com/Geertdepont/5e8db18f58cabda7b8200ecdf245c553.js"></script>
-
-Our methods getRepositories() and getContributors(String repo), both return observable 
+Our methods <b>getRepositories()</b> and <b>getContributors(String repo)</b>, both return observable 
 Values. Which means that this values can be viewed by an Observer, which we need to 
 Implement.
+<script src="https://gist.github.com/Geertdepont/5e8db18f58cabda7b8200ecdf245c553.js"></script>
+
+We then create a Retrofit class, which returns a Retrofit instance, which will perform our API 
+requests to “https://api.github.com/” 
 
 <script src="https://gist.github.com/Geertdepont/fe492764b668d1393b32c7c66868ac24.js"></script>
 
-We then create a Retrofit class, which returns a Retrofit instance, which will perform our API 
-requests to “”https://api.github.com/”” 
+
 
 In our repository, we will return our A Single object. Which either emits one value, or an error 
 message. 
 
 <script src="https://gist.github.com/Geertdepont/047f1270a4745522b26927ae208eabfe.js"></script>
 
-The getContributorList() performs for each Repository in my github account a new request.
-These repositories are retrieved via the myAPI.getRepositories() request.
-Then .flatMapIterable(x -> x) flattens a stream of iterables. So that for each repository, we can fetch the contributors, and sort them based on the amount of contributions.
+The <b>getContributorList()</b> performs for each Repository in my github account a new request.
+These repositories are retrieved via the <b>myAPI.getRepositories()</b> request.
+Then <b>.flatMapIterable(x -> x)</b> flattens a stream of iterables. So that for each repository, we can fetch the contributors, and sort them based on the amount of contributions.
 
-If we had to write this code without RxJava, we would end up with a for loop within two nested callbacks. Which produces ugly code.
+If we had to write this code without RxJava, we would end up with a for loop within two nested callbacks. Which would lead to ugly code.
+
+Checkout the [RXJava documentation][RX-Java] to understand more about <b>Observers</b> and <b>Observables</b>
+
+Whenever using RXJava or Retrofit do not forget to add these libraries to your app/build.gradle file.
+
+<script src="https://gist.github.com/Geertdepont/d538c636d05bc38007701f306d019750.js"></script>
 
 Checkout our [MVVM example][MVVM-example] to view the complete repository. 
 
 [MVVM-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/RxjavaRetrofitGithub
+[RX-Java]: http://reactivex.io/documentation

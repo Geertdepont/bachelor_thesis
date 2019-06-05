@@ -8,8 +8,9 @@ date:   2019-05-21 01:00:35 +0200
 categories: Generic
 ---
 <h3>Why?</h3>
-Taking full advantage of libraries not only saves time, but could also be an improvement of 
-your own implementation. However do check the ratings of the library or dive into the code, to 
+Taking full advantage of libraries does not only save time, but could also be an improvement of 
+your own implementation. Since multiple users could have been working on this implementation and many hands make light work.
+ However do check the ratings of the library before using it. Or dive into the code of the library. This way you can
 see that you are working with high quality and bug free code.
 
 <h3>Example</h3>
@@ -27,7 +28,9 @@ the contributors, and sort them based on the amount of contributions.
 If we had to write this code without RxJava, we would end up with a for loop within two nested callbacks. 
 Which would lead to ugly code.
 
+Checkout the [RXJava documentation][RX-Java] to understand more about <b>Observers</b> and <b>Observables</b>
 
 Check out the [MVVM example][MVVM-example] to view the complete repository.
 
 [MVVM-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/RxjavaRetrofitGithub
+[RX-Java]: http://reactivex.io/documentation

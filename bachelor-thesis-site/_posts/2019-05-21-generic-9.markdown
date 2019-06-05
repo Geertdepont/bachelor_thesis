@@ -19,16 +19,25 @@ We created a simple [application][github-page] which retrieves employees from th
 
 If we take a look at the Presenter and Repository modules, we see they communicate 
 exclusively via interfaces. 
-The MainPresenter implements the OnViewEmployeesFinishedListener.
+The MainPresenter implements the <b> OnViewEmployeesFinishedListener </b>.
+Which contains the methods: 
 
-<script src="https://gist.github.com/Geertdepont/6ecccdffb113b1b2e581775384f4bc6c.js"></script>
+<ul>
+<li><b>onError </b> Which will be called when an error occurs in the Repository</li>
+<li><b>onSuccess </b> Which will be called when the Repository successfully retrieves the employees</li>
+</ul>              
+                    
+<script src="https://gist.github.com/Geertdepont/e8e9996406425a39462b5f03ec0896ff.js"></script>
 
-The MainPresenter then calls the getList giving itself as parameter.
+The MainPresenter calls the <b>employeeRepository.getList(this)</b> giving itself as parameter.
 The Repository communicates back by calling the methods of the
 OnViewEmployeesFinishedListener interface.
-
 OnError() is called if there does not exists a cache and the service does not work.
 OnSuccess() is called if the data is successfully retrieved from cache, or is newly retrieved from the network.
 
+
+<script src="https://gist.github.com/Geertdepont/6ecccdffb113b1b2e581775384f4bc6c.js"></script>
+
+Check out the [Github page][github-page] to view the complete repository.
 
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication

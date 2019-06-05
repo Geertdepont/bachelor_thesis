@@ -7,10 +7,9 @@ date:   2019-05-21 01:00:36 +0200
 categories: Generic
 ---
 <h3>Why?</h3>
-When organizing your packages and files by layer or by feature, it becomes easier for 
+By organizing your packages and files  it becomes easier for 
 programmers to find the code which performs a certain aspect of your application.
-By layer or by feature both have their advantages. However when packaging by layer, 
-whenever a feature has to be changed, multiple files in different packages need to be changed. 
+Whenever a feature has to be changed in layer-organized file system, multiple files in different packages need to be changed. 
 As however in packaging by feature this is less the case.
 
 <h3>Example</h3>
@@ -28,7 +27,8 @@ As you can see there are three main packages:
 
 In the service package everything with data preparation is taken care of.
 E.g. fetching data from the server. Putting the fetched data into mutableLiveData.
-The ViewModel exposes methods which help maintain the view.
+The ViewModel exposes methods which help maintain the View. 
+And the View handles the UI events and maps them to them to the ViewModel.
 
 Our [MVP][github-page] also somehow needs to reflect it's architecture.
 
@@ -42,6 +42,10 @@ As you can see there are three main packages:
 <li>Model</li>
 <li>Presenter</li>
 </ul>
+
+In the model all the data management is taken care of. 
+The Presenter queries the data from the model, and returns it to the View.
+And the View presents the data to the user in a way the Presenter decided.
 
 Check out both the [MVVM example][MVVM-example] and the [MVP example][github-page] on these links.
 

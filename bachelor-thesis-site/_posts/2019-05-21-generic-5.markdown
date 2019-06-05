@@ -17,9 +17,6 @@ adaptability/maintainability is not required, the selection of an
 ill-suited architectural pattern might lead to over-engineering.
 Choosing the architectural pattern to adopt is hence a nontrivial decision which should be taken by considering the
 context of apps, and their business/organizational goals.
-2) MVP-specific Android Architecture Guidelines: The second most considered theme regards practices related to the
-MVP architectural pattern. In total, 40 practices are collected
-and synthesized in the following 12 MVP-specific guidelines
 
 <h3>Example</h3>
 We created two examples:
@@ -37,6 +34,11 @@ Our [MVVM example][github-page] depicted:
 <figure>
   <img src="/assets/MVPLogin_depicted.png" alt="MVVM depicted" width="700">
 </figure>
+
+Both the MVVM architecture and the MVP are both recommended architectures when developing Android applications.
+As we can see choosing these architectures each component (model, view, presenter/ ViewModel) has its own responsibilities.
+Which makes improves testing and so also maintainability because each component can be tested separately.
+So whenever a test fails, it can be directly seen from which component this test fails.
 
 Check out both the [MVVM example][architecture-example] and the [MVP example][github-page] on these links.
 
