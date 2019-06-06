@@ -32,8 +32,7 @@ new thread, and comes back using a callback.
 </figure>
 
 
-This keeps the UI thread lighter than when the MainActivity would perform the request from 
-the database.
+This keeps the UI thread lighter than when the MainActivity would perform the request on the MainThread.
 
 Check out the [Github page][github-page] to view the complete repository.
 

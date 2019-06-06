@@ -16,16 +16,17 @@ client and hence, in a repository pattern fashion, data sources
 can be added, removed, or changed without much effort.
 
 <h3>Example</h3>
-We created a simple [MVP login Application][github-page]. The event diagram of the MVP login:
+We created a simple [MVP login Application][github-page]. 
 
 <figure>
-  <img src="/assets/MVPLogin_injection.png" alt="Login Injection" width="700">
+  <img src="/assets/MVPLogin_depicted.png" alt="Login depicted" width="600">
 </figure>
 
-Each layer works with its own model. If we change the way we implement validation of our 
-credentials. We do not need to change our Presenter.
-
-
+Each layer works with its own model.
+The View layer works with the Presenter.
+The Presenter works with the Model.
+If we change the way we store the data from the model, the View would not need to know.
+Since the View receives the same data.
 
 Check out the [Github page][github-page] to view the complete repository.
 

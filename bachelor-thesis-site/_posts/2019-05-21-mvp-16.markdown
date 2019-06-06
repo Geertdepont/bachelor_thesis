@@ -49,6 +49,9 @@ List<User>
   <img src="/assets/MVPLogin_showUsers.png" alt="MVVM depicted" width="700">
 </figure>
 
+In the DbHelper the data is transformed so that the Presenter and the View can use it.
+Delegating this task of transforming data, improving the testability of Activities.
+
 Check out the [Github page][github-page] to view the complete repository.
 
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin

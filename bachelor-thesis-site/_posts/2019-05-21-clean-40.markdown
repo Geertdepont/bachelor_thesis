@@ -17,4 +17,20 @@ module (e.g., LiveData, DAOs, ORMs, Shared Preferences,
 Retrofit, etc.) and eventual dependency injection frameworks.
 
 <h3>Example</h3>
-Everything related to the Android Framework should be in the view component. 
+We created a simple [MVP login Application][github-page]. 
+
+<figure>
+  <img src="/assets/MVPLogin_depicted.png" alt="MVP depicted" width="700">
+</figure>
+
+As you can see all the activities are in the View Layer. 
+This device layer contains everything related to the Android Framework.
+
+These are also the only files that contain <b>onCreate</b> from the Android Framework.
+Because this method is called whenever an Activity is created.
+
+<script src="https://gist.github.com/Geertdepont/9430f84a89fb5f16ba2503bd23eceddd.js"></script>
+
+Check out the [Github page][github-page] to view the complete repository.
+
+[github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin

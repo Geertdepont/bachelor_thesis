@@ -35,12 +35,12 @@ MainPresenter is Android-independent making the presenter testable without an em
 
 <script src="https://gist.github.com/Geertdepont/e8e9996406425a39462b5f03ec0896ff.js"></script>
 
-When the Presenter wants the view to show the users. It just calls, 
-mainView.showUsers(Employees).
+When the Presenter wants the view to show the users, it calls, mainView.showUsers(Employees).
 
+These are methods accessible by the MainPresenter:
 <script src="https://gist.github.com/Geertdepont/608af87f6a302b6d5f66da2582dd5b0c.js"></script>
 
-These are the only methods in the Presenter and the view.
+
 
 Check out the [Github page][github-page] to view the complete repository.
 
