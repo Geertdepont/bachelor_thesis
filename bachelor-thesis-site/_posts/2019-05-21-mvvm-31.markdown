@@ -15,7 +15,7 @@ occur. By quoting a Google Android Developer Advocate:
 “The consumer of the data should know about the producer,
 but the producer - the ViewModel - doesn’t know, and doesn’t
 care, who consumes the data.” In order to adhere to this
-guideline, the LiveData15 architectural class provided by the
+guideline, the LiveData architectural class provided by the
 Jetpack library can be used, so that Activities can simply
 observe the changes of the ViewModel’s data.
 

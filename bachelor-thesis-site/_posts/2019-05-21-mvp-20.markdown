@@ -14,13 +14,15 @@ Presenters should not be responsible for
 data-related tasks. It is hence advised not to retain Presenters.
 An alternative solution would be to use a caching mechanism
 to retain data, keep Presenters stateless, and destroy Presenters
-when their corresponding Views are destroyed. 3) 
-MVVM-specific Android Architecture Guidelines: 
-Another recurrent theme identified in the practices regards the
-MVVM pattern. In total, 24 practices are collected and synthesized in the following 10 MVP-specific guidelines.
+when their corresponding Views are destroyed.
 
 <h3>Example</h3>
 We created a simple [MVP login Application][github-page]. 
+
+MVP event diagram:
+<figure>
+  <img src="/assets/MVPLogin_injection.png" alt="Login Injection" width="600">
+</figure>
 
 After the login is successful, the AuthComponent gets added to the AppComponent. 
 With the <b>plusAuthComponent()</b> method.
@@ -45,6 +47,14 @@ When the view is added to the module a new ViewPresenter is provided with this	V
 When this view is removed the presenter is removed as well.
 
 <script src="https://gist.github.com/Geertdepont/bb5770a60eff27f2da993c3f46a140d0.js"></script>
+
+When the user logs out, the AuthComponent is removed with the corresponding presenter and view. 
+The Presenter only has a reference to the view and not directly to the Activity. 
+Dagger injects the Presenter in to the LoginActivity. Dagger also injects the LoginView in the Presenter. 
+
+Once the Activity is destroyed and eligible for garbage collection, 
+so is the component and it's dependencies, so memory leaks are avoided.
+Dagger performs the maintainability of Presenters.
 
 Check out the [Github page][github-page] to view the complete repository.
 

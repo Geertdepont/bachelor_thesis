@@ -15,11 +15,7 @@ to use by Views, it might be tempting to implement minor
 operations in Views. Nevertheless, adhering to this guideline
 guarantees a higher level of consistency and reliability of all
 the components which are based on the ViewModels.
-4) Clean Architecture Android Guidelines: While rather a
-set of architectural practices than a pattern, clean architecture
-results to be a common theme in Android architecture literature.
- In total, 28 practices on this theme are collected and
-synthesized into the following 5 architectural guidelines
+
 
 
 <h3>Example</h3>

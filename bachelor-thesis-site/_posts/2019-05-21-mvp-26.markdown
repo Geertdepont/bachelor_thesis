@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "If an app has multiple Presenters, do not let them communicate with each other."
-guideline_id: 27
+guideline_id: 26
 short_description: "Do not let presenters communicate with each other."
 date:   2019-05-21 01:00:16 +0200
 categories: MVP

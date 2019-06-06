@@ -44,6 +44,22 @@ parameter. If not, it will show the error message.
   <img src="/assets/BookApplication_eventDiagram.png" alt="Login Injection" width="600">
 </figure>
 
+The Contract describes the interaction between the view and the presenter. 
+The Presenter has to perform two methods:
+<ul>
+<li><b>loadBookList</b> to get the books for the view</li>
+<li><b>dropView</b> to release its connection with the view</li>
+</ul> 
+
+The View has to perform four methods:
+<ul>
+<li><b>showProgress</b> to add progressbar, to show that the books are being retrieved.</li>
+<li><b>hideProgress</b> to remove the progressbar, if successful or unsuccesful. </li>
+<li><b>showBookList</b> to show the retrieved books</li>
+<li><b>showLoadingError</b> to show if the retrieval was unsuccesful.</li>
+</ul> 
+
+I hope that creating this contract makes the interaction more understandable.
 
 Check out the [Github page][Book-example] to view the complete repository.
 

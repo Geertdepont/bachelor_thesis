@@ -2,7 +2,7 @@
 layout: post
 title: "What is MVP?"
 guideline_id: Introduction
-short_description: "Provide views with data"
+short_description: "What is MVP?"
 date:   2019-05-21 01:00:26 +0200
 categories: MVP
 ---

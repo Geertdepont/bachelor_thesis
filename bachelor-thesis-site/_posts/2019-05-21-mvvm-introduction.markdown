@@ -2,7 +2,7 @@
 layout: post
 title: "What is MVVM?"
 guideline_id: Introduction
-short_description: "Models, Views, and ViewModels should exclusively expose their state"
+short_description: "What is MVVM?"
 date:   2019-05-21 01:00:14 +0200
 categories: MVVM
 ---

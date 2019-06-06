@@ -54,7 +54,9 @@ If not, then a new listener is created. Which is used during the API request.
 
 <script src="https://gist.github.com/Geertdepont/6ecccdffb113b1b2e581775384f4bc6c.js"></script>
 
-This results in a faster response.
+This results in a faster response. If this data was stored in the MainActivity and
+this activity would be destroyed, the data would be lost. 
+To retrieve the data again a new request would have to be performed, which results in a bad user experience.
 
 Check out the [Github page][github-page] to view the complete repository.
 

@@ -17,9 +17,20 @@ We created a simple [MVP login Application][github-page].
 
 As described above the presenter is dependent on views and not the activity.
 
-<script src="https://gist.github.com/Geertdepont/fc1bed409951ee9254f7aeeb7d6f4de6.js"></script>
+<script src="https://gist.github.com/Geertdepont/7e57da2825201c7246ad8599e9fb9abd.js"></script>
 
-The Presenter has only a reference to a view.
+The GreetPresenter has only a reference to a GreetView.
+The GreetActivity implements the GreetView.
+
+<script src="https://gist.github.com/Geertdepont/a75d3679705df490bdae794dfcc1bbee.js"></script>
+
+The GreetPresenter makes changes to the Activity via the view.
+To show the message, <b>mGreetView.showMessage(mCredentials.getPersonalizedGreeting());</b> is being called.
+
+Which in the mainActivity is described as:
+<script src="https://gist.github.com/Geertdepont/da05a619efc529decd2db3c7c0298d3f.js"></script>
+
+The message has been added to the TextView <b>personalGreetingTextView</b>.
 
 Check out the [Github page][github-page] to view the complete repository.
 
