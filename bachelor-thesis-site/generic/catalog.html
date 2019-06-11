@@ -1,14 +1,14 @@
 ---
 layout: frontpage
 ---
-<h1 >Catalog of MVP guidelines</h1>
+<h1 >Catalog of Generic guidelines</h1>
 
 <div class="wrapper">
   <div class="home">
     {% for category in site.categories %}
     {% capture category_name %}{{ category | first }}{% endcapture %}
 
-    {% if category_name == "mvp" %}
+    {% if category_name == "generic" %}
     {% assign rows = site.categories[category_name].size | divided_by: 3.0 | ceil %}
     {% for i in (1..rows) %}
     {% assign offset = forloop.index0 | times: 3 %}

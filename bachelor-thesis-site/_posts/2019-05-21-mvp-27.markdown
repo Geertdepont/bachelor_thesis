@@ -5,6 +5,10 @@ guideline_id: 27
 short_description: "Retain fragments for avoiding memory leaks"
 date:   2019-05-21 01:00:15 +0200
 categories: mvp
+doc: "Fragments are destroyed and recreated with their parent Activity.
+      The setRetainInstance in a fragment, allows us to skip this cycle.
+      The fragment is then retained. This is used to avoid memory leaks."
+
 ---
 <h3>Why?</h3>
 Fragments are destroyed and recreated with their parent Activity.

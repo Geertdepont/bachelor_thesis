@@ -5,6 +5,14 @@ guideline_id: 40
 short_description: "Framework and devices layer"
 date:   2019-05-21 01:00:02 +0200
 categories: clean
+doc: "In accordance to the clean architecture principles,
+      all components related to the framework should be grouped
+      in the outer architectural layer. This includes all components
+      which contain Android specific implementations, which should
+      not be present in the business logic layers. Examples include,
+      in addition to the user interface model, the data persistence
+      module (e.g., LiveData, DAOs, ORMs, Shared Preferences,
+      Retrofit, etc.) and eventual dependency injection frameworks."
 ---
 <h3>Why?</h3>
 In accordance to the clean architecture principles,

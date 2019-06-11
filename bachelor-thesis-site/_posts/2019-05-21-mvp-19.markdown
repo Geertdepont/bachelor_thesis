@@ -5,6 +5,15 @@ guideline_id: 19
 short_description: "Clearly define contracts between Views and Presenters."
 date:   2019-05-21 01:00:23 +0200
 categories: mvp
+doc: "Before starting to develop a new app feature,
+      a good architectural practice consists in writing a contract
+      documenting the communication between the View and the
+      Presenter. The contract should document for each event in
+      the View which is the corresponding action in the Presenter.
+      By implementing contract interface classes, the source code
+      of apps become more understandable, as the relation between
+      the View and the Presenter is explicitly documented."
+
 ---
 <h3>Why?</h3>
 Before starting to develop a new app feature,

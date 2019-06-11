@@ -5,6 +5,15 @@ guideline_id: 30
 short_description: "Models should be evolvable/testable"
 date:   2019-05-21 01:00:12 +0200
 categories: mvvm
+doc: "Well-designed ViewModels should completely decouple Views from Model
+      classes. In such way, by strictly adhering to the MVVM
+      pattern, Models and Views can evolve independently and be
+      tested with ease. Additionally, by applying the inversion of
+      control principle and implementing ViewModels decoupled
+      from the Android framework, it is possible to test ViewModels
+      via unit tests. In contrast, if the binding between the MVVM
+      components is too complex and intertwined, testing and debugging Android apps can become a cumbersome challenge."
+
 ---
 <h3>Why?</h3>
 Well-designed ViewModels should completely decouple Views from Model

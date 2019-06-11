@@ -5,6 +5,7 @@ guideline_id: 35
 short_description: "The state of the app should be defined in the Models only."
 date:   2019-05-21 01:00:07 +0200
 categories: mvvm
+doc: "Instead of emitting a stream for each feature of the model, emit the whole model. This results in up-to-date models."
 ---
 
 <h3>Why?</h3>

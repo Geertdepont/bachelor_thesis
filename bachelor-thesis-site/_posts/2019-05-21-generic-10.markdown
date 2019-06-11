@@ -6,6 +6,12 @@ guideline_id: 10
 short_description: "Avoid nested callbacks"
 date:   2019-05-21 01:00:32 +0200
 categories: generic
+doc: "Using too many callbacks leads to unreadable code. 
+      These callback hells often arise when multiple server requests need to be performed for one activity. 
+      For example, showing the details of users. 
+      First you need to know which users exist, and with each username you can request the details. 
+      The RxJava library can simplify our code. "
+
 ---
 <h3>Why?</h3>
 Using too many callbacks leads to unreadable code. 

@@ -5,6 +5,10 @@ guideline_id: 26
 short_description: "Do not let presenters communicate with each other."
 date:   2019-05-21 01:00:16 +0200
 categories: mvp
+doc: "There is no need for Presenters to communicate with each other. 
+      Whenever an event happens. The Presenter sends it to the model. 
+      From which the other Presenter then can retrieve the new data. "
+
 ---
 <h3>Why?</h3>
 There is no need for Presenters to communicate with each other. 

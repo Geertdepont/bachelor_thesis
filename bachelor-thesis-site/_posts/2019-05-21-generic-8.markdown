@@ -5,6 +5,12 @@ guideline_id: 8
 short_description: "Cache data"
 date:   2019-05-21 01:00:34 +0200
 categories: generic
+doc: "Using a cache to store data, enhances the user’s experience. Activities are destroyed 
+      constantly. Retrieving data from the server whenever an activity is destroyed, 
+      is a waste of mobile data and a bad user experience. 
+      A synchronization of a local database and the webservice can solve this problem. 
+      Whenever the local database is empty, or the data is not valid, retrieve data from the web server."
+
 ---
 <h3>Why?</h3>
 Using a cache to store data, enhances the user’s experience. Activities are destroyed 

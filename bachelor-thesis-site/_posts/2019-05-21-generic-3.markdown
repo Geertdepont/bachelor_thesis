@@ -5,6 +5,18 @@ short_description: "Counter the tendency of Activities to grow too big"
 guideline_id: 3
 date:   2019-05-21 01:00:39 +0200
 categories: generic
+doc: "Android
+      Activities should ideally contain exclusively logic handling the
+      user interface (UI) and operating system interactions. Nevertheless, a common architectural issue consists of delegating too
+      many functionalities and responsibilities to a single Activity.
+      This leads to Activities slowly becoming god-classes. As the
+      Android framework does not support the reuse of methods
+      implemented in activities, code tends to be directly copied into
+      other ones, increasing code duplication and impacting negatively the app’s maintainability. Additionally, testing might
+      become a challenging task, as complex business logic could
+      reside in Activities, which by themselves result arduous to unit
+      test. Finally, as activities are kept in memory at runtime, “godactivities” can lead to the deterioration of apps’ performance."
+
 ---
 <h3>Why?</h3>
 Android

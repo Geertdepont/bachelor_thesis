@@ -6,6 +6,14 @@ guideline_id: 32
 short_description: "Views should always know about changes after ViewModels"
 date:   2019-05-21 01:00:10 +0200
 categories: mvvm
+doc: "Adhering to this guideline implies that all the logic
+      in the Views should be moved to the ViewModels. While the
+      purpose of ViewModels is to pre-process data to be ready
+      to use by Views, it might be tempting to implement minor
+      operations in Views. Nevertheless, adhering to this guideline
+      guarantees a higher level of consistency and reliability of all
+      the components which are based on the ViewModels."
+
 ---
 <h3>Why?</h3>
 Adhering to this guideline implies that all the logic

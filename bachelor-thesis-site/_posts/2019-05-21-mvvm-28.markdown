@@ -5,6 +5,13 @@ guideline_id: 29
 short_description: "Models, Views, and ViewModels should exclusively expose their state"
 date:   2019-05-21 01:00:14 +0200
 categories: mvvm
+doc: "For example, to ensure that Views display upto-date content, it is recommended that ViewModels expose
+      states rather than just events. This can be achieved by bundling
+      together the data that needs to be displayed. In such way,
+      when one of the fields to be displayed changes, a new state is
+      emitted and the View is updated. This entails that each user
+      interaction involves an action in the ViewModel, enabling a
+      clean separation of concerns between MVVM components."
 ---
 
 <h3>Why?</h3>

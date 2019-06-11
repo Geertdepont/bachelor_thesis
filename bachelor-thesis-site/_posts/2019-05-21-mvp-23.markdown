@@ -5,6 +5,11 @@ guideline_id: 23
 short_description: "Views are passive"
 date:   2019-05-21 01:00:19 +0200
 categories: mvp
+doc: "Views contain attributes which can be visible and non-visible. 
+      It is the Presenter’s task to change the state of the View. 
+      However, whenever an Activity is killed, it is not the task of the 
+      Presenter to check this and reconfigure this Activity."
+
 ---
 <h3>Why?</h3>
 Views contain attributes which can be visible and non-visible. 

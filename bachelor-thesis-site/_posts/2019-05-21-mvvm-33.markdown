@@ -5,6 +5,10 @@ short_description: "Adopt one Model for each feature of the app."
 guideline_id: 33
 date:   2019-05-21 01:00:09 +0200
 categories: mvvm
+doc: "The single responsibility principle from the SOLID principles, leads to a creating a model for 
+      each future of the app. 
+      Each ViewModel references to it’s own repository instead of referencing the database directly.
+       This results in cleaner code, and repetitions of the similar code."
 ---
 <h3>Why?</h3>
 The single responsibility principle from the SOLID principles, leads to a creating a model for 

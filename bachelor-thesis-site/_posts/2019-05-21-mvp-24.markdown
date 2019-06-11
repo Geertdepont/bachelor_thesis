@@ -5,6 +5,10 @@ guideline_id: 24
 short_description: "Keep business logic out of activities and views."
 date:   2019-05-21 01:00:18 +0200
 categories: mvp
+doc: "Good presenters act as documentation of the business logic. 
+      Try to remove as much logic from the Views as possible. 
+      This results into clearer views and makes testing easier. "
+
 ---
 <h3>Why?</h3>
 Good presenters act as documentation of the business logic. 
