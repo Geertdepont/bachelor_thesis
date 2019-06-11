@@ -4,7 +4,7 @@ title: "When starting a new project, carefully select a fitting architectural pa
 guideline_id: 5
 short_description: "Select architectual pattern"
 date:   2019-05-21 01:00:37 +0200
-categories: Generic
+categories: generic
 ---
 <h3>Why?</h3>
 Picking the
@@ -25,12 +25,12 @@ We created two examples:
 <li>MVP example</li>
 </ul>
 
-Our [MVVM example][architecture-example] depicted:
+Our [MVVM example][architecture-example]{:target="_blank"} depicted:
 <figure>
   <img src="/assets/MVVM_depicted.png" alt="MVVM depicted" width="700">
 </figure>
 
-Our [MVVM example][github-page] depicted:
+Our [MVVM example][github-page]{:target="_blank"} depicted:
 <figure>
   <img src="/assets/MVPLogin_depicted.png" alt="MVVM depicted" width="700">
 </figure>
@@ -40,7 +40,10 @@ As we can see choosing these architectures each component (model, view, presente
 Which makes improves testing and so also maintainability because each component can be tested separately.
 So whenever a test fails, it can be directly seen from which component this test fails.
 
-Check out both the [MVVM example][architecture-example] and the [MVP example][github-page] on these links.
+Check out both the [MVVM example][architecture-example]{:target="_blank"} and the [MVP example][github-page]{:target="_blank"} on these links.
+
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExample" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">MVVM example</button></a>
+<a href=" https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">MVP example</button></a>
 
 [architecture-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExample
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin

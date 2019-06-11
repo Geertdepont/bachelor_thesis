@@ -4,7 +4,7 @@ title: "Networking or data access functionalities should be performed exclusivel
 guideline_id: 37
 short_description: "Networking or data access functionalities should be performed by Models."
 date:   2019-05-21 01:00:05 +0200
-categories: MVVM
+categories: mvvm
 ---
 <h3>Why?</h3>
 Performing data functionalities by models, results into smaller ViewModels/Views. 
@@ -14,7 +14,7 @@ Instead of asserting that a View needs to behave after a certain retrieval from 
 
 
 <h3>Example</h3>
-We created a simple [MVVM example][architecture-example].
+We created a simple [MVVM example][architecture-example]{:target="_blank"}.
 
 We use for this example Rxjava in combination with retrofit.
 	Sometimes it is necessary to have nested callbacks.
@@ -47,6 +47,8 @@ It then sorts all the results and puts them in a List.
 
 The repository is the only module which performs <b> Networking </b> functionalities.
 
-Check this [page][MVVM-example] to view the complete repository.
+Check this [page][MVVM-example]{:target="_blank"} to view the complete repository.
+
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/RxjavaRetrofitGithub" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
 [MVVM-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/RxjavaRetrofitGithub

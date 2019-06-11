@@ -4,7 +4,7 @@ title: "Presenters should be Android- and framework-independent."
 guideline_id: 17
 short_description: "Presenters should be Android- and framework-independent."
 date:   2019-05-21 01:00:25 +0200
-categories: MVP
+categories: mvp
 ---
 <h3>Why?</h3>
 To abstract Presenter components
@@ -19,7 +19,7 @@ Presenters drastically improves, as now non-instrumented
 unit-test cases can be written for such components.
 
 <h3>Example</h3>
-We created a simple [application][github-page] which retrieves employees from this url: http://dummy.restapiexample.com/api/v1/
+We created a simple [application][github-page]{:target="_blank"} which retrieves employees from this url: http://dummy.restapiexample.com/api/v1/
 
 The event diagram of the Boss Application:
 <figure>
@@ -32,7 +32,9 @@ MainPresenter is Android-independent making the presenter testable without an em
 
 <script src="https://gist.github.com/Geertdepont/e8e9996406425a39462b5f03ec0896ff.js"></script>
 
-Check out the [Github page][github-page] to view the complete repository.
+Check out the [Github page][github-page]{:target="_blank"} to view the complete repository.
+
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication
 

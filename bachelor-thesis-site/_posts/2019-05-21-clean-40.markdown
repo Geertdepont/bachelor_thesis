@@ -4,7 +4,7 @@ title:  "The framework and devices layer should include the entirety of the app 
 guideline_id: 40
 short_description: "Framework and devices layer"
 date:   2019-05-21 01:00:02 +0200
-categories: Clean
+categories: clean
 ---
 <h3>Why?</h3>
 In accordance to the clean architecture principles,
@@ -17,7 +17,7 @@ module (e.g., LiveData, DAOs, ORMs, Shared Preferences,
 Retrofit, etc.) and eventual dependency injection frameworks.
 
 <h3>Example</h3>
-We created a simple [MVP login Application][github-page]. 
+We created a simple [MVP login Application][github-page]{:target="_blank"}. 
 
 <figure>
   <img src="/assets/MVPLogin_depicted.png" alt="MVP depicted" width="700">
@@ -31,6 +31,8 @@ Because this method is called whenever an Activity is created.
 
 <script src="https://gist.github.com/Geertdepont/9430f84a89fb5f16ba2503bd23eceddd.js"></script>
 
-Check out the [Github page][github-page] to view the complete repository.
+Check out the [Github page][github-page]{:target="_blank"} to view the complete repository.
+
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin

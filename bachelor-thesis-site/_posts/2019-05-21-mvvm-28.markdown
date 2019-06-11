@@ -4,7 +4,7 @@ title: "Models, Views, and ViewModels should exclusively expose their state inst
 guideline_id: 29
 short_description: "Models, Views, and ViewModels should exclusively expose their state"
 date:   2019-05-21 01:00:14 +0200
-categories: MVVM
+categories: mvvm
 ---
 
 <h3>Why?</h3>
@@ -18,7 +18,7 @@ clean separation of concerns between MVVM components.
 
 
 <h3>Example</h3>
-We created a simple [MVVM example][architecture-example].
+We created a simple [MVVM example][architecture-example]{:target="_blank"}.
 
 <figure>
   <img src="/assets/MVVM_event.png" alt="MVVM event diagram" width="600">
@@ -33,6 +33,8 @@ If we submit the form with the Note details, the note is then submitted to the N
 <script src="https://gist.github.com/Geertdepont/b0ce80924a9962d0f68f48ea517521c8.js"></script>
 
 
-Check this [page][architecture-example] to view the complete repository.
+Check this [page][architecture-example]{:target="_blank"} to view the complete repository.
+
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExample" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
 [architecture-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExample

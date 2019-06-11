@@ -4,7 +4,7 @@ title:  "Keep ViewModels as simple as possible. When needed, transfer responsibi
 guideline_id: 34
 short_description: "Keep ViewModels as simple as possible."
 date:   2019-05-21 01:00:08 +0200
-categories: MVVM
+categories: mvvm
 ---
 <h3>Why?</h3>
 Delegating responsibilities from the ViewModels to other layers results into smaller and more understandable ViewModels.
@@ -12,7 +12,7 @@ Delegating responsibilities from the ViewModels to other layers results into sma
   Instead of asserting that a View needs to behave after a certain retrieval from the model, the model now can be tested independently.
 
 <h3>Example</h3>
-We created a simple [MVVM example][MVVM-example].
+We created a simple [MVVM example][MVVM-example]{:target="_blank"}.
 
 
 Our MVVM example depicted:
@@ -28,7 +28,8 @@ And what the MainActivity has to do is observe this data.
 
 <script src="https://gist.github.com/Geertdepont/ca639b53cc3110ff30860c1dd05283aa.js"></script>
 
+Check this [page][MVVM-example]{:target="_blank"} to view the complete repository.
 
-Check this [page][MVVM-example] to view the complete repository.
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/RxjavaRetrofitGithub" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
 [MVVM-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/RxjavaRetrofitGithub

@@ -4,7 +4,7 @@ title: "Employ well-defined and accepted coding standards, as they improve both 
 guideline_id: 11
 short_description: "Coding standards"
 date:   2019-05-21 01:00:31 +0200
-categories: Generic
+categories: generic
 ---
 <h3>Why?</h3>
 Coding standards are guidelines that all developers follow in a project follow to improve collaboration.
@@ -16,7 +16,7 @@ An example coding standard file can be found <a href="https://github.com/ustwo/a
 Which follows the official Android coding standards: https://source.android.com/setup/contribute/code-style
 
 <h3>Example</h3>
-We created a simple [application][github-page] which retrieves employees from this url: http://dummy.restapiexample.com/api/v1/
+We created a simple [application][github-page]{:target="_blank"} which retrieves employees from this url: http://dummy.restapiexample.com/api/v1/
 
 <script src="https://gist.github.com/Geertdepont/19218a422cf9fb53e02b280dcc405b7e.js"></script>
 
@@ -28,8 +28,10 @@ spend more time retrieving the exception, since you did not know what caused it.
 <b>Fields on top of your file</b>
 <script src="https://gist.github.com/Geertdepont/7d81c4202d16157d0bd7d0c5a90d4f5d.js"></script>
 
-For more coding standards read this [link][coding-standards]:
+For more coding standards read this [link][coding-standards]{:target="_blank"}:
 
+<a href="https://source.android.com/setup/contribute/code-style" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the coding standards page</button></a>
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication
 [coding-standards]: https://source.android.com/setup/contribute/code-style

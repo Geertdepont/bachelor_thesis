@@ -4,7 +4,7 @@ title: "ViewModels should not refer to View-specific components."
 guideline_id: 31
 short_description: "ViewModels should not refer to View-specific components."
 date:   2019-05-21 01:00:11 +0200
-categories: MVVM
+categories: mvvm
 ---
 
 <h3>Why?</h3>
@@ -21,7 +21,7 @@ observe the changes of the ViewModel’s data.
 
 
 <h3>Example</h3>
-We created a simple [MVVM example][architecture-example].
+We created a simple [MVVM example][architecture-example]{:target="_blank"}.
 
 Our viewModels do not store activities or instances of an activity in the view model.
 
@@ -29,7 +29,8 @@ Our viewModels do not store activities or instances of an activity in the view m
 
 <script src="https://gist.github.com/Geertdepont/0cf01c5b3504ad226e946d261908cf44.js"></script>
 
+Check this [page][architecture-example]{:target="_blank"} to view the complete repository.
 
-Check this [page][architecture-example] to view the complete repository.
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExample" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
 [architecture-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExample

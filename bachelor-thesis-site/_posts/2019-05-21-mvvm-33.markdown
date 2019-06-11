@@ -4,7 +4,7 @@ title:  "Adopt one Model for each feature of the app."
 short_description: "Adopt one Model for each feature of the app."
 guideline_id: 33
 date:   2019-05-21 01:00:09 +0200
-categories: MVVM
+categories: mvvm
 ---
 <h3>Why?</h3>
 The single responsibility principle from the SOLID principles, leads to a creating a model for 
@@ -13,7 +13,7 @@ Each ViewModel references to it’s own repository instead of referencing the da
  This results in cleaner code, and repetitions of the similar code.
 
 <h3>Example</h3>
-We created a simple [MVVM example][architecture-example].
+We created a simple [MVVM example][architecture-example]{:target="_blank"}.
 
 Every viewModel creates its own repository, which in its turn has access to the one database.
 
@@ -28,6 +28,8 @@ Our MVVM example depicted:
   <img src="/assets/MVVM_depicted.png" alt="MVVM depicted" width="600">
 </figure>
 
-Check this [page][architecture-example] to view the complete repository.
+Check this [page][architecture-example]{:target="_blank"} to view the complete repository.
+
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExamples" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
 [architecture-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExamples

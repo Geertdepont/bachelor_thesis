@@ -4,7 +4,7 @@ title: "Locally cache data for supporting offline-first experience."
 guideline_id: 8
 short_description: "Cache data"
 date:   2019-05-21 01:00:34 +0200
-categories: Generic
+categories: generic
 ---
 <h3>Why?</h3>
 Using a cache to store data, enhances the user’s experience. Activities are destroyed 
@@ -51,6 +51,8 @@ Using a cache results in a faster response.
 When using online services, do not forget to add the <uses-permission> in the 
 AndroidManifest.xml
 
-Check out the [Github page][github-page] to view the complete repository.
+Check out the [Github page][github-page]{:target="_blank"} to view the complete repository.
+
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication

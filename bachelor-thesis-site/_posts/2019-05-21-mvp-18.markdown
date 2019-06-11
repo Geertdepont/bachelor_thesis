@@ -4,7 +4,7 @@ title: "Access (and cache) the data provided by Models via app-scoped dedicated 
 guideline_id: 18
 short_description: "Data provided by Models via app-scoped dedicated components."
 date:   2019-05-21 01:00:24 +0200
-categories: MVP
+categories: mvp
 ---
 <h3>Why?</h3>
 When developing an Android app, a common issue which might
@@ -21,7 +21,7 @@ through an architecturally maintainable solution.
 
 
 <h3>Example</h3>
-We created a simple [application][github-page] which retrieves employees from this url: http://dummy.restapiexample.com/api/v1/
+We created a simple [application][github-page]{:target="_blank"} which retrieves employees from this url: http://dummy.restapiexample.com/api/v1/
 
 If the employees were already retrieved within 5000 milliseconds, the repository returns the 
 cache instead of making a new API request.	
@@ -58,6 +58,8 @@ This results in a faster response. If this data was stored in the MainActivity a
 this activity would be destroyed, the data would be lost. 
 To retrieve the data again a new request would have to be performed, which results in a bad user experience.
 
-Check out the [Github page][github-page] to view the complete repository.
+Check out the [Github page][github-page]{:target="_blank"} to view the complete repository.
+
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication" target="_blank"target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication

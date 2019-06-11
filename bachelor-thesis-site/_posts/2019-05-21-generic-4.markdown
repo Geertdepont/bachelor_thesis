@@ -5,7 +5,7 @@ title: "Strive towards separation of concerns in your architecture, where each c
 short_description: "Separation of concerns in your architecture"
 guideline_id: 4
 date:   2019-05-21 01:00:38 +0200
-categories: Generic
+categories: generic
 ---
 <h3>Why?</h3>
 
@@ -24,7 +24,7 @@ little effort if considered early in the project, it might become
 an extremely expensive process in later development stages
 
 <h3>Example</h3>
-We created a simple [MVP login Application][github-page]. 
+We created a simple [MVP login Application][github-page]{:target="_blank"}. 
 The AuthComponent has one responsibility: Inject the specified modules after login. 
 There are two activities that can take place after login:
 
@@ -58,6 +58,6 @@ Which would then have too many responsibilities.
   <img src="/assets/AppComponentWithoutAuth.png" alt="AppComponent without AuthComponent" width="500">
 </figure>
 
-
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin

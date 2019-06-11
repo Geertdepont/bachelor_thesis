@@ -5,7 +5,7 @@ title: "Take into consideration the lifecycle of Android components (e.g., Activ
 guideline_id: 13
 short_description: "Lifecycle of android components"
 date:   2019-05-21 01:00:29 +0200
-categories: Generic
+categories: generic
 ---
 <h3>Why?</h3>
 Each android component has a lifecycle. Without taking them in consideration, your app might crash, or unexpected activities might occur. 
@@ -13,7 +13,7 @@ Also since activities are constantly being destroyed, referencing them could lea
 Using lifecycle aware components reduces much of this complexity. 
 
 <h3>Example</h3>
-For this example we will look at the [Book example][Book-example].
+For this example we will look at the [Book example][Book-example]{:target="_blank"}.
 Whenever we flip our phone, our BookListActivity gets destroyed.
 	This means that any reference to the BookListActivity needs to be destroyed as well.
 
@@ -28,6 +28,8 @@ So in our BookListActivity we override the onDestroy() method.
 
 <script src="https://gist.github.com/Geertdepont/635410e638efae37801dc53927e2acb1.js"></script>
 
-Check out the [Book-example][Book-example] to view the complete repository.
+Check out the [Book-example][Book-example]{:target="_blank"} to view the complete repository.
+
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/BookApplication" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
 [Book-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/BookApplication

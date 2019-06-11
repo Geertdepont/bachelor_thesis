@@ -4,7 +4,7 @@ title: " Organize your Java/Kotlin packages and files either by layer or by app 
 guideline_id: 6
 short_description: "Organize packages"
 date:   2019-05-21 01:00:36 +0200
-categories: Generic
+categories: generic
 ---
 <h3>Why?</h3>
 By organizing your packages and files  it becomes easier for 
@@ -30,7 +30,7 @@ E.g. fetching data from the server. Putting the fetched data into mutableLiveDat
 The ViewModel exposes methods which help maintain the View. 
 And the View handles the UI events and maps them to them to the ViewModel.
 
-Our [MVP][github-page] also somehow needs to reflect it's architecture.
+Our [MVP][github-page]{:target="_blank"} also somehow needs to reflect it's architecture.
 
 <figure>
   <img src="/assets/MVP_packages.png" alt="MVP packages" width="300">
@@ -47,7 +47,11 @@ In the model all the data management is taken care of.
 The Presenter queries the data from the model, and returns it to the View.
 And the View presents the data to the user in a way the Presenter decided.
 
-Check out both the [MVVM example][MVVM-example] and the [MVP example][github-page] on these links.
+Check out both the [MVVM example][MVVM-example]{:target="_blank"} and the [MVP example][github-page]{:target="_blank"} on these links.
+
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/RxjavaRetrofitGithub" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">MVVM example</button></a>
+<a href=" https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">MVP example</button></a>
+
 
 [MVVM-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/RxjavaRetrofitGithub
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin

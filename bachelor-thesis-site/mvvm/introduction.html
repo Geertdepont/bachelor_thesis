@@ -1,0 +1,28 @@
+---
+layout: frontpage
+---
+<h3>The Model-View-ViewModel architecture</h3>
+The MVVM architecture consists of three components:
+<ul>
+  <li><b>Model</b> represents the datasource. This layer is accessed to update/store and retrieve the data.</li>
+  <li><b>View-Model</b> exposes methods and variables for the view to use. </li>
+  <li><b>View</b> uses the variables and methods from the View-Model.</li>
+</ul>
+
+
+<h3>Difference MVVM and MVP</h3>
+In MVVM the ViewModel exposes it's methods and variables for the View to use it.
+In MVP the Presenter has a one-to-one relationship with the View, and decides what the view should do.
+
+<h3>Example</h3>
+We created a simple [MVVM example][architecture-example]{:target="_blank"}. As you can see, the activities perform the requests:
+<b>getAllNotes()</b> and <b>insert(note)</b>. The ViewModels, perform the requests to the Model (NoteRepository).
+
+<figure>
+  <img src="/assets/MVVM_event.png" alt="MVVM depicted" width="600">
+</figure>
+
+Checkout the <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExamples" target="_blank">github page</a> to view the full repository.
+
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExamples" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
+

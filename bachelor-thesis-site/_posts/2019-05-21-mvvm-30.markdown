@@ -4,7 +4,7 @@ title: "Models should be evolvable/testable independently from the rest of the a
 guideline_id: 30
 short_description: "Models should be evolvable/testable"
 date:   2019-05-21 01:00:12 +0200
-categories: MVVM
+categories: mvvm
 ---
 <h3>Why?</h3>
 Well-designed ViewModels should completely decouple Views from Model
@@ -18,7 +18,7 @@ components is too complex and intertwined, testing and debugging Android apps ca
 
 
 <h3>Example</h3>
-We created a simple [MVVM example][architecture-example].
+We created a simple [MVVM example][architecture-example]{:target="_blank"}.
 
 This is our current model:
 <script src="https://gist.github.com/Geertdepont/e62a8bc6a6a32d822af397e6bee8fdc1.js"></script>
@@ -40,7 +40,8 @@ We can now restart the app, and the database has been updated.
 Maybe this is a bad example, but when we create a new feature for our model.
 We can evolve our model and test it without creating a new view.
 
+Check this [page][architecture-example]{:target="_blank"} to view the complete repository.
 
-Check this [page][architecture-example] to view the complete repository.
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExample" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
 [architecture-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExample

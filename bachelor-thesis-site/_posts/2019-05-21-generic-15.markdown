@@ -4,7 +4,7 @@ title: "Use permissions consistently. Every component of an app that has a permi
 guideline_id: 15
 short_description: "Permissions"
 date:   2019-05-21 01:00:27 +0200
-categories: Generic
+categories: generic
 ---
 <h3>Why?</h3>
 Android apps must require permissions before accessing specific data or certain system activities, like accessing the Internet.
@@ -12,8 +12,10 @@ Android apps must require permissions before accessing specific data or certain 
   And the certain system feature can then only be used if the user allows it.
   
 <h3>Example</h3>
-Since we use the internet in our [MVP BossApplication][boss-application] we need to specify this permission in our AndroidManifest.xml file.
+Since we use the internet in our [MVP BossApplication][boss-application]{:target="_blank"} we need to specify this permission in our AndroidManifest.xml file.
 
 <script src="https://gist.github.com/Geertdepont/014777b09a63414769b0489d30aa80da.js"></script>
+
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
 [boss-application]: https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication

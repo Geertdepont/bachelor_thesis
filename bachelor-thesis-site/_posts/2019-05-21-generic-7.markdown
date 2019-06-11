@@ -5,7 +5,7 @@ title: "Take full advantage of libraries. Do not try to reinvent the wheel and l
 guideline_id: 7
 short_description: "Take advantage of libraries"
 date:   2019-05-21 01:00:35 +0200
-categories: Generic
+categories: generic
 ---
 <h3>Why?</h3>
 Taking full advantage of libraries does not only save time, but could also be an improvement of 
@@ -14,7 +14,7 @@ your own implementation. Since multiple users could have been working on this im
 see that you are working with high quality and bug free code.
 
 <h3>Example</h3>
-We created a simple [MVVM example][MVVM-example]. 
+We created a simple [MVVM example][MVVM-example]{:target="_blank"}. 
 This example uses RxJava. Which is a library for creating and 
 receiving asynchronous calls by creating Observers and Observables.
 
@@ -28,9 +28,11 @@ the contributors, and sort them based on the amount of contributions.
 If we had to write this code without RxJava, we would end up with a for loop within two nested callbacks. 
 Which would lead to ugly code.
 
-Checkout the [RXJava documentation][RX-Java] to understand more about <b>Observers</b> and <b>Observables</b>
+Checkout the [RXJava documentation][RX-Java]{:target="_blank"} to understand more about <b>Observers</b> and <b>Observables</b>
 
-Check out the [MVVM example][MVVM-example] to view the complete repository.
+Check out the [MVVM example][MVVM-example]{:target="_blank"} to view the complete repository.
+
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/RxjavaRetrofitGithub" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
 [MVVM-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/RxjavaRetrofitGithub
 [RX-Java]: http://reactivex.io/documentation

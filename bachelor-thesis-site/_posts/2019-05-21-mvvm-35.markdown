@@ -4,20 +4,22 @@ title: "The state of the app should be defined in the Models only, whereas Views
 guideline_id: 35
 short_description: "The state of the app should be defined in the Models only."
 date:   2019-05-21 01:00:07 +0200
-categories: MVVM
+categories: mvvm
 ---
 
 <h3>Why?</h3>
 Instead of emitting a stream for each feature of the model, emit the whole model. This results in up-to-date models.
 
 <h3>Example</h3>
-We created a simple [MVVM example][architecture-example].
+We created a simple [MVVM example][architecture-example]{:target="_blank"}.
 
 When we display all the notes. We display all the features of note of each note encapsulated 
 in a LiveData object. This stream will emit every time a change happens in this object.
 
 <script src="https://gist.github.com/Geertdepont/f052953dfaf8a19a8be395b55aaa5da5.js"></script>
 
-Check this [page][architecture-example] to view the complete repository.
+Check this [page][architecture-example]{:target="_blank"} to view the complete repository.
+
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExamples" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
 [architecture-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExamples

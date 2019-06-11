@@ -4,7 +4,7 @@ title: "Use exclusively interfaces to let app modules communicate. This protects
 guideline_id: 9
 short_description: "Use interfaces"
 date:   2019-05-21 01:00:33 +0200
-categories: Generic
+categories: generic
 ---
 <h3>Why?</h3>
 Using interfaces for linking modules, is a great way for module communication. 
@@ -15,7 +15,7 @@ This way modules can’t access methods that are not declared in the interface.
 And helps define a clear overview of what each module does. 
 
 <h3>Example</h3>
-We created a simple [application][github-page] which retrieves employees from this url: http://dummy.restapiexample.com/api/v1/
+We created a simple [application][github-page]{:target="_blank"} which retrieves employees from this url: http://dummy.restapiexample.com/api/v1/
 
 If we take a look at the Presenter and Repository modules, we see they communicate 
 exclusively via interfaces. 
@@ -38,6 +38,8 @@ OnSuccess() is called if the data is successfully retrieved from cache, or is ne
 
 <script src="https://gist.github.com/Geertdepont/6ecccdffb113b1b2e581775384f4bc6c.js"></script>
 
-Check out the [Github page][github-page] to view the complete repository.
+Check out the [Github page][github-page]{:target="_blank"} to view the complete repository.
+
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication

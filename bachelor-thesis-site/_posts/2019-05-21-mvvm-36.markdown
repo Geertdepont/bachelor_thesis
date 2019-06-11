@@ -4,7 +4,7 @@ title:  "The data produced by the Models should be reliable and of high quality.
 guideline_id: 36
 short_description: "The data produced by the Models should be reliable and of high quality."
 date:   2019-05-21 01:00:06 +0200
-categories: MVVM
+categories: mvvm
 ---
 
 <h3>Why?</h3>
@@ -13,7 +13,7 @@ Store the data retrieved from the web into Observables.
  This results into less unexpected code.
   Also creating tests checking whether the received data matches the model, allows programmers to see if the model from the web has changed.
 <h3>Example</h3>
-We created a simple [MVVM example][architecture-example].
+We created a simple [MVVM example][architecture-example]{:target="_blank"}.
 
 The data we receive from the NoteDao, is how our ViewModel wants it, which is <b>LiveData</b>
 
@@ -25,7 +25,8 @@ So in this case there is not soo much changing to be done.
 Our NoteRepository contains all the notes.
 If however we receive data from a webservice, we need to make sure our data is valid.
 
+Check this [page][architecture-example]{:target="_blank"} to view the complete repository.
 
-Check this [page][architecture-example] to view the complete repository.
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExamples" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
 [architecture-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExamples

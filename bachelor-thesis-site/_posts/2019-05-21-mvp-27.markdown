@@ -4,7 +4,7 @@ title: " If necessary, retain fragments for avoiding memory leaks due to configu
 guideline_id: 27
 short_description: "Retain fragments for avoiding memory leaks"
 date:   2019-05-21 01:00:15 +0200
-categories: MVP
+categories: mvp
 ---
 <h3>Why?</h3>
 Fragments are destroyed and recreated with their parent Activity.
@@ -23,6 +23,8 @@ Due to time issues, I did not create an example for retaining fragments, but her
 If the fragment already started before, then it does not have to be created. 
 
 
-Check this [page][github-page] to view the complete repository.
+Check this [page][github-page]{:target="_blank"} to view the complete repository.
+
+<a href="https://www.androiddesignpatterns.com/2013/04/retaining-objects-across-config-changes.html" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
 [github-page]: https://www.androiddesignpatterns.com/2013/04/retaining-objects-across-config-changes.html

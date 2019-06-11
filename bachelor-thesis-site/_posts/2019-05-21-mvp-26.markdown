@@ -4,7 +4,7 @@ title: "If an app has multiple Presenters, do not let them communicate with each
 guideline_id: 26
 short_description: "Do not let presenters communicate with each other."
 date:   2019-05-21 01:00:16 +0200
-categories: MVP
+categories: mvp
 ---
 <h3>Why?</h3>
 There is no need for Presenters to communicate with each other. 
@@ -12,7 +12,7 @@ Whenever an event happens. The Presenter sends it to the model.
 From which the other Presenter then can retrieve the new data. 
 
 <h3>Example</h3>
-We created a simple [MVP login Application][github-page].
+We created a simple [MVP login Application][github-page]{:target="_blank"}.
 
 <figure>
   <img src="/assets/MVPLogin_depicted.png" alt="Login Injection" width="700">
@@ -23,7 +23,9 @@ Presenters do not have to talk with eachother.
 	The Presenter let it sink to the model, and other Presenters will find for example a new user.
 
 
-Check out the [Github page][github-page] to view the complete repository.
+Check out the [Github page][github-page]{:target="_blank"} to view the complete repository.
+
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin
 

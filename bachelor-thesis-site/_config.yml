@@ -1,18 +1,19 @@
 # Site settings
-name: Bachelor Thesis site
+name: Guidelines for Architecting Android Apps
 email: geertdepont@yahoo.com
 author: Geert de Pont
 url: "geertdepont.github.io"
 github: https://github.com/Geertdepont/bachelor_thesis
 baseurl: ""
-description: This website is created for my bachelor thesis. In my bachelor thesis I describe 42 guidelines
- for creating good Android applications. These guidelines are formed in the https://robertoverdecchia.github.io/papers/ICSA_2019.pdf paper.
+description:  42 guidelines for creating good Android applications. These guidelines are formed in the https://robertoverdecchia.github.io/papers/ICSA_2019.pdf paper.
 banner: Banner
 
 permalink: /:categories/:title/
 paginate: 10
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+
+gems: ['jekyll/scholar']
 
 github_username: geertdepont
 

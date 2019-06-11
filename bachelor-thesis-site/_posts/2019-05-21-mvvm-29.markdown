@@ -4,7 +4,7 @@ title: "The app should possess a single source of truth of data."
 guideline_id: 30
 short_description: "The app should possess a single source of truth of data."
 date:   2019-05-21 01:00:13 +0200
-categories: MVVM
+categories: mvvm
 ---
 <h3>Why?</h3>
 In the context of mobile applications,
@@ -19,7 +19,7 @@ Android which is specifically tailored for such task.s
 
 
 <h3>Example</h3>
-We created a simple [MVVM example][architecture-example].
+We created a simple [MVVM example][architecture-example]{:target="_blank"}.
 
 In our example the viewModel contains only one database.
 Whenever someone creates a Repository, an instance of the NoteDatabase gets requested.
@@ -29,6 +29,8 @@ This NoteDatabase is a singleton, so each repository will contain the same datab
 
 To retrieve or insert data into the database, the noteDao has to be used.
 
-Check this [page][architecture-example] to view the complete repository.
+Check this [page][architecture-example]{:target="_blank"} to view the complete repository.
+
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExample" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
 [architecture-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExample

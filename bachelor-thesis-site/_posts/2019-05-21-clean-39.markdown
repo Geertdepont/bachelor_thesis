@@ -4,7 +4,7 @@ title:  " The outer architectural layer should contain the entirety of the appâ€
 guideline_id: 39
 short_description: "The outer architectural layer"
 date:   2019-05-21 01:00:03 +0200
-categories: Clean
+categories: clean
 ---
 <h3>Why?</h3>
 In order to ensure
@@ -37,7 +37,10 @@ MVVM depicted:
   <img src="/assets/MVVM_depicted.png" alt="Login Injection" width="500">
 </figure>
 
-Check out the [MVP example][github-page] and the [MVVM example][MVVM example] to view the complete repositories.
+Check out the [MVP example][github-page]{:target="_blank"} and the [MVVM example][MVVM example]{:target="_blank"} to view the complete repositories.
+
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">MVP example</button></a>
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExample" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">MVVM example</button></a>
 
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication
 [MVVM example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExample

@@ -4,7 +4,7 @@ title: " Design components to be as independent as possible, build them around t
 short_description: "Design independent components"
 guideline_id: 2
 date:   2019-05-21 01:00:40 +0200
-categories: Generic
+categories: generic
 ---
 <h3>Why?</h3>
  As also remarked by two
@@ -24,7 +24,7 @@ more emphasis is put on the business logic, making an app
 more testable, maintainable, and of low technical debt.
 
 <h3>Example</h3>
-We created a simple [Boss Application][boss-application] which retrieves users from a dummy API. 
+We created a simple [Boss Application][boss-application]{:target="_blank"} which retrieves users from a dummy API. 
 
 The three main components from the BossApplication are:
 <ul>
@@ -48,6 +48,8 @@ Which has a reference to the MainView.
 
 <script src="https://gist.github.com/Geertdepont/608af87f6a302b6d5f66da2582dd5b0c.js"></script>
 
-Check out the [Github page][boss-application] to view the complete repository.
+Check out the [Github page][boss-application]{:target="_blank"} to view the complete repository.
+
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
 [boss-application]: https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication

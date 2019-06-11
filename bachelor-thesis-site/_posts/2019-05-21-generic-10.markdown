@@ -5,7 +5,7 @@ title: "Avoid nested callbacks, as they could lead to a “callback hell”. App
 guideline_id: 10
 short_description: "Avoid nested callbacks"
 date:   2019-05-21 01:00:32 +0200
-categories: Generic
+categories: generic
 ---
 <h3>Why?</h3>
 Using too many callbacks leads to unreadable code. 
@@ -16,7 +16,7 @@ The RxJava library can simplify our code.
 
 <h3>Example</h3>
 
-For this example we will look at the [MVVM example][MVVM-example] to retrieve my github contributors.
+For this example we will look at the [MVVM example][MVVM-example]{:target="_blank"} to retrieve my github contributors.
 We use for this example Rxjava in combination with retrofit.
 Sometimes it is necessary to have nested callbacks.
 Like in this example, where we want to find the contributors of our repository.
@@ -45,13 +45,15 @@ Then <b>.flatMapIterable(x -> x)</b> flattens a stream of iterables. So that for
 
 If we had to write this code without RxJava, we would end up with a for loop within two nested callbacks. Which would lead to ugly code.
 
-Checkout the [RXJava documentation][RX-Java] to understand more about <b>Observers</b> and <b>Observables</b>
+Checkout the [RXJava documentation][RX-Java]{:target="_blank"} to understand more about <b>Observers</b> and <b>Observables</b>
 
 Whenever using RXJava or Retrofit do not forget to add these libraries to your app/build.gradle file.
 
 <script src="https://gist.github.com/Geertdepont/d538c636d05bc38007701f306d019750.js"></script>
 
-Checkout our [MVVM example][MVVM-example] to view the complete repository. 
+Checkout our [MVVM example][MVVM-example]{:target="_blank"} to view the complete repository. 
+
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/RxjavaRetrofitGithub" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
 [MVVM-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/RxjavaRetrofitGithub
 [RX-Java]: http://reactivex.io/documentation

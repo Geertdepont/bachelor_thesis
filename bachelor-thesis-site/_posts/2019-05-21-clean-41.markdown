@@ -4,7 +4,7 @@ title:  "Each architectural layer should possess its own data model"
 guideline_id: 41
 short_description: "Each architectural layer should possess its own data model"
 date:   2019-05-21 01:00:01 +0200
-categories: Clean
+categories: clean
 ---
 <h3>Why?</h3>
 By implementing a data model at every
@@ -16,7 +16,7 @@ client and hence, in a repository pattern fashion, data sources
 can be added, removed, or changed without much effort.
 
 <h3>Example</h3>
-We created a simple [MVP login Application][github-page]. 
+We created a simple [MVP login Application][github-page]{:target="_blank"}. 
 
 <figure>
   <img src="/assets/MVPLogin_depicted.png" alt="Login depicted" width="600">
@@ -28,7 +28,9 @@ The Presenter works with the Model.
 If we change the way we store the data from the model, the View would not need to know.
 Since the View receives the same data.
 
-Check out the [Github page][github-page] to view the complete repository.
+Check out the [Github page][github-page]{:target="_blank"} to view the complete repository.
+
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin
 

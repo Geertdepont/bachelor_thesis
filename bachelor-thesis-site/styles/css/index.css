@@ -3093,6 +3093,87 @@ input[type="button"].btn-block {
 [data-toggle="buttons"] > .btn > input[type="checkbox"] {
   display: none;
 }
+
+
+.boxone {
+  position: relative;
+  width: 400px;
+}
+
+.boxtwo {
+  position: relative;
+  width: 400px;
+}
+
+.boxthree {
+  position: relative;
+  width: 400px;
+}
+
+.clean {
+  background-image: url("../../assets/SittingMonk.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 600px 400px;
+}
+
+.generic {
+  background-image: url("../../assets/prayingmonk.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 600px;
+}
+
+.mvp {
+  background-image: url("../../assets/mvpmonk.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 600px;
+}
+
+.mvvm {
+  background-image: url("../../assets/mvvmMonk.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 600px;
+}
+
+.homeitem {
+  width: 100%;
+  height: 300px;
+  border-bottom: 2px solid lightgray;
+}
+
+.lasthomeitem{
+  width: 100%;
+  height: 300px;
+}
+
+.articlebox{
+  border: 4px solid #cde;
+}
+
+.BelowTitleText{
+    font-size: 20px;
+}
+
+.text-in-box {
+  width: 50%;
+  float:left;
+}
+
+.big {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.homepagepicture {
+  width: 50%;
+  float:left;
+  margin-top: 50px;
+}
+
+
 .input-group {
   position: relative;
   display: table;
@@ -6436,6 +6517,13 @@ hr {
 .sidebar.affix {
   position: static;
 }
+
+.sidebarpost {
+  display: none;
+}
+.sidebarpost.affix {
+  position: static;
+}
 /* First level of nav */
 .sidenav {
   margin-top: 30px;
@@ -6503,6 +6591,73 @@ hr {
     margin-bottom: 0;
   }
 }
+
+
+
+.sidebarpost .nav > li > a {
+  display: block;
+  color: #36556e;
+  padding: 5px 20px;
+}
+.sidebarpost .nav > li > a:hover,
+.sidebarpost .nav > li > a:focus {
+  text-decoration: none;
+  background-color: #e8ebee;
+  border-right: 1px solid #d8dde2;
+}
+.sidebarpost .nav > .active > a,
+.sidebarpost .nav > .active:hover > a,
+.sidebarpost .nav > .active:focus > a {
+  font-weight: bold;
+  color: #444e5e;
+  background-color: transparent;
+  border-right: 1px solid #444e5e;
+}
+.sidebarpost .nav .nav {
+  display: none;
+  margin-bottom: 8px;
+}
+.sidebarpost .nav .nav > li > a {
+  padding: 3px 30px;
+  font-size: 90%;
+}
+.sidebarpost .glyphicon {
+  font-size: 12px;
+  margin-left: 10px;
+}
+@media (min-width: 992px) {
+  .sidebarpost {
+    display: block;
+    padding-top: 15px;
+  }
+  .sidebarpost .nav > .active > ul {
+    display: block;
+  }
+  .sidebarpost.affix,
+  .sidebarpost.affix-bottom {
+    width: 213px;
+  }
+  .sidebarpost.affix {
+    position: fixed;
+    top: 45px;
+  }
+  .sidebarpost.affix-bottom {
+    position: absolute;
+  }
+  .sidebarpost.affix .sidenav,
+  .sidebarpost.affix-bottom .sidenav {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sidebarpost.affix-bottom,
+  .sidebarpost.affix {
+    width: 263px;
+  }
+}
+
 @media (min-width: 1200px) {
   .sidebar.affix-bottom,
   .sidebar.affix {

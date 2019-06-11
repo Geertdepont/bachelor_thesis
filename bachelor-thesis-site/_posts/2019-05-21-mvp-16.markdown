@@ -4,7 +4,7 @@ title: "Provide Views with data which is ready to be displayed."
 guideline_id: 16
 short_description: "Provide views with data"
 date:   2019-05-21 01:00:26 +0200
-categories: MVP
+categories: mvp
 ---
 <h3>Why?</h3>
 The view layer of Android apps tends to become
@@ -17,7 +17,7 @@ of transforming and filtering domain-specific data, potentially
 improving the testability and usability of the app.
 
 <h3>Example</h3>
-We created a simple [MVP login Application][github-page].
+We created a simple [MVP login Application][github-page]{:target="_blank"}.
 Let us take a look at the ViewUsersActivity which implements the ViewUsersView. 
 
 <script src="https://gist.github.com/Geertdepont/c026944fc859a456ba6edbc7dccc2a3a.js"></script>
@@ -52,6 +52,8 @@ List<User>
 In the DbHelper the data is transformed so that the Presenter and the View can use it.
 Delegating this task of transforming data, improving the testability of Activities.
 
-Check out the [Github page][github-page] to view the complete repository.
+Check out the [Github page][github-page]{:target="_blank"} to view the complete repository.
+
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin

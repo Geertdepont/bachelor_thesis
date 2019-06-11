@@ -4,12 +4,9 @@
 
 
 !function ($) {
-
   $(function () {
 
-    // IE10 viewport hack for Surface/desktop Windows 8 bug
-    //
-    // See Getting Started docs for more information
+
     if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
       var msViewportStyle = document.createElement('style')
       msViewportStyle.appendChild(
@@ -25,8 +22,7 @@
 
     $body.scrollspy({
       target: '.sidebar',
-      offset: 20 // required to select the right thing. if this is smaller then you are at the top of one section
-                 // but the next section is highlighted
+      offset: 20
     });
 
     $window.on('load', function () {

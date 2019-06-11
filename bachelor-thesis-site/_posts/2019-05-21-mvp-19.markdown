@@ -4,7 +4,7 @@ title: "Clearly define contracts between Views and Presenters."
 guideline_id: 19
 short_description: "Clearly define contracts between Views and Presenters."
 date:   2019-05-21 01:00:23 +0200
-categories: MVP
+categories: mvp
 ---
 <h3>Why?</h3>
 Before starting to develop a new app feature,
@@ -17,7 +17,7 @@ of apps become more understandable, as the relation between
 the View and the Presenter is explicitly documented.
 
 <h3>Example</h3>
-For this example we will look at the [Book example][Book-example].
+For this example we will look at the [Book example][Book-example]{:target="_blank"}.
 
 Our BookListContract:
 <script src="https://gist.github.com/Geertdepont/303ada3a2b720dea0bf534313bf4a845.js"></script>
@@ -61,6 +61,8 @@ The View has to perform four methods:
 
 I hope that creating this contract makes the interaction more understandable.
 
-Check out the [Github page][Book-example] to view the complete repository.
+Check out the [Github page][Book-example]{:target="_blank"} to view the complete repository.
+
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/BookApplication" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
 [Book-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/BookApplication

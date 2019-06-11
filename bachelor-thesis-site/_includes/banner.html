@@ -2,7 +2,7 @@
 <div class="banner">
   <div class="container">
   	{% if page.categories != null %}
-    	<a href="{{ '/' | prepend: site.baseurl }}#category_{{page.categories}}">{{page.categories}}</a>	/
+    	<a href="{{ '/' | prepend: site.baseurl }}{{page.categories}}" style="text-transform: uppercase;">{{page.categories}}</a>	/
     {% else %}
     	{{ site.banner }}
     {% endif %}

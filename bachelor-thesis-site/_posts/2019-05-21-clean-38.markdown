@@ -4,7 +4,7 @@ title:  "Business logic should be completely decoupled from the Android framewor
 guideline_id: 38
 short_description: "Decoupled business logic"
 date:   2019-05-21 01:00:04 +0200
-categories: Clean
+categories: clean
 ---
 
 <h3>Why?</h3>
@@ -40,8 +40,10 @@ When the Presenter wants the view to show the users, it calls, mainView.showUser
 These are methods accessible by the MainPresenter:
 <script src="https://gist.github.com/Geertdepont/608af87f6a302b6d5f66da2582dd5b0c.js"></script>
 
-
-
 Check out the [Github page][github-page] to view the complete repository.
+
+<a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
+
+{% bibliography %}
 
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication
