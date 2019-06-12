@@ -47,7 +47,7 @@ We created a simple [MVP login Application][github-page]. The event diagram of t
 
 The lifecycle of our components:
 <figure>
-  <img src="/assets/Component_lifecycle.png" alt="Login Injection" width="50%">
+  <img src="/assets/Component_lifecycle.png" alt="Login Injection" width="70%">
 </figure>
 
 As you can see the AuthComponent gets added to the AppComponent after the validation of the credentials.

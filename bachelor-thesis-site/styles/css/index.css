@@ -3139,6 +3139,7 @@ input[type="button"].btn-block {
 }
 
 .homeitem {
+  padding: 5px;
   width: 100%;
   border-bottom: 2px solid lightgray;
 }
