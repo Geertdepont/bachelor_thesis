@@ -34,7 +34,7 @@ We created a simple [application][github-page]{:target="_blank"} which retrieves
 
 The event diagram of the Boss Application:
 <figure>
-  <img src="/assets/BossApplication_lifecycle.png" alt="Login Injection" width="700">
+  <img src="/assets/BossApplication_lifecycle.png" alt="Login Injection" width="90%">
 </figure>
 
 Each component can easily be tested. 

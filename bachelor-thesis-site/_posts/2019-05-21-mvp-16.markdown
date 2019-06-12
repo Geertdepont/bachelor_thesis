@@ -55,7 +55,7 @@ The presenter then just provides the showUsers function from the ViewUsersView w
 List<User>
 
 <figure>
-  <img src="/assets/MVPLogin_showUsers.png" alt="MVVM depicted" width="700">
+  <img src="/assets/MVPLogin_showUsers.png" alt="MVVM depicted" width="90%">
 </figure>
 
 In the DbHelper the data is transformed so that the Presenter and the View can use it.

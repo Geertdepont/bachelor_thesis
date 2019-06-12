@@ -42,7 +42,7 @@ dependencies. To perform this dependency injection, dagger uses the following an
 We created a simple [MVP login Application][github-page]. The event diagram of the MVP login:
 
 <figure>
-  <img src="/assets/MVPLogin_injection.png" alt="Login Injection" width="700">
+  <img src="/assets/MVPLogin_injection.png" alt="Login Injection" width="90%">
 </figure>
 
 The lifecycle of our components:

@@ -38,12 +38,12 @@ We created two examples:
 
 Our [MVVM example][architecture-example]{:target="_blank"} depicted:
 <figure>
-  <img src="/assets/MVVM_depicted.png" alt="MVVM depicted" width="700">
+  <img src="/assets/MVVM_depicted.png" alt="MVVM depicted" width="90%">
 </figure>
 
 Our [MVVM example][github-page]{:target="_blank"} depicted:
 <figure>
-  <img src="/assets/MVPLogin_depicted.png" alt="MVVM depicted" width="700">
+  <img src="/assets/MVPLogin_depicted.png" alt="MVVM depicted" width="90%">
 </figure>
 
 Both the MVVM architecture and the MVP are both recommended architectures when developing Android applications.

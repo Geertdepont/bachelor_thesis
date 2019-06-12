@@ -29,7 +29,7 @@ And the NoteRepository has access to the global used database.
 
 Our MVVM example depicted:
 <figure>
-  <img src="/assets/MVVM_depicted.png" alt="MVVM depicted" width="600">
+  <img src="/assets/MVVM_depicted.png" alt="MVVM depicted" width="85%">
 </figure>
 
 Check this [page][architecture-example]{:target="_blank"} to view the complete repository.

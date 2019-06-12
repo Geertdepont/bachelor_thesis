@@ -23,7 +23,7 @@ We created a simple [application][github-page]{:target="_blank"} which retrieves
 We retrieve the data from the service and save it in the cache. 
 Whenever a user requests the employee data within 5 seconds, the data is retrieved from the Repository.
 <figure>
-  <img src="/assets/BossApplication_lifecycle.png" alt="Rxjava packages" width="600">
+  <img src="/assets/BossApplication_lifecycle.png" alt="Rxjava packages" width="85%">
 </figure>
 
 <script src="https://gist.github.com/Geertdepont/c61436332a1b29568d1a5bd93b023dbc.js"></script>

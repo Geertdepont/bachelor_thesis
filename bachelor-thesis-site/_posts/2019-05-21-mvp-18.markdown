@@ -40,7 +40,7 @@ If the employees were already retrieved within 5000 milliseconds, the repository
 cache instead of making a new API request.	
 
 <figure>
-  <img src="/assets/BossApplication_lifecycle.png" alt="Login Injection" width="700">
+  <img src="/assets/BossApplication_lifecycle.png" alt="Login Injection" width="90%">
 </figure>
 
 In the mainActivity when the button is clicked, the function showEmployees is called from the 

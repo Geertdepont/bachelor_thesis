@@ -41,7 +41,7 @@ new thread, and comes back using a callback.
 
 
 <figure>
-  <img src="/assets/MVPLogin_injection.png" alt="Login Injection" width="700">
+  <img src="/assets/MVPLogin_injection.png" alt="Login Injection" width="90%">
 </figure>
 
 

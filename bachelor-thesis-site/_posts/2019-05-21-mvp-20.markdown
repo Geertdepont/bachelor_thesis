@@ -30,7 +30,7 @@ We created a simple [MVP login Application][github-page]{:target="_blank"}.
 
 MVP event diagram:
 <figure>
-  <img src="/assets/MVPLogin_injection.png" alt="Login Injection" width="600">
+  <img src="/assets/MVPLogin_injection.png" alt="Login Injection" width="85%">
 </figure>
 
 After the login is successful, the AuthComponent gets added to the AppComponent. 

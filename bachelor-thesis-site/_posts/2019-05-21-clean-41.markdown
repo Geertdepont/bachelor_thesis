@@ -26,7 +26,7 @@ can be added, removed, or changed without much effort.
 We created a simple [MVP login Application][github-page]{:target="_blank"}. 
 
 <figure>
-  <img src="/assets/MVPLogin_depicted.png" alt="Login depicted" width="600">
+  <img src="/assets/MVPLogin_depicted.png" alt="Login depicted" width="85%">
 </figure>
 
 Each layer works with its own model.

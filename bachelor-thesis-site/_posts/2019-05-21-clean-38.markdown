@@ -35,7 +35,7 @@ Android framework. Only the Activity is coupled to the Android framework. The Pr
 views this MainActivity as a View. So there is no direct link to the Android framework.
 
 <figure>
-  <img src="/assets/BossApplication_lifecycle.png" alt="Login Injection" width="700">
+  <img src="/assets/BossApplication_lifecycle.png" alt="Login Injection" width="90%">
 </figure>
 
 Each component can easily be tested. 

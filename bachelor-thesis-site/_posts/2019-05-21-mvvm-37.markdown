@@ -46,7 +46,7 @@ Repo -> myApi.getContributors(repo.getName())
 It then sorts all the results and puts them in a List.
 
 <figure>
-  <img src="/assets/RXJava_depicted.png" alt="RxJava depicted" width="700">
+  <img src="/assets/RXJava_depicted.png" alt="RxJava depicted" width="90%">
 </figure>
 
 The repository is the only module which performs <b> Networking </b> functionalities.

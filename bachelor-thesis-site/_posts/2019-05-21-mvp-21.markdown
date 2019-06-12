@@ -28,7 +28,7 @@ In our case the data is also requested from the model, so it just has to wait, t
 view with the data. Also the received data is already formatted the way the MainPresenter and the MainView want it.
 
 <figure>
-  <img src="/assets/MVPLogin_depicted.png" alt="Login Injection" width="600">
+  <img src="/assets/MVPLogin_depicted.png" alt="Login Injection" width="85%">
 </figure>
 
 Instead of performing the data request to the database itself and transforming, ask the Interactor to perform the job.

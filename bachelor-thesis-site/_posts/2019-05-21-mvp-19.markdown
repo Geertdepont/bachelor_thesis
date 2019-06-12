@@ -50,7 +50,7 @@ If the request is succesfull, the callback will call the showBookList() with the
 parameter. If not, it will show the error message.
 
 <figure>
-  <img src="/assets/BookApplication_eventDiagram.png" alt="Login Injection" width="600">
+  <img src="/assets/BookApplication_eventDiagram.png" alt="Login Injection" width="85%">
 </figure>
 
 The Contract describes the interaction between the view and the presenter. 

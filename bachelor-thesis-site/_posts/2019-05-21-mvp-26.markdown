@@ -19,7 +19,7 @@ From which the other Presenter then can retrieve the new data.
 We created a simple [MVP login Application][github-page]{:target="_blank"}.
 
 <figure>
-  <img src="/assets/MVPLogin_depicted.png" alt="Login Injection" width="700">
+  <img src="/assets/MVPLogin_depicted.png" alt="Login Injection" width="90%">
 </figure>
 
 Presenters do not have to talk with eachother.

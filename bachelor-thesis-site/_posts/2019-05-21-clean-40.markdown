@@ -28,7 +28,7 @@ Retrofit, etc.) and eventual dependency injection frameworks.
 We created a simple [MVP login Application][github-page]{:target="_blank"}. 
 
 <figure>
-  <img src="/assets/MVPLogin_depicted.png" alt="MVP depicted" width="700">
+  <img src="/assets/MVPLogin_depicted.png" alt="MVP depicted" width="90%">
 </figure>
 
 As you can see all the activities are in the View Layer. 

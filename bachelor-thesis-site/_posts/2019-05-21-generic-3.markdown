@@ -55,7 +55,7 @@ And two buttons:
 
 The event diagram of the Login Application:
 <figure>
-  <img src="/assets/MVPLogin_event_diagram.png" alt="Login Event diagram" width="700">
+  <img src="/assets/MVPLogin_event_diagram.png" alt="Login Event diagram" width="90%">
 </figure>
 
 We do not want our LoginActivity to create a database, and store and retrieve all the users.

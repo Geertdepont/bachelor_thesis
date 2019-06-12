@@ -28,7 +28,7 @@ clean separation of concerns between MVVM components.
 We created a simple [MVVM example][architecture-example]{:target="_blank"}.
 
 <figure>
-  <img src="/assets/MVVM_event.png" alt="MVVM event diagram" width="600">
+  <img src="/assets/MVVM_event.png" alt="MVVM event diagram" width="85%">
 </figure>
 
 This is our whole application.

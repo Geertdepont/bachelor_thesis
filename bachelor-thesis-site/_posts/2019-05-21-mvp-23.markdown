@@ -23,7 +23,7 @@ We created a simple [MVP login Application][github-page]{:target="_blank"}.
 
 
 <figure>
-  <img src="/assets/MVPLogin_showUsers.png" alt="Login Injection" width="600">
+  <img src="/assets/MVPLogin_showUsers.png" alt="Login Injection" width="85%">
 </figure>
 
 As can be seen in this graph. 
