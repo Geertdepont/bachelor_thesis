@@ -61,4 +61,39 @@ Check out the [Github page][github-page]{:target="_blank"} to view the complete 
 
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
+This guideline was extracted from:
+<table id="guidelinelinks">
+  <tr>
+    <th>Id</th>
+    <th>Guideline</th>
+    <th>URL</th>
+  </tr>
+    <tr>
+      <td>96</td>
+      <td>Persist as much relevant and fresh data as possible. That way, users can enjoy your app's functionality even when their device is in offline mode. Remember that not all of your users enjoy constant, highspeed connectivity.</td>
+      <td><a href="https://developer.android.com/jetpack/docs/guide" target="_blank">https://developer.android.com/jetpack/docs/guide</a></td>
+    </tr>     
+    <tr>
+      <td>138</td>
+      <td>If the app isn't designed with care, it can request data that it doesn't need, which places a performance burden on the device, and on the network. If the data is stored or synchronized with a remote database, this can also slow the app and waste the user's data plan. The paging library addresses issues with existing solutions.</td>
+      <td><a href="https://google-developer-training.gitbooks.io/android-developer-advanced-course-concepts/content/unit-6-working-with-architecture-components/lesson-14-architecture-components/14-1-c-architecture-components/14-1-c-architecture-components.html" target="_blank">https://google-developer-training.gitbooks.io/android-developer-advanced-course-concepts/content/unit-6-working-with-architecture-components/lesson-14-architecture-components/14-1-c-architecture-components/14-1-c-architecture-components.html</a></td>
+    </tr>      
+    <tr>
+      <td>202</td>
+      <td>In Android screen orientation change is a challenging problem. The simplest way to deal with that is to ignore it. Just reload everything on each screen orientation change. This is a completely valid solution. Most of the time your app works offline too so that data comes from a local database or another local cache. Therefore, loading data is superfast after screen orientation changes. However, I personally dislike seeing a loading indicator [...]</td>
+      <td><a href="http://hannesdorfmann.com/android/mosby3-mvi-1" target="_blank">http://hannesdorfmann.com/android/mosby3-mvi-1</a></td>
+    </tr>     
+    <tr>
+      <td>132</td>
+      <td>By relying on our current implementation in this situation, we need to fetch the data again from the network. This refetching process isn't just a bad user experience; it's also wasteful because it consumes valuable mobile data. You could fix this issue by caching the web requests, but that creates a key new problem: What happens if the same user data shows up from another type of request, such as fetching a list of friends? The app would show inconsistent data, which is confusing at best. The proper way to handle this situation is to use a persistent model. This is where the Room persistence library comes to the rescue.</td>
+      <td><a href="https://www.pluralsight.com/guides/mvp-with-testing-part-1" target="_blank">https://www.pluralsight.com/guides/mvp-with-testing-part-1</a></td>
+    </tr>   
+    <tr>
+      <td>100</td>
+      <td>Most modern Android apps maintain a synchronization between local database and the web service, this is super useful for users which helps in using the app even if the device is offline. This is something which users have started to nowadays expect in apps. It [the model] states to first fetch the data from local database; if the data doesn’t exist then make the required network call based upon the “should fetch” condition and then save the fetched data into the local database on response.</td>
+      <td><a href="https://proandroiddev.com/building-modern-apps-using-the-android-architecture-guidelines-3238fff96f14" target="_blank">https://proandroiddev.com/building-modern-apps-using-the-android-architecture-guidelines-3238fff96f14</a></td>
+    </tr>     
+    
+</table>
+
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication

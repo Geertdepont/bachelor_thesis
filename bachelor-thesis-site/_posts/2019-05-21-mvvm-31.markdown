@@ -43,4 +43,29 @@ Check this [page][architecture-example]{:target="_blank"} to view the complete r
 
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExample" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
+This guideline was extracted from:
+<table id="guidelinelinks">
+  <tr>
+    <th>Id</th>
+    <th>Guideline</th>
+    <th>URL</th>
+  </tr>
+    <tr>
+      <td>136</td>
+      <td>Never pass context into ViewModel instances. Do not store Activity, Fragment, or View instances or their Context in the ViewModel. For example, an Activity can be destroyed and created many times during the lifecycle of a ViewModel, such as when the device is rotated. If you store a reference to the Activity in the ViewModel, you end up with references that point to the destroyed Activity. This is a memory leak. If you need the application context, use AndroidViewModel instead of ViewModel.</td>
+     <td><a href="https://google-developer-training.gitbooks.io/android-developer-advanced-course-concepts/content/unit-6-working-with-architecture-components/lesson-14-architecture-components/14-1-c-architecture-components/14-1-c-architecture-components.html" target="_blank">https://google-developer-training.gitbooks.io/android-developer-advanced-course-concepts/content/unit-6-working-with-architecture-components/lesson-14-architecture-components/14-1-c-architecture-components/14-1-c-architecture-components.html</a></td>
+    </tr>    
+    <tr>
+      <td>135</td>
+      <td>When you pass data through the layers of your app architecture from a Room database to your UI, that data has to be LiveData in all layers: All the data that Room returns to the Repository, and the Repository then passes to the ViewModel, must be LiveData. You can then create an observer in the activity that observes the data in the ViewModel.</td>
+     <td><a href="https://google-developer-training.gitbooks.io/android-developer-advanced-course-concepts/content/unit-6-working-with-architecture-components/lesson-14-architecture-components/14-1-c-architecture-components/14-1-c-architecture-components.html" target="_blank">https://google-developer-training.gitbooks.io/android-developer-advanced-course-concepts/content/unit-6-working-with-architecture-components/lesson-14-architecture-components/14-1-c-architecture-components/14-1-c-architecture-components.html</a></td>
+    </tr>   
+    <tr>
+      <td>258</td>
+      <td>[MVVM] The consumer of the data should know about the producer, but the producer — the ViewModel — doesn’t know, and doesn’t care, who consumes the data.</td>
+     <td><a href="https://medium.com/upday-devs/android-architecture-patterns-part-3-model-view-viewmodel-e7eeee76b73b" target="_blank">https://medium.com/upday-devs/android-architecture-patterns-part-3-model-view-viewmodel-e7eeee76b73b</a></td>
+    </tr>    
+    
+</table>
+
 [architecture-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExample

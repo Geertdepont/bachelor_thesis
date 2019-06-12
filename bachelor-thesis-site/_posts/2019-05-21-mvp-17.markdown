@@ -47,5 +47,40 @@ Check out the [Github page][github-page]{:target="_blank"} to view the complete 
 
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
+This guideline was extracted from:
+<table id="guidelinelinks">
+  <tr>
+    <th>Id</th>
+    <th>Guideline</th>
+    <th>URL</th>
+  </tr>
+    <tr>
+      <td>177</td>
+      <td>You may need the context to access shared preferences or resources, for example. But you shouldn’t do that in the presenter: you should access to resources in the view and to preferences in the model. By the way, the dependency inversion principle helps a lot in cases like this, when you need to decouple an object.</td>
+     <td><a href="https://medium.com/@cervonefrancesco/model-view-presenter-android-guidelines-94970b430ddf" target="_blank">https://medium.com/@cervonefrancesco/model-view-presenter-android-guidelines-94970b430ddf</a></td>
+    </tr> 
+    <tr>
+      <td>119</td>
+      <td>Presenter does not depend on Android classes hence improves testability.</td>
+     <td><a href="https://dev.to/wahibhaq/a-brief-summary-of-thoughts-on-clean-architecture-and-mvp-48h9" target="_blank">https://dev.to/wahibhaq/a-brief-summary-of-thoughts-on-clean-architecture-and-mvp-48h9</a></td>
+    </tr> 
+    <tr>
+      <td>130</td>
+      <td>Don't create a lifecycle in presenter, otherwise your presenter will be tightly connected with the Android component where most have their own differences. This makes the presenter more dependent and highly rigid to modification.</td>
+     <td><a href="https://www.pluralsight.com/guides/mvp-with-testing-part-1" target="_blank">https://www.pluralsight.com/guides/mvp-with-testing-part-1</a></td>
+    </tr> 
+    <tr>
+      <td>162</td>
+      <td>We can now easily write unit tests for the presenters by mocking the view layer. Before, this code was part of the view layer so we couldn’t unit test it. The whole architecture becomes very testfriendly.</td>
+     <td><a href="https://labs.ribot.co.uk/android-application-architecture-8b6e34acda65" target="_blank">https://labs.ribot.co.uk/android-application-architecture-8b6e34acda65</a></td>
+    </tr> 
+    <tr>
+      <td>176</td>
+      <td>In order to make the previous principle really effective (improving testability), make sure that presenter doesn’t depend on Android classes. Write the presenter using just Java dependencies for two reasons: firstly you are abstracting presenter from implementation details (Android framework) and consequently, you can write noninstrumented tests for the presenter (even without Robolectric), running tests faster on your local JVM and without an emulator.</td>
+     <td><a href="https://medium.com/@cervonefrancesco/model-view-presenter-android-guidelines-94970b430ddf" target="_blank">https://medium.com/@cervonefrancesco/model-view-presenter-android-guidelines-94970b430ddf</a></td>
+    </tr> 
+       
+</table>
+
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication
 

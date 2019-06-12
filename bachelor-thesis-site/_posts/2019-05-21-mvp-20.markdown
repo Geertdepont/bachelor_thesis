@@ -69,4 +69,34 @@ Check out the [Github page][github-page]{:target="_blank"} to view the complete 
 
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
+This guideline was extracted from:
+<table id="guidelinelinks">
+  <tr>
+    <th>Id</th>
+    <th>Guideline</th>
+    <th>URL</th>
+  </tr>
+    <tr>
+      <td>132</td>
+      <td>Use cache a mechanism like LRUCache to retain the data, keep the presenter stateless, and let it recreate with the creation of an activity or fragment.</td>
+     <td><a href="https://www.pluralsight.com/guides/mvp-with-testing-part-1" target="_blank">https://www.pluralsight.com/guides/mvp-with-testing-part-1</a></td>
+    </tr> 
+    <tr>
+      <td>181</td>
+      <td>Do not create Activitylifecyclestyle callbacks in the Presenter interface. In this way, the presenter would be coupled in particular with the Activity lifecycle. The presenter shouldn’t have a so complex lifecycle.</td>
+     <td><a href="https://medium.com/@cervonefrancesco/model-view-presenter-android-guidelines-94970b430ddf" target="_blank">https://medium.com/@cervonefrancesco/model-view-presenter-android-guidelines-94970b430ddf</a></td>
+    </tr> 
+    <tr>
+      <td>184</td>
+      <td>No. Do not retain the presenter. I don’t like this solution mainly because I think that presenter is not something we should persist, it is not a data class, to be clear.</td>
+     <td><a href="https://medium.com/@cervonefrancesco/model-view-presenter-android-guidelines-94970b430ddf" target="_blank">https://medium.com/@cervonefrancesco/model-view-presenter-android-guidelines-94970b430ddf</a></td>
+    </tr> 
+        <tr>
+      <td>182</td>
+      <td>Presenter has a 1to1 relation with the view. The presenter doesn’t make sense without a view. It comes with the view and goes when the view is destroyed. It manages one view at a time.</td>
+     <td><a href="https://medium.com/@cervonefrancesco/model-view-presenter-android-guidelines-94970b430ddf" target="_blank">https://medium.com/@cervonefrancesco/model-view-presenter-android-guidelines-94970b430ddf</a></td>
+    </tr> 
+
+</table>
+
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin

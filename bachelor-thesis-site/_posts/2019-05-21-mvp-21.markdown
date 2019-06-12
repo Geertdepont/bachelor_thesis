@@ -39,4 +39,36 @@ Check out the [Github page][github-page]{:target="_blank"} to view the complete 
 
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogins" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
+
+This guideline was extracted from:
+<table id="guidelinelinks">
+  <tr>
+    <th>Id</th>
+    <th>Guideline</th>
+    <th>URL</th>
+  </tr>
+    <tr>
+      <td>145</td>
+      <td>In MVP, as projects grow, the presenter can become a huge class with a lot of methods, making it hard to maintain and understand. That happens because it is responsible for a lot of stuff: it has to handle UI Events, UI logic, business logic, networking and database queries. That violates the Single Responsibility Principle.</td>
+     <td><a href="https://cheesecakelabs.com/blog/using-viper-architecture-android/" target="_blank">https://cheesecakelabs.com/blog/using-viper-architecture-android/</a></td>
+    </tr>   
+    <tr>
+      <td>241</td>
+      <td>[MVP] The elephant in the room here is the presenter. It’s a god object. It deals with the models, it sends the data to the view, it holds the business logic (business logic are those gears :) ), and it goes to the database and Internet, fetches sensor data, etc. So yeah, better, but it could get way more better.</td>
+     <td><a href="https://five.agency/android-architecture-part-1-every-new-beginning-is-hard/" target="_blank">https://five.agency/android-architecture-part-1-every-new-beginning-is-hard/</a></td>
+    </tr> 
+    <tr>
+      <td>265</td>
+      <td>[MVP] One of the pitfalls of MVP appears when moving the UI logic to the Presenter: this becomes now an allknowing class, with thousands of lines of code. To solve this, split the code even more and remember to create classes that have only one responsibility and are unit testable.</td>
+     <td><a href="https://medium.com/upday-devs/android-architecture-patterns-part-3-model-view-viewmodel-e7eeee76b73b" target="_blank">https://medium.com/upday-devs/android-architecture-patterns-part-3-model-view-viewmodel-e7eeee76b73b</a></td>
+    </tr> 
+    <tr>
+      <td>183</td>
+      <td>Do not save the state inside the presenter. I mean using a Bundle. I’m not saying that the presenter should be stateless because I’d be lying. In the use case I described before, for instance, the presenter should at least have the page number/offset somewhere.</td>
+     <td><a href="https://medium.com/@cervonefrancesco/model-view-presenter-android-guidelines-94970b430ddf" target="_blank">https://medium.com/@cervonefrancesco/model-view-presenter-android-guidelines-94970b430ddf</a></td>
+    </tr> 
+    
+
+</table>
+
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin

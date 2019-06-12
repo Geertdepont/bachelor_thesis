@@ -74,4 +74,30 @@ Check out the [Github page][Book-example]{:target="_blank"} to view the complete
 
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/BookApplication" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
+This guideline was extracted from:
+<table id="guidelinelinks">
+  <tr>
+    <th>Id</th>
+    <th>Guideline</th>
+    <th>URL</th>
+  </tr>
+    <tr>
+      <td>178</td>
+      <td>When you are going to write a new feature, it is a good practice to write a contract at first step. The contract describes the communication between view and presenter, it helps you to design in a cleaner way the interaction.</td>
+     <td><a href="https://medium.com/@cervonefrancesco/model-view-presenter-android-guidelines-94970b430ddf" target="_blank">https://medium.com/@cervonefrancesco/model-view-presenter-android-guidelines-94970b430ddf</a></td>
+    </tr> 
+    <tr>
+      <td>180</td>
+      <td>During the “contract design” phase, you must decide for each user event, what is the corresponding action and who the logic should belong to.</td>
+     <td><a href="https://medium.com/@cervonefrancesco/model-view-presenter-android-guidelines-94970b430ddf" target="_blank">https://medium.com/@cervonefrancesco/model-view-presenter-android-guidelines-94970b430ddf</a></td>
+    </tr> 
+    <tr>
+      <td>268</td>
+      <td>[MVP] The ModelViewPresenter pattern brings with it a very good separation of concerns. While this is for sure a pro, when developing a small app or a prototype, this can seem like an overhead. To decrease the number of interfaces used, some developers remove the Contract interface class, and the interface for the Presenter.</td>
+     <td><a href="https://medium.com/@cervonefrancesco/model-view-presenter-android-guidelines-94970b430ddf" target="_blank">https://medium.com/@cervonefrancesco/model-view-presenter-android-guidelines-94970b430ddf</a></td>
+    </tr> 
+   
+
+</table>
+
 [Book-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/BookApplication

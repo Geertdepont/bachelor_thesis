@@ -36,4 +36,24 @@ Check out the [Github page][github-page]{:target="_blank"} to view the complete 
 
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
+This guideline was extracted from:
+<table id="guidelinelinks">
+  <tr>
+    <th>Id</th>
+    <th>Guideline</th>
+    <th>URL</th>
+  </tr>
+    <tr>
+      <td>97</td>
+      <td>Assign one data source to be the single source of truth. Whenever your app needs to access this piece of data, it should always originate from this single source of truth.</td>
+     <td><a href="https://developer.android.com/jetpack/docs/guide" target="_blank">https://developer.android.com/jetpack/docs/guide</a></td>
+    </tr>    
+    <tr>
+      <td>101</td>
+      <td>Remember, your UI should always reflect based on the data in the database.</td>
+     <td><a href="https://proandroiddev.com/building-modern-apps-using-the-android-architecture-guidelines-3238fff96f14" target="_blank">https://proandroiddev.com/building-modern-apps-using-the-android-architecture-guidelines-3238fff96f14</a></td>
+    </tr>    
+</table>
+
+
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication

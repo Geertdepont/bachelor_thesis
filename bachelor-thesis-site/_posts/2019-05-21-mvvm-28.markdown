@@ -44,4 +44,40 @@ Check this [page][architecture-example]{:target="_blank"} to view the complete r
 
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExample" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
+This guideline was extracted from:
+<table id="guidelinelinks">
+  <tr>
+    <th>Id</th>
+    <th>Guideline</th>
+    <th>URL</th>
+  </tr>
+    <tr>
+      <td>261</td>
+      <td>[MVVM] We should make sure that every action of the user goes through the ViewModel and that any possible logic of the View is moved in the ViewModel.</td>
+     <td><a href="https://medium.com/upday-devs/android-architecture-patterns-part-3-model-view-viewmodel-e7eeee76b73b" target="_blank">https://medium.com/upday-devs/android-architecture-patterns-part-3-model-view-viewmodel-e7eeee76b73b</a></td>
+    </tr>    
+    <tr>
+      <td>226</td>
+      <td>[On MVVM] The importance of a well designed view entity. One common mistake is to pass the view an object that hasn’t been designed for it, usually because we don’t want to create another object that is specific for the view, so we rather just pass the one that comes from our data or domain layer. This should be avoided because it means that the view needs to do some final transformations to be able to consume it, leaving code that contains untested logic. In our experience, the most critical step working in the presentation layer is the design of the view entities. Creating these POJOs is in a way the main goal of the presentation layer and defines how readable, understandable and testable the whole layer is. [Nice quote on MVVM] Take your time designing the view entities. You don’t want to deal with a poorly designed one and it is painful to change them when the implementation of the presentation layer is advanced.</td>
+     <td><a href="https://medium.com/insiden26/reactive-clean-architecture-with-android-architecture-components-685a6682e0ca">https://medium.com/insiden26/reactive-clean-architecture-with-android-architecture-components-685a6682e0ca</a></td>
+    </tr> 
+    <tr>
+      <td>227</td>
+      <td>Expose states and not events: expose one stream per view that emits states instead of events. Both the position and the data set should be wrapped up together so the ViewPager never receives one without the other. This is true for any view with intradependent state. You would never expose two separate streams for a TextView, one that sets the text and another one that emits the position of the letter that should be highlighted in bold, but for some reason it’s much easier to make this mistake with a ViewPager or lists. [MVVM+RxJava]</td>
+     <td><a href="https://medium.com/insiden26/reactive-clean-architecture-with-android-architecture-components-685a6682e0ca">https://medium.com/insiden26/reactive-clean-architecture-with-android-architecture-components-685a6682e0ca</a></td>
+    </tr>   
+    <tr>
+      <td>223</td>
+      <td>The view entity should be designed to represent as close as possible the state of one specific view. Some time ago I wrote a blog post about how to design this view entities safely, things that need to be taken into account when dealing with RxJava + MVVM.</td>
+     <td><a href="https://medium.com/insiden26/reactive-clean-architecture-with-android-architecture-components-685a6682e0ca">https://medium.com/insiden26/reactive-clean-architecture-with-android-architecture-components-685a6682e0ca</a></td>
+    </tr>  
+    <tr>
+      <td>260</td>
+      <td>[MVVM] The ViewModel should expose states for the View, rather than just events.</td>
+     <td><a href="https://medium.com/upday-devs/android-architecture-patterns-part-3-model-view-viewmodel-e7eeee76b73b">https://medium.com/upday-devs/android-architecture-patterns-part-3-model-view-viewmodel-e7eeee76b73b</a></td>
+    </tr>    
+    
+</table>
+
+
 [architecture-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExample

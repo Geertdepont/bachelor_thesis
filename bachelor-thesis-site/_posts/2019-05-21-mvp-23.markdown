@@ -34,4 +34,23 @@ Check out the [Github page][github-page]{:target="_blank"} to view the complete 
 
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
+This guideline was extracted from:
+<table id="guidelinelinks">
+  <tr>
+    <th>Id</th>
+    <th>Guideline</th>
+    <th>URL</th>
+  </tr>
+    <tr>
+      <td>165</td>
+      <td>In MVP (or at least, in our vision of MVP) it is only the view that holds the current state of itself. Think about a screen that shows a “Loading….” spinner: the Presenter sets such spinner to visible, and once the requested data is loaded the spinner is hidden. But what happens if, in the meantime, the presenter wants to know if the spinner is visible? It can either privately keep this information or query the view for it. Now, what if the screen has more and more features? Is the presenter going to keep the current “state” of every single button, view, list along with the business logic of the app? Well, if yes: the complexity to keep synchronised what the view is showing and what the presenter knows about the view will easily explode. Because an Android View is a very transient object, that could be destroyed at any given moment, and because the View is the state, it is hard to keep track and recreate exactly the last screen visualized to the user.</td>
+     <td><a href="https://blog.shazam.com/android-apply-redux-2ad0f7355e0" target="_blank">https://blog.shazam.com/android-apply-redux-2ad0f7355e0</a></td>
+    </tr> 
+    <tr>
+      <td>175</td>
+      <td>One of the biggest problems of Android is that views (Activities, Fragments,…) aren’t easy to test because of the framework complexity. To solve this problem, you should implement the Passive View pattern. The implementation of this pattern reduces the behavior of the view to the absolute minimum by using a controller, in our case, the presenter. For example, if you have a username/password form and a “submit” button, you don’t write the validation logic inside the view but inside the presenter. Your view should just collect the username and password and send them to the presenter.</td>
+     <td><a href="https://medium.com/@cervonefrancesco/model-view-presenter-android-guidelines-94970b430ddf" target="_blank">https://medium.com/@cervonefrancesco/model-view-presenter-android-guidelines-94970b430ddf</a></td>
+    </tr>   
+</table>
+
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin

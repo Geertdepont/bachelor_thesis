@@ -55,4 +55,18 @@ Check this [page][MVVM-example]{:target="_blank"} to view the complete repositor
 
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/RxjavaRetrofitGithub" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
+This guideline was extracted from:
+<table id="guidelinelinks">
+  <tr>
+    <th>Id</th>
+    <th>Guideline</th>
+    <th>URL</th>
+  </tr>
+    <tr>
+      <td>84</td>
+      <td>Implementing ViewModel might involve directly calling the Webservice to fetch the data and assign this data to our LiveData object. This design works, but by using it, our app becomes more and more difficult to maintain as it grows. Additionally, the scope of a ViewModel is tied to an Activity or Fragment lifecycle, which means that the data from the Webservice is lost when the associated UI object's lifecycle ends. This behavior creates an undesirable user experience.</td>
+     <td><a href="https://developer.android.com/jetpack/docs/guide" target="_blank">https://developer.android.com/jetpack/docs/guide</a></td>
+    </tr>   
+</table>
+
 [MVVM-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/RxjavaRetrofitGithub

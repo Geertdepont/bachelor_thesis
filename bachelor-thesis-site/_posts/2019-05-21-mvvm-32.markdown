@@ -42,4 +42,18 @@ Check this [page][architecture-example]{:target="_blank"} to view the complete r
 
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExample" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
+This guideline was extracted from:
+<table id="guidelinelinks">
+  <tr>
+    <th>Id</th>
+    <th>Guideline</th>
+    <th>URL</th>
+  </tr>
+    <tr>
+      <td>228</td>
+      <td>[MVVM+RxJava] Everything goes through the view model: the view model transforms the data into something that is easy to use in the Views or any other consumer, this means the view should know about the changes always after the view model. So basically, it doesn’t matter how trivial or easy an operation is, everything should go through the view model, this way other stuff that is based on the view model’s state can happen reliably. The view should know about the changes always after the view model.</td>
+     <td><a href="https://medium.com/upday-devs/mvvm-rxjava-learnings-1819423f9592" target="_blank">https://medium.com/upday-devs/mvvm-rxjava-learnings-1819423f9592</a></td>
+    </tr>    
+</table>
+
 [architecture-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExample

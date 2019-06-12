@@ -38,5 +38,25 @@ For more coding standards read this [link][coding-standards]{:target="_blank"}:
 <a href="https://source.android.com/setup/contribute/code-style" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the coding standards page</button></a>
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
+This guideline was extracted from:
+<table id="guidelinelinks">
+  <tr>
+    <th>Id</th>
+    <th>Guideline</th>
+    <th>URL</th>
+  </tr>
+    <tr>
+      <td>173</td>
+      <td>For God’s Sake, Maintain Proper Coding Standards. If you compare coding with writing, then coding standards is like your handwriting. As you would be reading more of others code, other people will also be reading a lot of your code and you don’t want to scare the shit out of them, do you? And if you are working in an organization and collaborating with other developers heavily, do take special care about it. Write short, clean and readable code that YOU and people reading your code would enjoy thoroughly. Your code should read like a story.</td>
+     <td><a href="https://blog.aritraroy.in/what-my-2-years-of-android-development-have-taught-me-the-hard-way-52b495ba5c51" target="_blank">https://blog.aritraroy.in/what-my-2-years-of-android-development-have-taught-me-the-hard-way-52b495ba5c51</a></td>
+    </tr>    
+    <tr>
+      <td>196</td>
+      <td>Organize your build logic (Gradle) and group stuff by functionality in separate gradle build files.</td>
+     <td><a href="https://fernandocejas.com/2015/07/18/architecting-android-the-evolution/" target="_blank">https://fernandocejas.com/2015/07/18/architecting-android-the-evolution/</a></td>
+    </tr>      
+    
+</table>
+
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication
 [coding-standards]: https://source.android.com/setup/contribute/code-style

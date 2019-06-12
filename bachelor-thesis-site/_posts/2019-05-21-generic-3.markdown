@@ -71,4 +71,49 @@ Check out the [Github page][MVP-Login] to view the complete repository.
 
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
+This guideline was extracted from:
+<table id="guidelinelinks">
+  <tr>
+    <th>Id</th>
+    <th>Guideline</th>
+    <th>URL</th>
+  </tr>
+    <tr>
+      <td>82</td>
+      <td>Activities and Fragments should only contain logic that handles UI and operating system interactions.</td>
+      <td><a href="https://developer.android.com/jetpack/docs/guide" target="_blank">https://developer.android.com/jetpack/docs/guide</a></td>
+    </tr>
+    <tr>
+      <td>139</td>
+      <td>Use a single activity for the whole flow</td>
+      <td><a href="https://blog.gojekengineering.com/an-architectural-overview-of-the-new-go-jek-rider-app-bb1dbd174323" target="_blank">https://blog.gojekengineering.com/an-architectural-overview-of-the-new-go-jek-rider-app-bb1dbd174323</a></td>
+    </tr>
+    <tr>
+      <td>150</td>
+      <td>Activities and Fragments become very large and difficult to maintain</td>
+      <td><a href="https://labs.ribot.co.uk/android-application-architecture-8b6e34acda65" target="_blank">https://labs.ribot.co.uk/android-application-architecture-8b6e34acda65</a></td>
+    </tr>    
+    <tr>
+      <td>152</td>
+      <td>Unit testing becomes challenging, if not impossible, because a lot of the logic lives within the Activities or Fragments that are arduous to unit test.</td>
+      <td><a href="https://labs.ribot.co.uk/android-application-architecture-8b6e34acda65" target="_blank">https://labs.ribot.co.uk/android-application-architecture-8b6e34acda65</a></td>
+    </tr>    
+    <tr>
+      <td>161</td>
+      <td>Activities and Fragments become very lightweight. Their only responsibilities are to set up/update the UI and handle user events. Therefore, they become easier to maintain.</td>
+      <td><a href="https://labs.ribot.co.uk/android-application-architecture-8b6e34acda65" target="_blank">https://labs.ribot.co.uk/android-application-architecture-8b6e34acda65</a></td>
+    </tr>
+    <tr>
+      <td>240</td>
+      <td>God Activity: We have an activity that touches databases, goes to the Internet, does parsing, spawns threads, and renders data. So, all the stakeholders are looking at the single class, none of the concerns is separated, it’s not testable, and business logic is mixed with the Android stuff.</td>
+      <td><a href="https://five.agency/android-architecture-part-1-every-new-beginning-is-hard/" target="_blank">https://five.agency/android-architecture-part-1-every-new-beginning-is-hard/</a></td>
+    </tr>    
+    <tr>
+      <td>254</td>
+      <td>Activities were often bloated with multiple responsibilities. There was a lot of code duplication custom views and custom logic.</td>
+      <td><a href="https://academy.realm.io/posts/converting-an-app-to-use-clean-architecture/" target="_blank">https://academy.realm.io/posts/converting-an-app-to-use-clean-architecture/</a></td>
+    </tr>
+    
+</table>
+
 [MVP-Login]: https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin

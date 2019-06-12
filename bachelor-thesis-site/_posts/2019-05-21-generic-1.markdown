@@ -89,7 +89,7 @@ Check out the [Github page][github-page]{:target="_blank"} to view the complete 
 
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
-This guideline was subtracted from:
+This guideline was extracted from:
 
 <table id="guidelinelinks">
   <tr>
@@ -112,6 +112,100 @@ This guideline was subtracted from:
     <td>Dagger2 is used to avoid detailcomplicated boilerplate code of connecting architecture elements one to another</td>
     <td><a href="https://hackernoon.com/android-clean-architecture-with-kotlin-rxjava-and-dagger-2-6006be2d0c02" target="_blank">https://hackernoon.com/android-clean-architecture-with-kotlin-rxjava-and-dagger-2-6006be2d0c02</a></td>
   </tr>
+    <tr>
+      <td>123</td>
+      <td>By injecting mock implementations of respective dependencies to separated classes can make testing much easier.</td>
+      <td><a href="https://dev.to/wahibhaq/a-brief-summary-of-thoughts-on-clean-architecture-and-mvp-48h9" target="_blank">https://dev.to/wahibhaq/a-brief-summary-of-thoughts-on-clean-architecture-and-mvp-48h9</a></td>
+    </tr>
+    <tr>
+      <td>212</td>
+      <td>Through dagger we can manage the scope of our instances created, which is something really cool and from my point of view, Any object or collaborator in your app should not know anything about instances creation and lifecycle and this should be managed by our dependency injection framework.</td>
+      <td><a href="https://fernandocejas.com/2015/04/11/tasting-dagger-2-on-android/" target="_blank">https://fernandocejas.com/2015/04/11/tasting-dagger-2-on-android/</a></td>
+    </tr>
+    <tr>
+      <td>194</td>
+      <td>Use Dagger as (i) components become reusable (since dependencies can be injected and configured externally), 
+      (ii) when injecting abstractions as collaborators, we can just change the implementation of any object without having to make a lot of changes in our codebase, 
+      (iii) Dependencies can be injected into a component: 
+      it is possible to inject mock implementations of these dependencies which makes testing easier.</td>
+      <td><a href="https://fernandocejas.com/2015/07/18/architecting-android-the-evolution/" target="_blank">https://fernandocejas.com/2015/07/18/architecting-android-the-evolution/</a></td>
+    </tr>
+    <tr>
+      <td>213</td>
+      <td>The @PerActivity is a custom scoping annotation to permit objects whose lifetime should conform to the life of the activity to be memorized in the correct component.
+          I really encourage to do this as a good practice, since we get these advantages:
+          The ability to inject objects where and activity is required to be constructed.
+          The use of singletons on a per-activity basis.
+          The global object graph is kept clear of things that can be used only in activities.</td>
+      <td><a href="https://fernandocejas.com/2015/04/11/tasting-dagger-2-on-android/" target="_blank">https://fernandocejas.com/2015/04/11/tasting-dagger-2-on-android/</a></td>
+    </tr>
+    <tr>
+      <td>112</td>
+      <td>My second tip is to have a core module which will have these main responsitilities:
+          <ul>
+          <li>Handle global dependency injection.</li>
+          <li>Contain extension functions.</li>
+          <li>Contain the main framework abstractions.</li>
+          <li>Initiate in the main application common 3rd party libraries like Analytics, Crash Reporting</li>
+          </ul>
+      </td>
+      <td><a href="https://fernandocejas.com/2018/05/07/architecting-android-reloaded/" target="_blank">https://fernandocejas.com/2018/05/07/architecting-android-reloaded/</a></td>
+    </tr>
+    <tr>
+      <td>103</td>
+      <td>Having DI framework is not a must, you can live without it, but right setup of DI can really make your life easier. There are several libraries which offer ready solutions (e.g. Dagger, Roboguice, Toothpick). You can decide which one will fit best in your project, considering performance and usability. With dependency injection you don’t have to care so much about things like e.g. object creation, passing references, implementing singleton pattern.
+      </td>
+      <td><a href="https://medium.com/stepstone-tech/considering-architecture-for-android-app-f7f0fabf680a" target="_blank">https://medium.com/stepstone-tech/considering-architecture-for-android-app-f7f0fabf680a</a></td>
+    </tr>
+    <tr>
+      <td>104</td>
+      <td> think it is a good practice to wrap libraries with a layer of abstraction, this way you can avoid dependencies from particular library implementation inside your business logic. Also if you decide to change a library to a different one, you won’t have to do refactoring in the entire project, just inside a single repository. It is not necessary to use this pattern for everything, only for libraries which you are not confident you will be using in the future.
+      </td>
+      <td><a href="https://medium.com/stepstone-tech/considering-architecture-for-android-app-f7f0fabf680a" target="_blank">https://medium.com/stepstone-tech/considering-architecture-for-android-app-f7f0fabf680a</a></td>
+    </tr>
+    <tr>
+      <td>86</td>
+      <td>
+      The UserRepository class above needs an instance of Webservice to fetch the user's data. It could simply create the instance, but to do that, it also needs to know the dependencies of the Webservice class. Additionally, UserRepository is probably not the only class that needs a Webservice. This situation requires us to duplicate code, as each class that needs a reference to Webservice needs to know how to construct it and its dependencies. If each class creates a new WebService, our app could become very resource heavy.
+      </td>
+      <td><a href="https://developer.android.com/jetpack/docs/guide" target="_blank">https://developer.android.com/jetpack/docs/guide</a></td>
+    </tr>
+    <tr>
+        <td>85</td>
+        <td>. Note: If you're already using a library like RxJava or Agera, you can continue using them instead of LiveData. When you use libraries and approaches like these, however, make sure you handle your app's lifecycle properly. In particular, make sure to pause your data streams when the related LifecycleOwner is stopped and to destroy these streams when the related LifecycleOwner is destroyed. You can also add the android.arch.lifecycle:reactivestreams artifact to use LiveData with another reactive streams library, such as RxJava2.</td>
+        <td><a href="https://developer.android.com/jetpack/docs/guide" target="_blank">https://developer.android.com/jetpack/docs/guide</a></td>
+    </tr>
+    <tr>
+        <td>153</td>
+        <td> RxJava allows you to manage data via asynchronous streams and gives you many operators that you can apply to the stream in order to transform, filter or combine the data.</td>
+        <td><a href="https://labs.ribot.co.uk/android-application-architecture-8b6e34acda65" target="_blank">https://labs.ribot.co.uk/android-application-architecture-8b6e34acda65</a></td>
+    </tr>
+    <tr>
+        <td>155</td>
+        <td>RxJava Observables and operators remove the need for having nested callbacks.</td>
+        <td><a href="https://labs.ribot.co.uk/android-application-architecture-8b6e34acda65" target="_blank">https://labs.ribot.co.uk/android-application-architecture-8b6e34acda65</a></td>
+    </tr>
+    <tr>
+        <td>218</td>
+        <td>RxJava Observables and operators remove the need for having nested callbacks.</td>
+        <td><a href="https://labs.ribot.co.uk/android-application-architecture-8b6e34acda65" target="_blank">https://labs.ribot.co.uk/android-application-architecture-8b6e34acda65</a></td>
+    </tr>
+    <tr>
+        <td>252</td>
+        <td>[On clean ark] Although it’s a bit hidden, the same data flow inversion principle still holds, because without RxJava presenters were implementing the callback, and with RxJava subscribers are also contained in the outer layer – somewhere in the presenter.</td>
+        <td><a href="https://five.agency/android-architecture-part-1-every-new-beginning-is-hard/" target="_blank">https://five.agency/android-architecture-part-1-every-new-beginning-is-hard/</a></td>
+    </tr>
+    <tr>
+        <td>191</td>
+        <td>Benefits we get out of this RxJava: Decoupling between Observables and Subscribers: makes maintainability and testing easier.</td>
+        <td><a href="https://fernandocejas.com/2015/07/18/architecting-android-the-evolution/" target="_blank">https://fernandocejas.com/2015/07/18/architecting-android-the-evolution/</a></td>
+    </tr>
+        
+    
+    
+    
+    
+    
 </table>
 
 

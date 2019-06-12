@@ -53,4 +53,28 @@ Check this [page][architecture-example]{:target="_blank"} to view the complete r
 
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExample" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
+This guideline was extracted from:
+<table id="guidelinelinks">
+  <tr>
+    <th>Id</th>
+    <th>Guideline</th>
+    <th>URL</th>
+  </tr>
+    <tr>
+      <td>108</td>
+      <td>The view model isolates the view from the model classes and allows the model to evolve independently of the view.</td>
+     <td><a href="https://fernandocejas.com/2018/05/07/architecting-android-reloaded/" target="_blank">https://fernandocejas.com/2018/05/07/architecting-android-reloaded/</a></td>
+    </tr>    
+    <tr>
+      <td>169</td>
+      <td>If the data binding logic is too complex, application debug will be a little harder.</td>
+     <td><a href="https://stfalcon.com/en/blog/post/android-mvvm" target="_blank">https://stfalcon.com/en/blog/post/android-mvvm</a></td>
+    </tr>  
+    <tr>
+      <td>262</td>
+      <td>[MVVM] DataModel: The use of inversion of control pattern, heavily applied in our code, and the lack of any Android classes, facilitate the implementation of unit tests of the DataModel.</td>
+     <td><a href="https://medium.com/upday-devs/android-architecture-patterns-part-3-model-view-viewmodel-e7eeee76b73b" target="_blank">https://medium.com/upday-devs/android-architecture-patterns-part-3-model-view-viewmodel-e7eeee76b73b</a></td>
+    </tr>    
+</table>
+
 [architecture-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExample

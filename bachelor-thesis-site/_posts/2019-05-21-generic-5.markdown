@@ -56,6 +56,36 @@ Check out both the [MVVM example][architecture-example]{:target="_blank"} and th
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExample" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">MVVM example</button></a>
 <a href=" https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">MVP example</button></a>
 
+This guideline was extracted from:
+<table id="guidelinelinks">
+  <tr>
+    <th>Id</th>
+    <th>Guideline</th>
+    <th>URL</th>
+  </tr>
+    <tr>
+      <td>168</td>
+      <td>MVVM can not be justified for small projects.</td>
+      <td><a href="https://stfalcon.com/en/blog/post/android-mvvm" target="_blank">https://stfalcon.com/en/blog/post/android-mvvm</a></td>
+    </tr>   
+    <tr>
+      <td>229</td>
+      <td>[...] Onion Architecture, Hexagonal Architecture (also known as Ports and Adapters) and the popular Clean Architecture, among other layered architectures. Though these approximations have their own fancy names and could seem completely different, they share a lot in common. In fact, its main intent is the same: Achieve a highlevel separation of concerns by layering.</td>
+      <td><a href="http://pguardiola.com/blog/clean-architecture-part-1/" target="_blank">http://pguardiola.com/blog/clean-architecture-part-1/</a></td>
+    </tr>        
+    <tr>
+      <td>230</td>
+      <td>[General on styles] There are a lot of scenarios where we aren’t gonna need that level of adaptability. Especially in mobile applications in which the domain logic is really close to the view. Prematurely creating that kind of indirection and isolation is usually a waste of time and it may be a bit overkill.</td>
+      <td><a href="http://pguardiola.com/blog/clean-architecture-part-1/" target="_blank">http://pguardiola.com/blog/clean-architecture-part-1/</a></td>
+    </tr>       
+    <tr>
+      <td>118</td>
+      <td>Another important thing is different entities for each layer of application. As dependency inversion principle works in the other way works additional fields decreasing. The purpose of different entities for each layer is to reduce the amount of information inner layer may depend on. E.g., you don’t need api version at your entity in domain and presentation layers of your application, you only need this property in data layers.</td>
+      <td><a href="https://hackernoon.com/android-clean-architecture-with-kotlin-rxjava-and-dagger-2-6006be2d0c02/" target="_blank">https://hackernoon.com/android-clean-architecture-with-kotlin-rxjava-and-dagger-2-6006be2d0c02/</a></td>
+    </tr>    
+</table>
+
+
 [architecture-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExample
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin
 [article-page]: https://robertoverdecchia.github.io/papers/ICSA_2019.pdf

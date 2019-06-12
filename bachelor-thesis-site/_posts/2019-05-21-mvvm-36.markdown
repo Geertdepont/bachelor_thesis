@@ -33,4 +33,18 @@ Check this [page][architecture-example]{:target="_blank"} to view the complete r
 
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExamples" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
+This guideline was extracted from:
+<table id="guidelinelinks">
+  <tr>
+    <th>Id</th>
+    <th>Guideline</th>
+    <th>URL</th>
+  </tr>
+    <tr>
+      <td>219</td>
+      <td>The plan is to put in the store the objects that are going to be consumed by the layers on top. This layer will build use cases out of these objects so let’s make sure the data we store is in good conditions. [Reactive Clean Architecture]</td>
+     <td><a href="https://medium.com/insiden26/reactive-clean-architecture-with-android-architecture-components-685a6682e0ca" target="_blank">https://medium.com/insiden26/reactive-clean-architecture-with-android-architecture-components-685a6682e0ca</a></td>
+    </tr>   
+</table>
+
 [architecture-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExamples

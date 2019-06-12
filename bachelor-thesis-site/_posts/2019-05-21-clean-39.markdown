@@ -41,19 +41,59 @@ If we compare our BossApplication with our MVVM example,
 
 MVP depicted:
 <figure>
-  <img src="/assets/BossApplication_lifecycle.png" alt="Login Injection" width="60%">
+  <img src="/assets/BossApplication_lifecycle.png" alt="Login Injection" width="500">
 </figure>
 
 <br>
 MVVM depicted:
 <figure>
-  <img src="/assets/MVVM_depicted.png" alt="Login Injection" width="60%">
+  <img src="/assets/MVVM_depicted.png" alt="Login Injection" width="500">
 </figure>
 
 Check out the [MVP example][github-page]{:target="_blank"} and the [MVVM example][MVVM example]{:target="_blank"} to view the complete repositories.
 
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">MVP example</button></a>
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExample" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">MVVM example</button></a>
+
+This guideline was extracted from:
+<table id="guidelinelinks">
+  <tr>
+    <th>Id</th>
+    <th>Guideline</th>
+    <th>URL</th>
+  </tr>
+
+ <tr>
+    <td>124</td>
+    <td> No compulsion to use Presenters to handle presentation logic, we could say that Clean architecture is "frontend" agnostic – meaning we can use MVP, MVVM or anything else on top of it.</td>
+    <td><a href=" https://dev.to/wahibhaq/a-brief-summary-of-thoughts-on-clean-architecture-and-mvp-48h9" target="_blank"> https://dev.to/wahibhaq/a-brief-summary-of-thoughts-on-clean-architecture-and-mvp-48h9</a></td>
+ </tr>
+
+ <tr>
+    <td>188</td>
+    <td> Fragments and activities are only views, there is no logic inside them other than UI logic, and this is where all the rendering stuff takes place.</td>
+    <td><a href=" https://fernandocejas.com/2014/09/03/architecting-android-the-clean-way/" target="_blank"> https://fernandocejas.com/2014/09/03/architecting-android-the-clean-way/</a></td>
+ </tr>
+
+ <tr>
+    <td>252</td>
+    <td> On clean ark Although it’s a bit hidden, the same data flow inversion principle still holds, because without RxJava presenters were implementing the callback, and with RxJava subscribers are also contained in the outer layer – somewhere in the presenter.</td>
+    <td><a href=" https://five.agency/android-architecture-part-1-every-new-beginning-is-hard/" target="_blank"> https://five.agency/android-architecture-part-1-every-new-beginning-is-hard/</a></td>
+ </tr>
+
+ <tr>
+    <td>246</td>
+    <td> On clean code ark we group everything related to the UI (including presenters) into the UI module. You can explicitly name it UI but because of all the Android stuff here, we leave it named "app," just as Android Studio named it during the creation of the project.</td>
+    <td><a href=" https://five.agency/android-architecture-part-1-every-new-beginning-is-hard/" target="_blank"> https://five.agency/android-architecture-part-1-every-new-beginning-is-hard/</a></td>
+ </tr>
+
+ <tr>
+    <td>251</td>
+    <td> On clean ark The easiest part, app module (UI module). This module is already created for you by the Android studio when you create a project. Here you can place all the classes related to the Android UI such as presenters, controllers, view models, adapters and views.</td>
+    <td><a href=" https://five.agency/android-architecture-part-1-every-new-beginning-is-hard/" target="_blank"> https://five.agency/android-architecture-part-1-every-new-beginning-is-hard/</a></td>
+ </tr>
+</table>
+
 
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication
 [MVVM example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExample
