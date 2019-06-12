@@ -11,7 +11,6 @@
 
     function orderTheLeftNavigations(){
       var current = location.pathname;
-      console.log(current)
       if (current !== "/"){
         $('#frontpagenav li a').each(function(){
           var $this = $(this);
@@ -29,6 +28,8 @@
           // }
 
         })
+
+
       }
 
 	    $('#navigation .sidenav').html($("#markdown-toc").html());
