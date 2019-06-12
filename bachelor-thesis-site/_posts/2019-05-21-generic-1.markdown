@@ -89,5 +89,31 @@ Check out the [Github page][github-page]{:target="_blank"} to view the complete 
 
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
+This guideline was subtracted from:
+
+<table id="guidelinelinks">
+  <tr>
+    <th>Id</th>
+    <th>Guideline</th>
+    <th>URL</th>
+  </tr>
+  <tr>
+    <td>197</td>
+    <td>Create maps of dependencies. </td>
+    <td><a href="https://fernandocejas.com/2015/07/18/architecting-android-the-evolution/" target="_blank" >https://fernandocejas.com/2015/07/18/architecting-android-the-evolution/</a></td>
+  </tr>
+  <tr>
+    <td>99</td>
+    <td>Use dagger or service locator</td>
+    <td><a href="https://proandroiddev.com/building-modern-apps-using-the-android-architecture-guidelines-3238fff96f14" target="_blank">https://proandroiddev.com/building-modern-apps-using-the-android-architecture-guidelines-3238fff96f14</a></td>
+  </tr>
+  <tr>
+    <td>116</td>
+    <td>Dagger2 is used to avoid detailcomplicated boilerplate code of connecting architecture elements one to another</td>
+    <td><a href="https://hackernoon.com/android-clean-architecture-with-kotlin-rxjava-and-dagger-2-6006be2d0c02" target="_blank">https://hackernoon.com/android-clean-architecture-with-kotlin-rxjava-and-dagger-2-6006be2d0c02</a></td>
+  </tr>
+</table>
+
+
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin
 

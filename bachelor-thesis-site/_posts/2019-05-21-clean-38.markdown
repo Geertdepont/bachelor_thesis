@@ -53,6 +53,6 @@ Check out the [Github page][github-page] to view the complete repository.
 
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
-{% bibliography %}
+
 
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication

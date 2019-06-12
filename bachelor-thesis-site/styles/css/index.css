@@ -3154,6 +3154,29 @@ input[type="button"].btn-block {
   line-height: 2rem;
 }
 
+#guidelinelinks {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#guidelinelinks td, #guidelinelinks th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#guidelinelinks tr:nth-child(even){background-color: #f2f2f2;}
+
+#guidelinelinks tr:hover {background-color: #333333;}
+
+#guidelinelinks th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #444e5e;
+  color: white;
+}
+
 
 
 .input-group {
