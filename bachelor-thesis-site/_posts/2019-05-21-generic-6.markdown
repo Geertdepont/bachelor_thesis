@@ -20,7 +20,7 @@ As however in packaging by feature this is less the case.
 <h3>Example</h3>
 Our [MVVM-example][MVVM-example] somehow needs to reflect that it uses this architecture.
 <figure>
-  <img src="/assets/Rxjava_packages.png" alt="Rxjava packages" width="300">
+  <img src="/assets/Rxjava_packages.png" alt="Rxjava packages" width="50%">
 </figure>
 
 As you can see there are three main packages:
@@ -38,7 +38,7 @@ And the View handles the UI events and maps them to them to the ViewModel.
 Our [MVP][github-page]{:target="_blank"} also somehow needs to reflect it's architecture.
 
 <figure>
-  <img src="/assets/MVP_packages.png" alt="MVP packages" width="300">
+  <img src="/assets/MVP_packages.png" alt="MVP packages" width="60%">
 </figure>
 
 As you can see there are three main packages:

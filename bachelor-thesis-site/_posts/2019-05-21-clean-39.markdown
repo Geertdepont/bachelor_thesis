@@ -41,13 +41,13 @@ If we compare our BossApplication with our MVVM example,
 
 MVP depicted:
 <figure>
-  <img src="/assets/BossApplication_lifecycle.png" alt="Login Injection" width="500">
+  <img src="/assets/BossApplication_lifecycle.png" alt="Login Injection" width="60%">
 </figure>
 
 <br>
 MVVM depicted:
 <figure>
-  <img src="/assets/MVVM_depicted.png" alt="Login Injection" width="500">
+  <img src="/assets/MVVM_depicted.png" alt="Login Injection" width="60%">
 </figure>
 
 Check out the [MVP example][github-page]{:target="_blank"} and the [MVVM example][MVVM example]{:target="_blank"} to view the complete repositories.
