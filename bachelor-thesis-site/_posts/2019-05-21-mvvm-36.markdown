@@ -5,10 +5,7 @@ guideline_id: 36
 short_description: "The data produced by the Models should be reliable and of high quality."
 date:   2019-05-21 01:00:06 +0200
 categories: mvvm
-doc: "Store the data retrieved from the web into Observables.
-       Also check whether the data received from the web, is equal as the specified model or create a new model with the received data. 
-       This results into less unexpected code.
-        Also creating tests checking whether the received data matches the model, allows programmers to see if the model from the web has changed."
+doc: "Store the data retrieved from the web into Observables and check whether the data received from the web, is equal as the specified model."
 ---
 
 <h3>Why?</h3>

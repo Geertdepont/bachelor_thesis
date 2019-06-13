@@ -6,11 +6,7 @@ short_description: "Lifecycle of Presenters"
 date:   2019-05-21 01:00:22 +0200
 categories: mvp
 doc: "By having callbacks related to the Activity lifecycle in Presenters, Presenters
-      become tightly coupled to Activities lifecycle. This can have
-      a negative impact in terms of maintainability. From an architectural perspective, 
-      Presenters should not be responsible for
-      data-related tasks. It is hence advised not to retain Presenters.
-      An alternative solution would be to use a caching mechanism
+      become tightly coupled to Activities lifecycle. Instead use a caching mechanism
       to retain data, keep Presenters stateless, and destroy Presenters
       when their corresponding Views are destroyed."
 

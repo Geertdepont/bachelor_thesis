@@ -5,16 +5,9 @@ guideline_id: 5
 short_description: "Select architectual pattern"
 date:   2019-05-21 01:00:37 +0200
 categories: generic
-doc: "Picking the
-      right architectural pattern (e.g., MVP or MVVM) for the
-      context and business goals of the app is a crucial decision. By
-      adhering to an architectural patter selected a priori, separating
-      responsibilities into components becomes a more straightforward process, and the growth of architectural technical debt is
-      hindered. It is important to note that, when a certain level of
-      adaptability/maintainability is not required, the selection of an
-      ill-suited architectural pattern might lead to over-engineering.
-      Choosing the architectural pattern to adopt is hence a nontrivial decision which should be taken by considering the
-      context of apps, and their business/organizational goals."
+doc: "This makes separating responsibilities into components becomes a more straightforward process.
+However when a certain level of adaptability/maintainability is not required, the selection of an
+      ill-suited architectural pattern might lead to over-engineering."
 
 ---
 <h3>Why?</h3>

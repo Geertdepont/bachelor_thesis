@@ -5,18 +5,8 @@ guideline_id: 39
 short_description: "The outer architectural layer"
 date:   2019-05-21 01:00:03 +0200
 categories: clean
-doc: "In order to ensure
-      a clear separation of concerns among the clean architecture
-      layers of an app, it is paramount that everything related to
-      Android UI is grouped in a module residing in the outer
-      architectural layer. As the other architectural layers of the
-      app should be “frontend agnostic” (see guideline CLEAN-1),
-      different patterns (e.g., MVP or MVVM) can be implemented
-      in this layer. Activities and Fragments should not handle any
-      other logic than the one necessary to render the UI. This allows
-      a clear separation of concern among the architectural layers
-      of an app, enhancing the understandability, modifiable and
-      testability of its components."
+doc: "Activities and Fragments should not handle any
+      other logic than the one necessary to render the UI."
 
 ---
 <h3>Why?</h3>

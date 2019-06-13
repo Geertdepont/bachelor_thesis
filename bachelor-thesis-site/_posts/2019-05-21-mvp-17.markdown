@@ -9,12 +9,7 @@ doc: "To abstract Presenter components
       from the implementation details, Presenters should ideally
       avoid dependencies to the Android framework. This also
       entails not creating a lifecycle in Presenters, as it may hinder
-      their maintainability and evolvability. In order to access app
-      resources and preferences, View and Model components can
-      be used instead, respectively. Additionally, by developing
-      Presenters as only dependent on Java, the testability of
-      Presenters drastically improves, as now non-instrumented
-      unit-test cases can be written for such components."
+      their maintainability and evolvability."
 
 ---
 <h3>Why?</h3>

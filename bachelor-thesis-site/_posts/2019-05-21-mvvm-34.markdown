@@ -6,8 +6,7 @@ short_description: "Keep ViewModels as simple as possible."
 date:   2019-05-21 01:00:08 +0200
 categories: mvvm
 doc: "Delegating responsibilities from the ViewModels to other layers results into smaller and more understandable ViewModels.
-       It also makes testing the whole architecture easier. Since each component can be tested separately.
-        Instead of asserting that a View needs to behave after a certain retrieval from the model, the model now can be tested independently."
+       It also makes testing the whole architecture easier since each component can be tested separately."
 
 ---
 <h3>Why?</h3>

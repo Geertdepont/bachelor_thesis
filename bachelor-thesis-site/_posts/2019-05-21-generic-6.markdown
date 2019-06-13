@@ -6,9 +6,7 @@ short_description: "Organize packages"
 date:   2019-05-21 01:00:36 +0200
 categories: generic
 doc: "By organizing your packages and files  it becomes easier for 
-      programmers to find the code which performs a certain aspect of your application.
-      Whenever a feature has to be changed in layer-organized file system, multiple files in different packages need to be changed. 
-      As however in packaging by feature this is less the case."
+      programmers to find the code which performs a certain aspect of your application."
 
 ---
 <h3>Why?</h3>

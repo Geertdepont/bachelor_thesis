@@ -13,31 +13,64 @@ layout: default
           <div class="panel docs-content">
             <div class="wrapper">
               <div class="home">
-                <h1>Welcome</h1>
-                <p class="big">Here you will find 42 guidelines that are used for creating good android applications.
-                  These guidelines cover: SOLID principles, design patterns, dependency injection tools like Dagger, and many more.
-                </p>
-                <p>
-                These guidelines are formed in this paper:
-                  <a href="https://robertoverdecchia.github.io/papers/ICSA_2019.pdf" target="_blank">https://robertoverdecchia.github.io/papers/ICSA_2019.pdf</a>
-                </p>
+                <div class="row">
+                  <h1>Welcome</h1>
+                  <div class="col-sm-6">
+                    <p class="big">Here you will find 42 guidelines that are used for creating good android applications.
+                      These guidelines cover: SOLID principles, design patterns, dependency injection tools like Dagger, and many more.
+                    </p>
+                    <p>
+                      These guidelines are formed in this <a href="https://robertoverdecchia.github.io/papers/ICSA_2019.pdf" target="_blank"> article</a>.
+                      In this article a mixed-method research is applied that combines: (i) semi-structured interviews with Android practitioners
+                      in the field, and (ii) a systematic analysis of both the grey
+                      (e.g., websites, on-line blogs, etc.) and white literature (i.e.,
+                      academic studies) on the architecture of Android apps.
+                      Finally, a set of 42 guidelines for architecting
+                      Android apps is systematically synthesized from the obtained
+                      practices. The emerging guidelines are organized around 4
+                      themes including the most adopted architectural patterns and
+                      principles when developing Android apps.<a href="#referenceOne">[1]</a>
+                      These themes include: <a href="#MVVM">MVVM</a>, <a href="#MVP">MVP</a>, <a href="#Clean">Clean</a>, <a href="#Generic">Generic</a>.
+                    </p>
+                  </div>
+                  <div class="col-sm-6">
+                    <figure class='book' >
+                      <ul class='hardcover_front'>
+                        <li>
+                          <img src="/assets/Article.png" alt="" width="100%" height="100%">
+                        </li>
 
-                <div style="border: 4px solid #cde;">
-                  <h3>
-                    <i class="icon-file" aria-hidden="true"></i>
-                    Article page</h3>
-                  <a href="https://robertoverdecchia.github.io/papers/ICSA_2019.pdf" target="_blank" >
-                    <figure >
-                      <img src="/assets/Articlepage.png" alt="Article" width="100%">
+                        <li></li>
+                      </ul>
+
+                      <ul class='page'>
+                        <li></li>
+                        <li>
+                          <a class="btn" style="display: inline-block; margin-left:10%; margin-top: 40%;" href="https://robertoverdecchia.github.io/papers/ICSA_2019.pdf" target="_blank">View this Article</a>
+                        </li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+
+                      <!-- Back -->
+
+                      <ul class='hardcover_back'>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      <ul class='book_spine'>
+                        <li></li>
+                        <li></li>
+                      </ul>
                     </figure>
-                  </a>
+                  </div>
                 </div>
-
 
                 <div class="homeitem">
                   <div class="row">
                     <div class="col-sm-6">
-                      <h2>Clean code</h2>
+                      <h2 id="Clean">Clean code</h2>
                       Clean code is when your code is understandable, has no code duplication,
                       is testable and each class should have a certain responsibility.
                       In a Clean architecture, the application is separated in layers.
@@ -56,10 +89,11 @@ layout: default
                 </div>
 
 
+
                 <div class="homeitem">
                   <div class="row">
                     <div class="col-sm-6">
-                      <h2>MVVM</h2>
+                      <h2 id="MVVM">MVVM</h2>
                       <b>The MVVM pattern</b> allows easy design changes and classes become more testable using this architecture.
                       Where <b>Model</b> represents the datasource. This layer is accessed to update/store and retrieve the data.
                       <b>The View-Model</b> exposes methods and variables for the view to use.
@@ -80,8 +114,8 @@ layout: default
                 <div class="homeitem">
                   <div class="row">
                     <div class="col-sm-6">
-                      <h2>Generic</h2>
-                      Using these following guidelines, will not only improve user experience, but will also make your life easier as a programmer.
+                      <h2 id="Generic">Generic Practices</h2>
+                      Using these guidelines, will not only improve user experience, but will also make your life easier as a programmer.
                       Examples are: Dagger (dependency injection tool), using cache to improve user experience, and what to think about starting a new project.
                       Click this button to read these guidelines.
                       <br>
@@ -98,10 +132,10 @@ layout: default
                 </div>
 
 
-                <div class="lasthomeitem">
+                <div class="homeitem">
                   <div class="row">
                     <div class="col-sm-6">
-                      <h2>MVP</h2>
+                      <h2 id="MVP">MVP</h2>
                       <b>The MVP pattern</b> allows to separate the business logic from User Interface. Where <b>model</b> stands for the data-management.
                       <b>The presenter</b> decides what is shown in the view.
                       <b>The view</b> is where the framework is used to interact with the user.
@@ -114,6 +148,18 @@ layout: default
                           <img src="/assets/homemvp.png" alt="Cleaning windows" width="60%">
                         </figure>
                       </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="lasthomeitem">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <h2 id="referenceOne">References</h2>
+                      {% bibliography %}
+                    </div>
+                    <div class="col-sm-6">
+                      <br>
                     </div>
                   </div>
                 </div>

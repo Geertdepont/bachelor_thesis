@@ -5,16 +5,8 @@ guideline_id: 31
 short_description: "ViewModels should not refer to View-specific components."
 date:   2019-05-21 01:00:11 +0200
 categories: mvvm
-doc: "Passing context to ViewModel instances can result in a dangerous practice. In fact by storing the
-      reference to an Activity in a ViewModel, once the Activity gets
-      destroyed (e.g., due to a screen rotation), a memory leak could
-      occur. By quoting a Google Android Developer Advocate:
-      “The consumer of the data should know about the producer,
-      but the producer - the ViewModel - doesn’t know, and doesn’t
-      care, who consumes the data.” In order to adhere to this
-      guideline, the LiveData architectural class provided by the
-      Jetpack library can be used, so that Activities can simply
-      observe the changes of the ViewModel’s data."
+doc: "Storing a reference to an Activity in a ViewModel, can lead to memory leaks, since the activity gets destroyed.
+      occur."
 ---
 
 <h3>Why?</h3>

@@ -6,11 +6,7 @@ short_description: "Designing background tasks"
 date:   2019-05-21 01:00:28 +0200
 categories: generic
 doc: "Each app runs on the main thread. 
-      Performing long computation tasks on the main thread could slow down the app. 
-      And lead to an unpleasant user experience. 
-      So whenever we perform a task like a network request, we perform then as a background task. 
-      It is important to handle your background tasks correctly. 
-      For example we do not want the user to wait forever when a network error occurred."
+      Performing long computation tasks on the main thread will slow down the app."
 
 ---
 <h3>Why?</h3>

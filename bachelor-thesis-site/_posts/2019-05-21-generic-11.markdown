@@ -5,10 +5,7 @@ guideline_id: 11
 short_description: "Coding standards"
 date:   2019-05-21 01:00:31 +0200
 categories: generic
-doc: "Coding standards are guidelines that all developers follow in a project follow to improve collaboration.
-      When non-logical variable or function names are used, it becomes harder for others to understand the code. 
-      Which results in time loss.
-      There also exists coding standard files which can be linked to your AndroidStudio project. "
+doc: "Coding standards are guidelines that all developers follow in a project follow to improve collaboration."
 
 ---
 <h3>Why?</h3>

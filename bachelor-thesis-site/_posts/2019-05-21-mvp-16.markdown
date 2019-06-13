@@ -5,14 +5,8 @@ guideline_id: 16
 short_description: "Provide views with data"
 date:   2019-05-21 01:00:26 +0200
 categories: mvp
-doc: "The view layer of Android apps tends to become
-      bloated with responsibilities, and hence becomes harder to
-      maintain. In order to alleviate such problem, Activities and
-      Fragments can be provided with preprocessed data ready
-      to be displayed. This can be achieved by delegating data processing tasks to one or more dedicated components. 
-      In such manner, Activities and Fragments are relieved from the task
-      of transforming and filtering domain-specific data, potentially
-      improving the testability and usability of the app."
+doc: "Activities and Fragments can be provided with preprocessed data ready
+      to be displayed. This can be achieved by delegating data processing tasks to one or more dedicated components."
 
 ---
 <h3>Why?</h3>

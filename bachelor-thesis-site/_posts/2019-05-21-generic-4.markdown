@@ -8,13 +8,7 @@ date:   2019-05-21 01:00:38 +0200
 categories: generic
 doc: "Architectural components of an app should
       have a single, well defined, responsibility. As a component
-      grows bigger, it should be split up. By following the single
-      responsibility principle, the app architecture naturally supports
-      the structure of developer teams and development stages.
-      Additionally, monoliths are detected in the early stages and
-      modules become testable in isolation. Finally, if the app is built
-      using Gradle, modularization can improve the performance of
-      the build process and ease the development of Instant apps."
+      grows bigger, it should be split up."
 ---
 <h3>Why?</h3>
 

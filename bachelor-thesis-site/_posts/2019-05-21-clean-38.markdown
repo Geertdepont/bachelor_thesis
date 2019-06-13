@@ -5,14 +5,8 @@ guideline_id: 38
 short_description: "Decoupled business logic"
 date:   2019-05-21 01:00:04 +0200
 categories: clean
-doc: "By adhering to
-      the clean architecture principles, the innermost layers of an
-      app (i.e., where all the business logic of the app resides)
-      should be “frontend agnostic”. This means that this layers are
-      completely decoupled from the Android framework, and could
-      be ideally implemented as pure Java packages. Additionally,
-      as this layers represent the core of Android apps, they should
-      be developed before all other layers. Changes to the innermost
+doc: "Layers should completely be decoupled from the Android framework, and could
+      be ideally implemented as pure Java packages. Changes to the innermost
       layers should be driven exclusively by business decisions."
 ---
 

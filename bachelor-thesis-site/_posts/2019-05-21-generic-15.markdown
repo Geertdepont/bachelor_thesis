@@ -6,8 +6,7 @@ short_description: "Permissions"
 date:   2019-05-21 01:00:27 +0200
 categories: generic
 doc: "Android apps must require permissions before accessing specific data or certain system activities, like accessing the Internet.
-       All these permission need to be specified in the  AndroidManifest.xml.
-        And the certain system feature can then only be used if the user allows it."
+       All these permission need to be specified in the  AndroidManifest.xml."
 
 ---
 <h3>Why?</h3>

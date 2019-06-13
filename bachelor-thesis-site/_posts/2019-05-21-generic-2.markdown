@@ -5,21 +5,9 @@ short_description: "Design independent components"
 guideline_id: 2
 date:   2019-05-21 01:00:40 +0200
 categories: generic
-doc: " As also remarked by two
-      interviewees, a recurrent problem arises when common functionalities 
-      are not provided in base classes. This often leads to
-      duplicated code, reducing the maintainability and testability of
-      the app. Ideally, components should be independent from each
-      other and their business logic should be clear and explicitly
-      separated. By quoting one of the data points “your architecture
-      should scream the purpose of the app”. Decoupled components
-      make it easier to focus on app functionalities and their issues,
-      without dealing with bloatware. Additionally, this enables a
-      higher testability of the core logic of the app by making components 
-      unit-testable (ideally without requiring an emulator).
-      Finally, by decoupling the business logic from frameworks,
-      more emphasis is put on the business logic, making an app
-      more testable, maintainable, and of low technical debt."
+doc: "When common functionalities are not provided in base classes duplicated code is often produced.
+      Decoupled components make it easier to focus on app functionalities and enables higher testability of the core logic of the app by making components 
+      unit-testable."
 
 ---
 <h3>Why?</h3>

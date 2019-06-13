@@ -5,15 +5,7 @@ guideline_id: 30
 short_description: "The app should possess a single source of truth of data."
 date:   2019-05-21 01:00:13 +0200
 categories: mvvm
-doc: "In the context of mobile applications,
-      consistency of data can become an issue. While caching
-      mechanisms allow to save energy and bandwidth, multiple data
-      sources can create inconsistencies and even conflicting Views.
-      In order to avoid such issues, it is recommended to designate
-      a dedicated component as single source of truth for the
-      entire app. Specifically, in the context of MVVM, the Room
-      persistence library is an official architectural component of
-      Android which is specifically tailored for such task."
+doc: "Using one designated data source avoid data inconsistencies and conflicting Views."
 ---
 <h3>Why?</h3>
 In the context of mobile applications,

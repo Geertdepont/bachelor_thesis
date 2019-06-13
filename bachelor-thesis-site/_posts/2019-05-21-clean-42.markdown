@@ -5,18 +5,8 @@ guideline_id: 42
 short_description: "The UI thread "
 date:   2019-05-21 01:00:00 +0200
 categories: clean
-doc: "In accordance to guidelines CLEAN-1
-      and CLEAN-2, presenters residing in the outer layers of
-      apps modeled through clean architecture principles should
-      be kept lightweight. In fact, Presenters should be composed
-      with interactor components, i.e., use cases residing in the
-      business logic layers, which are responsible for executing tasks
-      outside the main UI thread of the app. Once the task are
-      finished, the Views are updated through a callback with the
-      processed data. Besides callback-based communication among
-      components, other techniques used in order to keep the UI
-      thread lightweight rely on the inversion of control principle
-      and intent-based communication."
+doc: "Presenters should be composed with interactor components which are responsible for executing tasks
+      outside the main UI thread of the app. "
 
 ---
 <h3>Why?</h3>
