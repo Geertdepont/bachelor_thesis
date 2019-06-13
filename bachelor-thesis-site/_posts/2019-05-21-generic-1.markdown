@@ -196,12 +196,7 @@ This guideline was extracted from:
         <td>Benefits we get out of this RxJava: Decoupling between Observables and Subscribers: makes maintainability and testing easier.</td>
         <td><a href="https://fernandocejas.com/2015/07/18/architecting-android-the-evolution/" target="_blank">https://fernandocejas.com/2015/07/18/architecting-android-the-evolution/</a></td>
     </tr>
-        
-    
-    
-    
-    
-    
+      
 </table>
 
 

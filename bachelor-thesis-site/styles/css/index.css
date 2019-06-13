@@ -3110,34 +3110,6 @@ input[type="button"].btn-block {
   width: 400px;
 }
 
-.clean {
-  background-image: url("../../assets/SittingMonk.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 600px 400px;
-}
-
-.generic {
-  background-image: url("../../assets/prayingmonk.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 600px;
-}
-
-.mvp {
-  background-image: url("../../assets/mvpmonk.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 600px;
-}
-
-.mvvm {
-  background-image: url("../../assets/mvvmMonk.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 600px;
-}
-
 .homeitem {
   padding: 5px;
   width: 100%;

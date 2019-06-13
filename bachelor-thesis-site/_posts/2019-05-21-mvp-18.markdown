@@ -5,11 +5,9 @@ guideline_id: 18
 short_description: "Data provided by Models via app-scoped dedicated components."
 date:   2019-05-21 01:00:24 +0200
 categories: mvp
-doc: "Use a datamanager component which is responsible for data related tasks 
-such as fetching data from the network, caching results or returning already cached data. By
-      scoping such component at the app level and not at the one of
-      single Activities, issues relative to restoring View states are solved
-      through an architecturally maintainable solution."
+doc: "Use a datamanager component which performs data related tasks 
+such as fetching data from the network, caching results or returning already cached data.
+This solves issues relative to restoring View states."
       
       
 ---
