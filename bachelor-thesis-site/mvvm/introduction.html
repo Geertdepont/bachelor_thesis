@@ -15,14 +15,20 @@ In MVVM the ViewModel exposes it's methods and variables for the View to use it.
 In MVP the Presenter has a one-to-one relationship with the View, and decides what the view should do.
 
 <h3>Example</h3>
-We created a simple [MVVM example][architecture-example]{:target="_blank"}. As you can see, the activities perform the requests:
+We created a simple <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExamples" target="_blank">MVVM example </a>. As you can see, the activities perform the requests:
 <b>getAllNotes()</b> and <b>insert(note)</b>. The ViewModels, perform the requests to the Model (NoteRepository).
+The ViewModels have the notes ready for the Views to display. This data is in a LiveData< List < Note > >.
+Whenever a new Note has been added, this is directly observed in the MainActivity.
 
 <figure>
   <img src="/assets/MVVM_event.png" alt="MVVM depicted" width="600">
 </figure>
 
+<h3>Important</h3>
+Always get values directly from the ViewModel, do not compute these values in the Activities, since these results can get lost.
+<br>
+<br>
 Checkout the <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExamples" target="_blank">github page</a> to view the full repository.
-
+<br>
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExamples" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 

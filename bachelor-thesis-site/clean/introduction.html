@@ -1,8 +1,35 @@
 ---
 layout: frontpage
 ---
-<h2>What is a clean architecture?</h2>
+<h3>What is a clean architecture?</h3>
 
 <b>In a Clean architecture,</b> the application is separated in layers.
 Where the inner layers do not know anything about the outer layers
 This makes your code: testable, framework independent, UI independent, independent of data management.
+
+This can be visualized as:
+
+<figure>
+  <img src="/assets/clean-architecture.png" alt="Clean architecture diagram" width="60%">
+</figure>
+
+<h3>Example</h3>
+We created a simple <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin" target="_blank">MVP login Application</a>.
+
+<figure>
+  <img src="/assets/MVPLogin_depicted.png" alt="Login Injection" width="90%" />
+</figure>
+
+The MVP architecture is an example of a clean architecture:
+<ul>
+  <li><b>The Inner-layers</b> contain the interactors, the models, repositories etc,</li>
+  <li><b>The Middle layers</b> contain the Presenters</li>
+  <li><b>and the Outer layer</b> contains the User Interface</li>
+</ul>
+
+<br>
+In our example the Activities contains the User Interface.
+Which have a connection with the Presenters, which in their case talk to the interactors.
+
+
+<p><a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a></p>
