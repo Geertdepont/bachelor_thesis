@@ -5,6 +5,7 @@ short_description: "Views should always know about changes after ViewModels"
 guideline_id: 32
 short_description: "Views should always know about changes after ViewModels"
 date:   2019-05-21 01:00:10 +0200
+icon: "icon-stethoscope"
 categories: mvvm
 doc: "All the logic in the Views should be moved to the ViewModels and the ViewModels should pre-process the data to be ready
       to be used by Views"

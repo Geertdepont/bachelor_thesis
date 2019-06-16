@@ -6,6 +6,7 @@ guideline_id: 13
 short_description: "Lifecycle of android components"
 date:   2019-05-21 01:00:29 +0200
 categories: generic
+icon: "icon-retweet"
 doc: "Since activities are constantly being destroyed, referencing them could lead to memory leaks. 
       Using lifecycle aware components reduces much of this complexity. "
 

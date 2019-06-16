@@ -4,6 +4,7 @@ title: "Use exclusively interfaces to let app modules communicate. This protects
 guideline_id: 9
 short_description: "Use interfaces"
 date:   2019-05-21 01:00:33 +0200
+icon: "icon-copy"
 categories: generic
 doc: "Using interfaces for linking modules, is a great way for module communication. 
       This way modules can’t access methods that are not declared in the interface and helps define a clear overview of what each module does. "

@@ -5,6 +5,7 @@ guideline_id: 30
 short_description: "Models should be evolvable/testable"
 date:   2019-05-21 01:00:12 +0200
 categories: mvvm
+icon: "icon-beaker"
 doc: "ViewModels should completely decouple Views from Model
       classes. In such way  Models and Views can evolve independently and be
       tested with ease."

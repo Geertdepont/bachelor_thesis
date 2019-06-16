@@ -5,6 +5,7 @@ short_description: "Adopt one Model for each feature of the app."
 guideline_id: 33
 date:   2019-05-21 01:00:09 +0200
 categories: mvvm
+icon: "icon-resize-horizontal"
 doc: "Each ViewModel references to it’s own repository instead of referencing the database directly.
        This results in cleaner code, and repetitions of the similar code."
 ---

@@ -5,6 +5,7 @@ guideline_id: 31
 short_description: "ViewModels should not refer to View-specific components."
 date:   2019-05-21 01:00:11 +0200
 categories: mvvm
+icon: "icon-eye-close"
 doc: "Storing a reference to an Activity in a ViewModel, can lead to memory leaks, since the activity gets destroyed.
       occur."
 ---

@@ -5,6 +5,7 @@ guideline_id: 38
 short_description: "Decoupled business logic"
 date:   2019-05-21 01:00:04 +0200
 categories: clean
+icon: "icon-anchor"
 doc: "Layers should completely be decoupled from the Android framework, and could
       be ideally implemented as pure Java packages. Changes to the innermost
       layers should be driven exclusively by business decisions."

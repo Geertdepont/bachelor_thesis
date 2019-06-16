@@ -5,6 +5,7 @@ guideline_id: 18
 short_description: "Data provided by Models via app-scoped dedicated components."
 date:   2019-05-21 01:00:24 +0200
 categories: mvp
+icon: "icon-sitemap"
 doc: "Use a datamanager component which performs data related tasks 
 such as fetching data from the network, caching results or returning already cached data.
 This solves issues relative to restoring View states."

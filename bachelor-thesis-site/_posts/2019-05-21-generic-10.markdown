@@ -5,6 +5,7 @@ title: "Avoid nested callbacks, as they could lead to a “callback hell”. App
 guideline_id: 10
 short_description: "Avoid nested callbacks"
 date:   2019-05-21 01:00:32 +0200
+icon: "icon-phone"
 categories: generic
 doc: "Using too many callbacks leads to unreadable code. 
       These callback hells often arise when multiple server requests need to be performed for one activity. "

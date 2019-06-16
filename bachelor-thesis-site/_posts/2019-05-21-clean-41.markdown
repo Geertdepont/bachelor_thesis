@@ -5,6 +5,7 @@ guideline_id: 41
 short_description: "Each architectural layer should possess its own data model"
 date:   2019-05-21 01:00:01 +0200
 categories: clean
+icon: "icon-resize-horizontal"
 doc: "This way the outer layers of apps can be implemented without any explicit knowledge of the implementation details of the inner layers."
 ---
 <h3>Why?</h3>

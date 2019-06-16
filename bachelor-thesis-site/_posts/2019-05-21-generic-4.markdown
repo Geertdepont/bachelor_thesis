@@ -6,6 +6,7 @@ short_description: "Separation of concerns in your architecture"
 guideline_id: 4
 date:   2019-05-21 01:00:38 +0200
 categories: generic
+icon: "icon-code-fork"
 doc: "Architectural components of an app should
       have a single, well defined, responsibility. As a component
       grows bigger, it should be split up."

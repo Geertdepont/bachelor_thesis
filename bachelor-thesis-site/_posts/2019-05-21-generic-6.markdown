@@ -5,6 +5,7 @@ guideline_id: 6
 short_description: "Organize packages"
 date:   2019-05-21 01:00:36 +0200
 categories: generic
+icon: "icon-folder-open"
 doc: "By organizing your packages and files  it becomes easier for 
       programmers to find the code which performs a certain aspect of your application."
 

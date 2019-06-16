@@ -5,6 +5,7 @@ guideline_id: 20
 short_description: "Lifecycle of Presenters"
 date:   2019-05-21 01:00:22 +0200
 categories: mvp
+icon: "icon-retweet"
 doc: "By having callbacks related to the Activity lifecycle in Presenters, Presenters
       become tightly coupled to Activities lifecycle. Instead use a caching mechanism
       to retain data, keep Presenters stateless, and destroy Presenters

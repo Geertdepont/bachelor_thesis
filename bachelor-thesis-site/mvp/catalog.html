@@ -17,7 +17,7 @@ layout: frontpage
       {% for post in site.categories[category_name] limit:3 offset:offset %}
       <a href="{{ post.url | prepend: site.baseurl }}">
         <div class="col-sm-4">
-          <div style="margin-bottom: 21px;background-color: #fff; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+          <div id="catalogbox" style="margin-bottom: 21px;background-color: #fff; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
             <div style="background-color: #d4dde1;
                               border: none;
                               padding-top: 1px;
@@ -30,8 +30,9 @@ layout: frontpage
               </h3>
             </div>
             <div style="padding: 15px; color: #444e5e;">
-              <p>
-                {{ post.doc }}
+              <p class="iconsize">
+                <i class="{{ post.icon }}"></i>
+                <!--{{ post.doc }}-->
               </p>
             </div>
           </div>

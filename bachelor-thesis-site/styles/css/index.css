@@ -3126,6 +3126,17 @@ input[type="button"].btn-block {
   line-height: 2rem;
 }
 
+.iconsize {
+  font-size: 4rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+#catalogbox:hover{
+  border: solid;
+  border-color: blue;
+}
+
 #guidelinelinks {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;

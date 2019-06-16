@@ -5,6 +5,7 @@ short_description: "Design independent components"
 guideline_id: 2
 date:   2019-05-21 01:00:40 +0200
 categories: generic
+icon: "icon-circle-blank"
 doc: "When common functionalities are not provided in base classes duplicated code is often produced.
       Decoupled components make it easier to focus on app functionalities and enables higher testability of the core logic of the app by making components 
       unit-testable."

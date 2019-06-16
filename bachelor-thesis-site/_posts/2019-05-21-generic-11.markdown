@@ -4,6 +4,7 @@ title: "Employ well-defined and accepted coding standards, as they improve both 
 guideline_id: 11
 short_description: "Coding standards"
 date:   2019-05-21 01:00:31 +0200
+icon: "icon-code"
 categories: generic
 doc: "Coding standards are guidelines that all developers follow in a project follow to improve collaboration."
 

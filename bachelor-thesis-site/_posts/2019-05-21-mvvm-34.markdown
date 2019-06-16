@@ -5,6 +5,7 @@ guideline_id: 34
 short_description: "Keep ViewModels as simple as possible."
 date:   2019-05-21 01:00:08 +0200
 categories: mvvm
+icon: "icon-info"
 doc: "Delegating responsibilities from the ViewModels to other layers results into smaller and more understandable ViewModels.
        It also makes testing the whole architecture easier since each component can be tested separately."
 

@@ -5,6 +5,7 @@ short_description: "Decouple components"
 guideline_id: 1
 date:   2019-05-21 01:00:41 +0200
 categories: generic
+icon: "icon-puzzle-piece"
 doc: "Utilizing a dependency injection framework can drastically simplify the management of dependencies between Android architectural components. 
       This supports a clean decoupling of architectural components and avoids unnecessary boilerplate for connecting them."
 

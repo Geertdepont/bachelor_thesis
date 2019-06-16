@@ -4,6 +4,7 @@ title: "Locally cache data for supporting offline-first experience."
 guideline_id: 8
 short_description: "Cache data"
 date:   2019-05-21 01:00:34 +0200
+icon: "icon-save"
 categories: generic
 doc: "Using a cache to store data, enhances the user’s experience. Since Activities are destroyed 
       constantly, retrieving data from the server would be a waste of mobile data and a bad user experience."

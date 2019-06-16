@@ -5,6 +5,7 @@ guideline_id: 19
 short_description: "Clearly define contracts between Views and Presenters."
 date:   2019-05-21 01:00:23 +0200
 categories: mvp
+icon: "icon-file-text"
 doc: "Writing a contract documenting the communication between the View and the
       Presenter makes the source code of apps become more understandable, as the relation between
       the View and the Presenter is explicitly documented."

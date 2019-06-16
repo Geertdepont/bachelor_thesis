@@ -6,6 +6,7 @@ guideline_id: 7
 short_description: "Take advantage of libraries"
 date:   2019-05-21 01:00:35 +0200
 categories: generic
+icon: "icon-book"
 doc: "Taking full advantage of libraries does not only save time, but could also be an improvement of 
       your own implementation. Since multiple users could have been working on this implementation and many hands make light work."
 

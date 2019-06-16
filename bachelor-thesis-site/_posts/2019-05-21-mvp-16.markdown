@@ -5,6 +5,7 @@ guideline_id: 16
 short_description: "Provide views with data"
 date:   2019-05-21 01:00:26 +0200
 categories: mvp
+icon: "icon-shopping-cart"
 doc: "Activities and Fragments can be provided with preprocessed data ready
       to be displayed. This can be achieved by delegating data processing tasks to one or more dedicated components."
 

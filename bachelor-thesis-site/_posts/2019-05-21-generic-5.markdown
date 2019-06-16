@@ -5,6 +5,7 @@ guideline_id: 5
 short_description: "Select architectual pattern"
 date:   2019-05-21 01:00:37 +0200
 categories: generic
+icon: "icon-search"
 doc: "This makes separating responsibilities into components becomes a more straightforward process.
 However when a certain level of adaptability/maintainability is not required, the selection of an
       ill-suited architectural pattern might lead to over-engineering."

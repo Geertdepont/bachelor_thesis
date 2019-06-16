@@ -5,6 +5,7 @@ guideline_id: 21
 short_description: "Avoid too many responsibilities in the Presenters"
 date:   2019-05-21 01:00:21 +0200
 categories: mvp
+icon: "icon-cogs"
 doc: "When delegating the responsibilities from the View to 
       the Presenter a common pitfall is that the Presenter has to perform too many activities. 
       Don’t let the Presenter have a direct connection with the database. 

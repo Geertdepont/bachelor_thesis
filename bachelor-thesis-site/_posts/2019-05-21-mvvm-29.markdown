@@ -5,6 +5,7 @@ guideline_id: 30
 short_description: "The app should possess a single source of truth of data."
 date:   2019-05-21 01:00:13 +0200
 categories: mvvm
+icon: "icon-sitemap"
 doc: "Using one designated data source avoid data inconsistencies and conflicting Views."
 ---
 <h3>Why?</h3>

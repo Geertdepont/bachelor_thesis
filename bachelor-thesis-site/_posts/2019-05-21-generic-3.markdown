@@ -5,6 +5,7 @@ short_description: "Counter the tendency of Activities to grow too big"
 guideline_id: 3
 date:   2019-05-21 01:00:39 +0200
 categories: generic
+icon: "icon-stackexchange"
 doc: "Android Activities should ideally contain exclusively logic handling the
       user interface (UI) and operating system interactions. Nevertheless, a common architectural issue consists of delegating too
       many functionalities and responsibilities to a single Activity, leading them to become god-classes."

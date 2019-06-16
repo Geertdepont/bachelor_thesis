@@ -5,6 +5,7 @@ guideline_id: 14
 short_description: "Designing background tasks"
 date:   2019-05-21 01:00:28 +0200
 categories: generic
+icon: "icon-picture"
 doc: "Each app runs on the main thread. 
       Performing long computation tasks on the main thread will slow down the app."
 

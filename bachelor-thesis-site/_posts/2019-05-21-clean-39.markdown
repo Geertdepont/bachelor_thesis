@@ -5,6 +5,7 @@ guideline_id: 39
 short_description: "The outer architectural layer"
 date:   2019-05-21 01:00:03 +0200
 categories: clean
+icon: "icon-circle-blank"
 doc: "Activities and Fragments should not handle any
       other logic than the one necessary to render the UI."
 
