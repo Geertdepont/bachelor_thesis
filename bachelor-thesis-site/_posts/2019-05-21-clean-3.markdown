@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The framework and devices layer should include the entirety of the app components which depend on Android."
-guideline_id: 40
+guideline_id: 3
 short_description: "Framework and devices layer"
 date:   2019-05-21 01:00:02 +0200
 categories: clean

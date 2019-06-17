@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Networking or data access functionalities should be performed exclusively by Models"
-guideline_id: 37
+guideline_id: 10
 short_description: "Networking or data access functionalities should be performed by Models."
 date:   2019-05-21 01:00:05 +0200
 categories: mvvm

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Avoid to delegate too many responsibilities to Presenters, as they have the tendency to become bloat classes."
-guideline_id: 21
+guideline_id: 6
 short_description: "Avoid too many responsibilities in the Presenters"
 date:   2019-05-21 01:00:21 +0200
 categories: mvp

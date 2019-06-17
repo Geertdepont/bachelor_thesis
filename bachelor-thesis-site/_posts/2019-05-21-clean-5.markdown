@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Keep the UI thread as lightweight and isolated as possible."
-guideline_id: 42
+guideline_id: 5
 short_description: "The UI thread "
 date:   2019-05-21 01:00:00 +0200
 categories: clean

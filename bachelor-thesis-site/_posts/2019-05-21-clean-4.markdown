@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Each architectural layer should possess its own data model"
-guideline_id: 41
+guideline_id: 4
 short_description: "Each architectural layer should possess its own data model"
 date:   2019-05-21 01:00:01 +0200
 categories: clean

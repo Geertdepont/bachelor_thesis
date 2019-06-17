@@ -2,7 +2,7 @@
 layout: post
 title:  "Views should always know about changes after ViewModels, no matter how trivial an operation may be."
 short_description: "Views should always know about changes after ViewModels"
-guideline_id: 32
+guideline_id: 5
 short_description: "Views should always know about changes after ViewModels"
 date:   2019-05-21 01:00:10 +0200
 icon: "icon-stethoscope"

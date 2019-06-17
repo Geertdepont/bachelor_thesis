@@ -1,7 +1,7 @@
 ---
 layout: post
 title: " If necessary, retain fragments for avoiding memory leaks due to configuration changes in the activities."
-guideline_id: 27
+guideline_id: 12
 short_description: "Retain fragments for avoiding memory leaks"
 date:   2019-05-21 01:00:15 +0200
 categories: mvp

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Presenters should be Android- and framework-independent."
-guideline_id: 17
+guideline_id: 2
 short_description: "Presenters should be Android- and framework-independent."
 date:   2019-05-21 01:00:25 +0200
 categories: mvp

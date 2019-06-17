@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The state of the app should be defined in the Models only, whereas Views and ViewModels should be stateless"
-guideline_id: 35
+guideline_id: 8
 short_description: "The state of the app should be defined in the Models only."
 date:   2019-05-21 01:00:07 +0200
 categories: mvvm

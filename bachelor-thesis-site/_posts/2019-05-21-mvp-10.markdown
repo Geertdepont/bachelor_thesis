@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Inject dependencies to Presenters into the Views when instantiating the Presenters, as this reduces coupling issues and null checks."
-guideline_id: 25
+guideline_id: 10
 short_description: "Inject dependencies to Presenters into the Views"
 date:   2019-05-21 01:00:17 +0200
 categories: mvp

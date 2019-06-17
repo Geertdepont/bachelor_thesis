@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Provide Views with data which is ready to be displayed."
-guideline_id: 16
+guideline_id: 1
 short_description: "Provide views with data"
 date:   2019-05-21 01:00:26 +0200
 categories: mvp

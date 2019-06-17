@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The lifecycle of Presenters should follow the lifecycle of the Views, but not by replicating the complexity of the lifecycles of Android components."
-guideline_id: 20
+guideline_id: 5
 short_description: "Lifecycle of Presenters"
 date:   2019-05-21 01:00:22 +0200
 categories: mvp

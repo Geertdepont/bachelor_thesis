@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Make Presenters dependent on Views, and not Activities."
-guideline_id: 22
+guideline_id: 7
 short_description: "Make Presenters dependent on Views"
 date:   2019-05-21 01:00:20 +0200
 categories: mvp

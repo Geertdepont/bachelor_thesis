@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Models, Views, and ViewModels should exclusively expose their state instead of state and data separately."
-guideline_id: 29
+guideline_id: 1
 short_description: "Models, Views, and ViewModels should exclusively expose their state"
 date:   2019-05-21 01:00:14 +0200
 categories: mvvm

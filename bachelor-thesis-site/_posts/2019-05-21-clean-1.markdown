@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Business logic should be completely decoupled from the Android framework."
-guideline_id: 38
+guideline_id: 1
 short_description: "Decoupled business logic"
 date:   2019-05-21 01:00:04 +0200
 categories: clean

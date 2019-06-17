@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  " The outer architectural layer should contain the entirety of the app’s UI components."
-guideline_id: 39
+guideline_id: 2
 short_description: "The outer architectural layer"
 date:   2019-05-21 01:00:03 +0200
 categories: clean

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Access (and cache) the data provided by Models via app-scoped dedicated components."
-guideline_id: 18
+guideline_id: 3
 short_description: "Data provided by Models via app-scoped dedicated components."
 date:   2019-05-21 01:00:24 +0200
 categories: mvp

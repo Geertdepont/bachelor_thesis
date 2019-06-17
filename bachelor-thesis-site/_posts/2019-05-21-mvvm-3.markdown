@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Models should be evolvable/testable independently from the rest of the app."
-guideline_id: 30
+guideline_id: 3
 short_description: "Models should be evolvable/testable"
 date:   2019-05-21 01:00:12 +0200
 categories: mvvm

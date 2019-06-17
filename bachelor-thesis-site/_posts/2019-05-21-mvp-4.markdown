@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Clearly define contracts between Views and Presenters."
-guideline_id: 19
+guideline_id: 4
 short_description: "Clearly define contracts between Views and Presenters."
 date:   2019-05-21 01:00:23 +0200
 categories: mvp

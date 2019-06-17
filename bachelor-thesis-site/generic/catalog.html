@@ -17,14 +17,14 @@ layout: frontpage
       {% for post in site.categories[category_name] limit:3 offset:offset %}
       <a href="{{ post.url | prepend: site.baseurl }}">
         <div class="col-sm-4">
-          <div id="catalogbox" style="margin-bottom: 21px;background-color: #fff; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-            <div style="background-color: #d4dde1;
-                              border: none;
-                              padding-top: 1px;
-                              border-bottom: 1px solid transparent;
-                              border-top-right-radius: 3px;
-                              border-top-left-radius: 3px;
-                              color: #444e5e;">
+          <div id="catalogbox" style="height: 195px; margin-bottom: 21px;background-color: #fff; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <div style="
+                    height: 112px;
+                    background-color: #d4dde1;
+                    border: none;
+                    padding-top: 1px;
+                    border-bottom: 1px solid transparent;
+                    color: #444e5e;">
               <h3 style="font-size: 15px; text-transform: 1px;text-align: center;">
                 {{ post.short_description}}
               </h3>

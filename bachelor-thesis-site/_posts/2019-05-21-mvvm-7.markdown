@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Keep ViewModels as simple as possible. When needed, transfer responsibility to other layers."
-guideline_id: 34
+guideline_id: 7
 short_description: "Keep ViewModels as simple as possible."
 date:   2019-05-21 01:00:08 +0200
 categories: mvvm

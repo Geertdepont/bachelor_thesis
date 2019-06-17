@@ -3132,7 +3132,13 @@ input[type="button"].btn-block {
   text-align: center;
 }
 
+#catalogbox{
+  border: solid;
+  border-color: lightgray;
+}
+
 #catalogbox:hover{
+  padding: 0px;
   border: solid;
   border-color: blue;
 }
