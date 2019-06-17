@@ -3138,7 +3138,6 @@ input[type="button"].btn-block {
 }
 
 #catalogbox:hover{
-  padding: 0px;
   border: solid;
   border-color: blue;
 }
