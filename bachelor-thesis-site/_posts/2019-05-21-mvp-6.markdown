@@ -11,7 +11,7 @@ doc: "When delegating the responsibilities from the View to
       Don’t let the Presenter have a direct connection with the database. 
       Use are Repository to return the data. Keep presenters as simple as possible."
 ---
-<h3>Why?</h3>
+<h3>Description</h3>
 When delegating the responsibilities from the View to 
 the Presenter a common pitfall is that the Presenter has to perform too many activities. 
 Don’t let the Presenter have a direct connection with the database. 

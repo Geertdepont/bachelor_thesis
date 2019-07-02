@@ -11,7 +11,7 @@ doc: "Layers should completely be decoupled from the Android framework, and coul
       layers should be driven exclusively by business decisions."
 ---
 
-<h3>Why?</h3>
+<h3>Description</h3>
 By adhering to
 the clean architecture principles, the innermost layers of an
 app (i.e., where all the business logic of the app resides)

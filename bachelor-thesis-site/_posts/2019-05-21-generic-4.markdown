@@ -11,7 +11,7 @@ doc: "Architectural components of an app should
       have a single, well defined, responsibility. As a component
       grows bigger, it should be split up."
 ---
-<h3>Why?</h3>
+<h3>Description</h3>
 
 Architectural components of an app should
 have a single, well defined, responsibility. As a component

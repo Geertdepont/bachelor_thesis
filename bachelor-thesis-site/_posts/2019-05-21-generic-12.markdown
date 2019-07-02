@@ -10,7 +10,7 @@ doc: "Using one single source of data, allows for each component to only depend 
 This allows for changes in the implementation of a component to go unnoticed by the other components. "
 
 ---
-<h3>Why?</h3>
+<h3>Description</h3>
 Using one single source of data, allows for each component to only depend on the one below it. 
 If we want to add a local database to improve the user’s experience, the component above does not need to know a local database has been added.
  Because the data supplied to the above layer remains the same. If however a repository was not used each component would have to maintain its own local database. 

@@ -10,7 +10,7 @@ doc: "By organizing your packages and files  it becomes easier for
       programmers to find the code which performs a certain aspect of your application."
 
 ---
-<h3>Why?</h3>
+<h3>Description</h3>
 By organizing your packages and files  it becomes easier for 
 programmers to find the code which performs a certain aspect of your application.
 Whenever a feature has to be changed in layer-organized file system, multiple files in different packages need to be changed. 

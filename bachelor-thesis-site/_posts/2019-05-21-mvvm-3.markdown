@@ -11,7 +11,7 @@ doc: "ViewModels should completely decouple Views from Model
       tested with ease."
 
 ---
-<h3>Why?</h3>
+<h3>Description</h3>
 Well-designed ViewModels should completely decouple Views from Model
 classes. In such way, by strictly adhering to the MVVM
 pattern, Models and Views can evolve independently and be

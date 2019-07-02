@@ -11,7 +11,7 @@ doc: "All the logic in the Views should be moved to the ViewModels and the ViewM
       to be used by Views"
 
 ---
-<h3>Why?</h3>
+<h3>Description</h3>
 Adhering to this guideline implies that all the logic
 in the Views should be moved to the ViewModels. While the
 purpose of ViewModels is to pre-process data to be ready

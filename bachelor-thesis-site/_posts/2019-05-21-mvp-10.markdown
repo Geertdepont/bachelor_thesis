@@ -11,7 +11,7 @@ doc: "Injecting presenters using Dagger reduces null checks and setPresenter() m
        Which ultimately results into clearer code."
 
 ---
-<h3>Why?</h3>
+<h3>Description</h3>
 Injecting presenters using Dagger reduces null checks and setPresenter() methods. 
 Whenever an activity is used, Dagger couples the view with the Presenter.
  Which ultimately results into clearer code.

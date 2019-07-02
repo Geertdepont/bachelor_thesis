@@ -12,7 +12,7 @@ doc: "Views contain attributes which can be visible and non-visible.
       Presenter to check this and reconfigure this Activity."
 
 ---
-<h3>Why?</h3>
+<h3>Description</h3>
 Views contain attributes which can be visible and non-visible. 
 It is the Presenter’s task to change the state of the View. 
 However, whenever an Activity is killed, it is not the task of the 

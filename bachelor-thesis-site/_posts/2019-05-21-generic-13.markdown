@@ -11,7 +11,7 @@ doc: "Since activities are constantly being destroyed, referencing them could le
       Using lifecycle aware components reduces much of this complexity. "
 
 ---
-<h3>Why?</h3>
+<h3>Description</h3>
 Each android component has a lifecycle. Without taking them in consideration, your app might crash, or unexpected activities might occur. 
 Also since activities are constantly being destroyed, referencing them could lead to memory leaks. 
 Using lifecycle aware components reduces much of this complexity. 

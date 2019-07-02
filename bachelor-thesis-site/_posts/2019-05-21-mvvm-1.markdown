@@ -10,7 +10,7 @@ doc: "To ensure that Views display up-to-date content, it is recommended that Vi
       states rather than just events."
 ---
 
-<h3>Why?</h3>
+<h3>Description</h3>
 For example, to ensure that Views display upto-date content, it is recommended that ViewModels expose
 states rather than just events. This can be achieved by bundling
 together the data that needs to be displayed. In such way,

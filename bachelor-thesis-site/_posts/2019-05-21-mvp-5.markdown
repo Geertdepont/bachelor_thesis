@@ -12,7 +12,7 @@ doc: "By having callbacks related to the Activity lifecycle in Presenters, Prese
       when their corresponding Views are destroyed."
 
 ---
-<h3>Why?</h3>
+<h3>Description</h3>
 By having callbacks related to the Activity lifecycle in Presenters, Presenters
 become tightly coupled to Activities lifecycle. This can have
 a negative impact in terms of maintainability. From an architectural perspective, 

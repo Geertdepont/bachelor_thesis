@@ -10,7 +10,7 @@ doc: "Presenters should be composed with interactor components which are respons
       outside the main UI thread of the app. "
 
 ---
-<h3>Why?</h3>
+<h3>Description</h3>
 In accordance to guidelines CLEAN-1
 and CLEAN-2, presenters residing in the outer layers of
 apps modeled through clean architecture principles should

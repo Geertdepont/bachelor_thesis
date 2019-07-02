@@ -10,7 +10,7 @@ doc: "This  entails not creating a lifecycle in Presenters, as it may hinder
       their maintainability and evolvability."
 
 ---
-<h3>Why?</h3>
+<h3>Description</h3>
 To abstract Presenter components
 from the implementation details, Presenters should ideally
 avoid dependencies to the Android framework. This also

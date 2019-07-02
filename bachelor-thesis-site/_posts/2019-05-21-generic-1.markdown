@@ -10,7 +10,7 @@ doc: "Utilizing a dependency injection framework can drastically simplify the ma
       This supports a clean decoupling of architectural components and avoids unnecessary boilerplate for connecting them."
 
 ---
-<h3>Why?</h3>
+<h3>Description</h3>
 While not strictly necessary, utilizing a dependency injection framework
 can drastically simplify the management of dependencies between Android architectural components. 
 This supports a clean decoupling of architectural components and avoids unnecessary boilerplate for connecting them.

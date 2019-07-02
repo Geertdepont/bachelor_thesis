@@ -11,7 +11,7 @@ doc: "There is no need for Presenters to communicate with each other.
       From which the other Presenter then can retrieve the new data. "
 
 ---
-<h3>Why?</h3>
+<h3>Description</h3>
 There is no need for Presenters to communicate with each other. 
 Whenever an event happens. The Presenter sends it to the model. 
 From which the other Presenter then can retrieve the new data. 

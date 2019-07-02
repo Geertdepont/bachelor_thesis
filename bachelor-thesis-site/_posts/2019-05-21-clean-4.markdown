@@ -8,7 +8,7 @@ categories: clean
 icon: "icon-resize-horizontal"
 doc: "This way the outer layers of apps can be implemented without any explicit knowledge of the implementation details of the inner layers."
 ---
-<h3>Why?</h3>
+<h3>Description</h3>
 By implementing a data model at every
 layer, a high degree of decoupling between layers can be
 achieved. Specifically, by following this guideline, the outer

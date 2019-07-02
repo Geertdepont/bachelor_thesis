@@ -9,7 +9,7 @@ icon: "icon-search"
 doc: "Instead of emitting a stream for each feature of the model, emit the whole model. This results in up-to-date models."
 ---
 
-<h3>Why?</h3>
+<h3>Description</h3>
 Instead of emitting a stream for each feature of the model, emit the whole model. This results in up-to-date models.
 
 <h3>Example</h3>

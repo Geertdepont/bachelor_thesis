@@ -9,7 +9,7 @@ categories: generic
 doc: "Coding standards are guidelines that all developers follow in a project follow to improve collaboration."
 
 ---
-<h3>Why?</h3>
+<h3>Description</h3>
 Coding standards are guidelines that all developers follow in a project follow to improve collaboration.
 When non-logical variable or function names are used, it becomes harder for others to understand the code. 
 Which results in time loss.

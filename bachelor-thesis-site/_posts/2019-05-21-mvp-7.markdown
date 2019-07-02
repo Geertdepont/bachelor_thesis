@@ -11,7 +11,7 @@ doc: "Not only does this abstract away from the Android framework.
       Make the Activities implement a view interface. 
       This also prevents the Presenter to access methods which should not be accessible from the Activity. "
 ---
-<h3>Why?</h3>
+<h3>Description</h3>
 Not only does this abstract away from the Android framework. 
 But also improves the testability of the Presenters. 
 Make the Activities implement a view interface. 

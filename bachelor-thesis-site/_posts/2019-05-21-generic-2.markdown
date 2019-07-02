@@ -11,7 +11,7 @@ doc: "When common functionalities are not provided in base classes duplicated co
       unit-testable."
 
 ---
-<h3>Why?</h3>
+<h3>Description</h3>
  As also remarked by two
 interviewees, a recurrent problem arises when common functionalities 
 are not provided in base classes. This often leads to

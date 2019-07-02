@@ -11,7 +11,7 @@ doc: "Using too many callbacks leads to unreadable code.
       These callback hells often arise when multiple server requests need to be performed for one activity. "
 
 ---
-<h3>Why?</h3>
+<h3>Description</h3>
 Using too many callbacks leads to unreadable code. 
 These callback hells often arise when multiple server requests need to be performed for one activity. 
 For example, showing the details of users. 

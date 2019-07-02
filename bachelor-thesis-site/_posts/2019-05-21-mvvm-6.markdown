@@ -9,7 +9,7 @@ icon: "icon-resize-horizontal"
 doc: "Each ViewModel references to it’s own repository instead of referencing the database directly.
        This results in cleaner code, and repetitions of the similar code."
 ---
-<h3>Why?</h3>
+<h3>Description</h3>
 The single responsibility principle from the SOLID principles, leads to a creating a model for 
 each future of the app. 
 Each ViewModel references to it’s own repository instead of referencing the database directly.

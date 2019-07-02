@@ -11,7 +11,7 @@ doc: "Good presenters act as documentation of the business logic.
       This results into clearer views and makes testing easier. "
 
 ---
-<h3>Why?</h3>
+<h3>Description</h3>
 Good presenters act as documentation of the business logic. 
 Try to remove as much logic from the Views as possible. 
 This results into clearer views and makes testing easier.  

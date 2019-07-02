@@ -10,7 +10,7 @@ doc: "All components related to the framework should be grouped
       in the outer architectural layer. All components which contain Android specific implementations should
       not be present in the business logic layers."
 ---
-<h3>Why?</h3>
+<h3>Description</h3>
 In accordance to the clean architecture principles,
 all components related to the framework should be grouped
 in the outer architectural layer. This includes all components

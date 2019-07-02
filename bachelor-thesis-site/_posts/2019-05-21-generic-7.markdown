@@ -11,7 +11,7 @@ doc: "Taking full advantage of libraries does not only save time, but could also
       your own implementation. Since multiple users could have been working on this implementation and many hands make light work."
 
 ---
-<h3>Why?</h3>
+<h3>Description</h3>
 Taking full advantage of libraries does not only save time, but could also be an improvement of 
 your own implementation. Since multiple users could have been working on this implementation and many hands make light work.
  However do check the ratings of the library before using it. Or dive into the code of the library. This way you can

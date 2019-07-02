@@ -11,7 +11,7 @@ doc: "Writing a contract documenting the communication between the View and the
       the View and the Presenter is explicitly documented."
 
 ---
-<h3>Why?</h3>
+<h3>Description</h3>
 Before starting to develop a new app feature,
 a good architectural practice consists in writing a contract
 documenting the communication between the View and the
