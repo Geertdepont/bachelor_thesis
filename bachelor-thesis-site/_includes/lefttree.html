@@ -4,7 +4,7 @@
     <ul id="frontpagenav" class="nav sidenav">
       {% for category in page.categories %}
       {% for post in site.categories[category] %}
-      <li><a href="{{ post.url | prepend: site.baseurl }}"><b>Guideline {{ post.guideline_id}}:</b> {{post.short_description}}</a></li>
+      <li><a href="{{ post.url | prepend: site.baseurl }}"><b>{{ category | upcase}}-{{ post.guideline_id}}:</b> {{post.short_description}}</a></li>
       {% endfor %}
       {% endfor %}
     </ul>
