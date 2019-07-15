@@ -21,7 +21,7 @@ This application is a note list or TODO list.
 On the frontpage all the notes can be seen. 
 Clicking on the plus button takes you to a form where you can create your new note. 
 Whenever the new note is added, the notelist is automatically updated. 
-
+![Image of Architecture Example](https://geertdepont.github.io/assets/ArchitecturePhone.png)
 
 ### RxJavaRetrofitGithub
 This applicaton uses RxJava and performs multiple requests from this [github page](https://github.com/Geertdepont)
