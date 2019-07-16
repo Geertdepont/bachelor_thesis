@@ -21,20 +21,29 @@ This application is a note list or TODO list.
 On the frontpage all the notes can be seen. 
 Clicking on the plus button takes you to a form where you can create your new note. 
 Whenever the new note is added, the notelist is automatically updated. 
-![Image of Architecture Example](https://geertdepont.github.io/assets/ArchitecturePhone.png)
+
+<img src="https://geertdepont.github.io/assets/ArchitecturePhone.png" alt="ArchitectureExample" width="200"/>
+
 
 ### RxJavaRetrofitGithub
 This applicaton uses RxJava and performs multiple requests from this [github page](https://github.com/Geertdepont)
 And retrieves the contributors from each repository and shows for each contributor the amount of contributions in that repository.
-![Image of RxJavaRetrofitGithub](https://geertdepont.github.io/assets/RxjavaGithub.png)
+
+<img src="https://geertdepont.github.io/assets/RxjavaGithub.png" alt="RxJavaRetrofitGithub" width="200"/>
+
 ### BookApplication
 This application performs a fake GET Request and returns the best books of the moment. 
-![Image of BookApplication](https://geertdepont.github.io/assets/BookSecondPhone.png)
+
+<img src="https://geertdepont.github.io/assets/BookSecondPhone.png" alt="BookApplication" width="200"/>
+
+
 ### BossApplication
 This application performs a GET Request from this url: http://dummy.restapiexample.com/api/v1/employees. 
 This is a JSON file containing multiple fake employees with their salaries. 
 Whenever this request is performed again within 5 seconds, it returns these employees from the cache. 
-![Image of BossApplication](https://geertdepont.github.io/assets/BossAppPhone.png)
+<img src="https://geertdepont.github.io/assets/BossAppPhone.png" alt="BookApplication" width="200"/>
+
+
 
 ### MVPLogin
 This is a login form with an empty database. 
@@ -42,11 +51,11 @@ So you cannot login without creating a user in the add user form.
 Whenever you have successfully created a user. 
 You can use this user to login. If the password is correct, you will go to the greeting page. 
 On this page you will be personally greeted, and you can view the other users from the database. 
-![Image of MVPLogin](https://geertdepont.github.io/assets/LoginPhone.png)
+
+<img src="https://geertdepont.github.io/assets/LoginPhone.png" alt="MVPLogin" width="200"/>
 
 
 
-## Applications described
 
 
 
