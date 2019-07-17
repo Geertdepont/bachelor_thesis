@@ -64,39 +64,4 @@ Which would then have too many responsibilities.
 
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
-This guideline was extracted from:
-<table id="guidelinelinks">
-  <tr>
-    <th>Id</th>
-    <th>Guideline</th>
-    <th>URL</th>
-  </tr>
-    <tr>
-      <td>105</td>
-      <td>Separating project into a few modules should give you some profits. You can have abstract layers physically located in different modules, each module has its own build configuration, so you can customize dependencies for each of them. For example UI module doesn’t have to see database or network models, and low level modules don’t have to access libraries for animations, UI binding etc. With Android Gradle Plugin 3.0 or higher, modularization also increases building speed and makes solid fundaments for developing Instant Apps. Keep in mind, that modularization will be easy to achieve and low at cost at the beginning of project development, but when project is mature it will require much more effort.</td>
-      <td><a href="https://medium.com/stepstone-tech/considering-architecture-for-android-app-f7f0fabf680a" target="_blank">https://medium.com/stepstone-tech/considering-architecture-for-android-app-f7f0fabf680a</a></td>
-    </tr>    
-    <tr>
-      <td>92</td>
-      <td>Create welldefined boundaries of responsibility between various modules of your app. For example, don't spread the code that loads data from the network across multiple classes or packages in your code base. Similarly, don't define multiple unrelated responsibilities—such as data caching and data binding—into the same class.</td>
-      <td><a href="https://developer.android.com/jetpack/docs/guide" target="_blank">https://developer.android.com/jetpack/docs/guide</a></td>
-    </tr>      
-    <tr>
-      <td>94</td>
-      <td>Consider how to make each module testable in isolation. For example, having a welldefined API for fetching data from the network makes it easier to test the module that persists that data in a local database. If, instead, you mix the logic from these two modules in one place, or distribute your networking code across your entire code base, it becomes much more difficult—if not impossible—to test.</td>
-      <td><a href="https://developer.android.com/jetpack/docs/guide" target="_blank">https://developer.android.com/jetpack/docs/guide</a></td>
-    </tr>    
-    <tr>
-      <td>237</td>
-      <td>Encourage separation of concerns. What I have said before is an example of separation of concerns. We encourage that particular approach because it maps nicely to the organization of teams and project phases, but your architecture should also encourage separation of concerns generally. Separation of concerns, or the single responsibility principle, says that every component should have only one reason to change.</td>
-      <td><a href="https://five.agency/android-architecture-part-1-every-new-beginning-is-hard/" target="_blank">https://five.agency/android-architecture-part-1-every-new-beginning-is-hard/</a></td>
-    </tr>    
-    <tr>
-      <td>141</td>
-      <td>[A Component] Has a single, well defined responsibility. The most important property of a Component is it should do just one thing. Nearly all Components in our app are currently about 100 –120 lines. When a Component starts getting bigger, we break it into more Components.</td>
-      <td><a href="https://blog.gojekengineering.com/an-architectural-overview-of-the-new-go-jek-rider-app-bb1dbd174323" target="_blank">https://blog.gojekengineering.com/an-architectural-overview-of-the-new-go-jek-rider-app-bb1dbd174323</a></td>
-    </tr>
-    
-</table>
-
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin

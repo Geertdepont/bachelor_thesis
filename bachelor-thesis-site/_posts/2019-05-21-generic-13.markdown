@@ -36,29 +36,5 @@ Check out the [Book-example][Book-example]{:target="_blank"} to view the complet
 
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/BookApplication" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
-This guideline was extracted from:
-<table id="guidelinelinks">
-  <tr>
-    <th>Id</th>
-    <th>Guideline</th>
-    <th>URL</th>
-  </tr>
-    <tr>
-      <td>91</td>
-      <td>Avoid designating your app's entry points—such as activities, services, and broadcast receivers—as sources of data. Instead, they should only coordinate with other components to retrieve the subset of data that is relevant to that entry point. Each app component is rather shortlived, depending on the user's interaction with their device and the overall current health of the system.</td>
-     <td><a href="https://developer.android.com/jetpack/docs/guide" target="_blank">https://developer.android.com/jetpack/docs/guide</a></td>
-    </tr>    
-    <tr>
-      <td>134</td>
-      <td>Observing changes to data across multiple components of your app can create explicit, rigid dependency paths between the components. This makes testing and debugging, among other things, difficult. To avoid these problems, use LiveData, which is a lifecycle library class for data observation.</td>
-     <td><a href="https://google-developer-training.gitbooks.io/android-developer-advanced-course-concepts/content/unit-6-working-with-architecture-components/lesson-14-architecture-components/14-1-c-architecture-components/14-1-c-architecture-components.html" target="_blank">https://google-developer-training.gitbooks.io/android-developer-advanced-course-concepts/content/unit-6-working-with-architecture-components/lesson-14-architecture-components/14-1-c-architecture-components/14-1-c-architecture-components.html</a></td>
-    </tr> 
-    <tr>
-      <td>137</td>
-      <td>A common pattern is to implement the actions of the dependent components in the lifecycle methods of activities and fragments. However, once you have multiple components, using this pattern leads to poor code organization and a proliferation of errors, such as possible race conditions. Lifecycleaware components perform actions in response to a change in the lifecycle status of another component. For example, a listener could start and stop itself in response to an activity starting and stopping. This results in code that is better organized, usually shorter, and always easier to maintain.</td>
-     <td><a href="https://google-developer-training.gitbooks.io/android-developer-advanced-course-concepts/content/unit-6-working-with-architecture-components/lesson-14-architecture-components/14-1-c-architecture-components/14-1-c-architecture-components.html" target="_blank">https://google-developer-training.gitbooks.io/android-developer-advanced-course-concepts/content/unit-6-working-with-architecture-components/lesson-14-architecture-components/14-1-c-architecture-components/14-1-c-architecture-components.html</a></td>
-    </tr>    
-</table>
-
 
 [Book-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/BookApplication

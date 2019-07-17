@@ -40,34 +40,3 @@ Check out the [Github page][github-page]{:target="_blank"} to view the complete 
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin
-
-This guideline was extracted from:
-<table id="guidelinelinks">
-  <tr>
-    <th>Id</th>
-    <th>Guideline</th>
-    <th>URL</th>
-  </tr>
- <tr>
-    <td>222</td>
-    <td> This [presentation layer] is the last layer, responsible for building the objects the views are going to consume and processing the actions performed in this views. This is also the layer where the Android Architecture Components are used, more specifically, the LiveData and the ViewModel.</td>
-    <td><a href=" https://medium.com/insiden26/reactive-clean-architecture-with-android-architecture-components-685a6682e0ca" target="_blank"> https://medium.com/insiden26/reactive-clean-architecture-with-android-architecture-components-685a6682e0ca</a></td>
- </tr>
-
- <tr>
-    <td>249</td>
-    <td> On clean ark The data module should hold everything related to data persistence and manipulation. Here we will find DAOs, ORMs, SharedPreferences, network related stuff like Retrofit services and similar.</td>
-    <td><a href=" https://five.agency/android-architecture-part-1-every-new-beginning-is-hard/" target="_blank"> https://five.agency/android-architecture-part-1-every-new-beginning-is-hard/</a></td>
- </tr>
-
- <tr>
-    <td>245</td>
-    <td> On clean code ark The device module should have everything related to Android that’s not data persistence and UI. The data module should hold everything related to data persistence, as we’ve already said. You cannot make those two into Java modules because they need access to various Android stuff. You can make them into Android library. Data and Device modules contain all of the implementation details that business logic does not care about. It only cares about the contracts, allowing you to easily test it and swap out implementations without touching the business logic. [...] Each data source, both network, and local storage, will have its own models to work with.</td>
-    <td><a href=" https://five.agency/android-architecture-part-1-every-new-beginning-is-hard/" target="_blank"> https://five.agency/android-architecture-part-1-every-new-beginning-is-hard/</a></td>
- </tr>
-
- <tr>
-    <td>250</td>
-    <td> On clean ark The device module should have everything related to Android that’s not data persistence and UI. In example, wrapper classes for ConnectivityManager, NotificationManager and misc sensors. We will make both Data and Device modules android modules, as they must know about Android and cannot be pure java.</td>
-    <td><a href=" https://five.agency/android-architecture-part-1-every-new-beginning-is-hard/" target="_blank"> https://five.agency/android-architecture-part-1-every-new-beginning-is-hard/</a></td>
- </tr>

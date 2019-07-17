@@ -41,23 +41,5 @@ Check out the [Github page][github-page]{:target="_blank"} to view the complete 
 
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
-This guideline was extracted from:
-<table id="guidelinelinks">
-  <tr>
-    <th>Id</th>
-    <th>Guideline</th>
-    <th>URL</th>
-  </tr>
-    <tr>
-      <td>125</td>
-      <td>The Presenter depends on the View interface and not directly on the Activity: in this way, we succeed in decoupling the presenter from the view implementation respecting the D of the SOLID principles. We can replace the concrete view without changing a line of code of the presenter. Furthermore, we can easily unittest presenter by creating a mock view.</td>
-     <td><a href="https://dev.to/wahibhaq/a-brief-summary-of-thoughts-on-clean-architecture-and-mvp-48h9" target="_blank">https://dev.to/wahibhaq/a-brief-summary-of-thoughts-on-clean-architecture-and-mvp-48h9</a></td>
-    </tr>   
-    <tr>
-      <td>179</td>
-      <td>The View contract: Like I said before, the view is implemented by an Activity (or a Fragment). The presenter must depend on the View interface and not directly on the Activity.</td>
-     <td><a href="https://medium.com/@cervonefrancesco/model-view-presenter-android-guidelines-94970b430ddf" target="_blank">https://medium.com/@cervonefrancesco/model-view-presenter-android-guidelines-94970b430ddf</a></td>
-    </tr>   
-</table>
 
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin

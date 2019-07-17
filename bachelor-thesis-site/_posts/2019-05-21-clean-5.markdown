@@ -43,24 +43,3 @@ Check out the [Github page][github-page]{:target="_blank"} to view the complete 
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin
-
-This guideline was extracted from:
-<table id="guidelinelinks">
-    <tr>
-       <th>Id</th>
-       <th>Guideline</th>
-       <th>URL</th>
-    </tr>
-    <tr>
-       <td>187</td>
-       <td> Presentation layer: Presenters in this layer are composed with interactors (use cases) that perform the job in a new thread outside the main android UI thread, and come back using a callback with the data that will be rendered in the view.</td>
-       <td><a href=" https://fernandocejas.com/2014/09/03/architecting-android-the-clean-way/" target="_blank"> https://fernandocejas.com/2014/09/03/architecting-android-the-clean-way/</a></td>
-    </tr>
-    <tr>
-       <td>193</td>
-       <td>
-          Data transformation/composition: we can combine multiple Observables
-          <T>
-          without affecting the client, which makes our solution more scalable.
-       </td>
-       <td><a href="https://fernandocejas.com/2015/07/18/architecting-android-the-evolution/" target="_blank"> https://fernandocejas.com/2015/07/18/architecting-android-the-evolution/</a></td>

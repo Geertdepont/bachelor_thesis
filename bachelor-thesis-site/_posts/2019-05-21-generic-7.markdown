@@ -38,34 +38,6 @@ Check out the [MVVM example][MVVM-example]{:target="_blank"} to view the complet
 
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/RxjavaRetrofitGithub" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
-This guideline was extracted from:
-<table id="guidelinelinks">
-  <tr>
-    <th>Id</th>
-    <th>Guideline</th>
-    <th>URL</th>
-  </tr>
-    <tr>
-      <td>95</td>
-      <td>Focus on the unique core of your app so it stands out from other apps. Don't reinvent the wheel by writing the same boilerplate code again and again. Instead, focus your time and energy on what makes your app unique, and let the Android Architecture Components and other recommended libraries handle the repetitive boilerplate.</td>
-      <td><a href="https://developer.android.com/jetpack/docs/guide" target="_blank">https://developer.android.com/jetpack/docs/guide</a></td>
-    </tr>     
-    <tr>
-      <td>171</td>
-      <td>Don’t Reinvent the Wheel. Initially, I had a bad idea of not using opensource libraries. Whatever I needed, I just wanted to make it myself. It’s was seriously a terrible idea. Focus more on the core business logic of your app. If you want to make network calls in your app, you don’t need to make a Retrofit yourself.</td>
-      <td><a href="https://blog.aritraroy.in/what-my-2-years-of-android-development-have-taught-me-the-hard-way-52b495ba5c51" target="_blank">https://blog.aritraroy.in/what-my-2-years-of-android-development-have-taught-me-the-hard-way-52b495ba5c51</a></td>
-    </tr>     
-    <tr>
-      <td>172</td>
-      <td>There are lots and lots of opensource libraries available in Github for you to use for FREE. But don’t get too excited and start using libraries blindly. Check the number of stars that particular library has, the more the better. Check if the author of that library have also created some other popular libraries as well. Check the issues (both open and closed), which can give you a better idea of how robust and stable the library is in production. If you can afford the time, you should dive into the code of that library and check yourself if its really worth it.</td>
-      <td><a href="https://blog.aritraroy.in/what-my-2-years-of-android-development-have-taught-me-the-hard-way-52b495ba5c51" target="_blank">https://blog.aritraroy.in/what-my-2-years-of-android-development-have-taught-me-the-hard-way-52b495ba5c51</a></td>
-    </tr>       
-    <tr>
-      <td>174</td>
-      <td>Never ever, ever make the mistake of releasing your app on the Play Store without using ProGuard. ProGuard not only minifies your code, but it obfuscates your code making it harder for reverseengineers to understand, replicate and manipulate it.</td>
-      <td><a href="https://blog.aritraroy.in/what-my-2-years-of-android-development-have-taught-me-the-hard-way-52b495ba5c51" target="_blank">https://blog.aritraroy.in/what-my-2-years-of-android-development-have-taught-me-the-hard-way-52b495ba5c51</a></td>
-    </tr>      
-</table>
 
 [MVVM-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/RxjavaRetrofitGithub
 [RX-Java]: http://reactivex.io/documentation

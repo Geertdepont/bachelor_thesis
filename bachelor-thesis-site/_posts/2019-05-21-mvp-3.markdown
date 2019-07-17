@@ -68,30 +68,4 @@ Check out the [Github page][github-page]{:target="_blank"} to view the complete 
 
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication" target="_blank"target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
-
-This guideline was extracted from:
-<table id="guidelinelinks">
-  <tr>
-    <th>Id</th>
-    <th>Guideline</th>
-    <th>URL</th>
-  </tr>
-    <tr>
-      <td>185</td>
-      <td>Provide a cache for the Model to restore the View state. In my opinion, solving the “restore state” problem requires adapting a bit the app architecture. A great solution in line with this thoughts was proposed in this article. Basically, the author suggests caching network results using an interface like a Repository or anything with the aim to manage data, scoped to the application and not to the Activity (so that it can survive to orientation changes).</td>
-     <td><a href="https://medium.com/@cervonefrancesco/model-view-presenter-android-guidelines-94970b430ddf" target="_blank">https://medium.com/@cervonefrancesco/model-view-presenter-android-guidelines-94970b430ddf</a></td>
-    </tr> 
-    <tr>
-      <td>211</td>
-      <td>In conclusion I feel that the simplest way to work with data is to have an Activity/Fragment/View which owns a Presenter. That Presenter can request data from an app scoped Store which can either fetch new data or return cached data.</td>
-     <td><a href="https://hackernoon.com/presenters-are-not-for-persisting-f537a2cc7962" target="_blank">https://hackernoon.com/presenters-are-not-for-persisting-f537a2cc7962</a></td>
-    </tr> 
-    <tr>
-      <td>209</td>
-      <td>Writing the storage layer: This is where our repository gets implemented. All the database specific code should come here.</td>
-     <td><a href="https://medium.com/@dmilicic/a-detailed-guide-on-developing-android-apps-using-the-clean-architecture-pattern-d38d71e94029" target="_blank"></a></td>
-    </tr> 
-
-</table>
-
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication

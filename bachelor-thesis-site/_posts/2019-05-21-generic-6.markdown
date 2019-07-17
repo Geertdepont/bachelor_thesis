@@ -56,30 +56,5 @@ Check out both the [MVVM example][MVVM-example]{:target="_blank"} and the [MVP e
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/RxjavaRetrofitGithub" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">MVVM example</button></a>
 <a href=" https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">MVP example</button></a>
 
-This guideline was extracted from:
-<table id="guidelinelinks">
-  <tr>
-    <th>Id</th>
-    <th>Guideline</th>
-    <th>URL</th>
-  </tr>
-    <tr>
-      <td>111</td>
-      <td>Code/package organization is one of the key factors of a good architecture: package structure is the very first thing encountered by a programmer when browsing source code. Everything flows from it. Everything depends on it.</td>
-      <td><a href="https://fernandocejas.com/2018/05/07/architecting-android-reloaded/" target="_blank">https://fernandocejas.com/2018/05/07/architecting-android-reloaded/</a></td>
-    </tr>     
-    <tr>
-      <td>195</td>
-      <td>I consider code/package organization one of the key factors of a good architecture: package structure is the very first thing encountered by a programmer when browsing source code. Everything flows from it. Everything depends on it. Either package by layer of functionality.</td>
-      <td><a href="https://fernandocejas.com/2015/07/18/architecting-android-the-evolution/" target="_blank">https://fernandocejas.com/2015/07/18/architecting-android-the-evolution/</a></td>
-    </tr>       
-    <tr>
-      <td>256</td>
-      <td>For example, you should be able to look at a package structure and understand how it’s organized. I often think about this from the perspective of writing open source code: would my code be apparent to I don’t know, and who isn’t on my team?</td>
-      <td><a href="https://academy.realm.io/posts/converting-an-app-to-use-clean-architecture/" target="_blank">https://academy.realm.io/posts/converting-an-app-to-use-clean-architecture/</a></td>
-    </tr>   
-
-</table>
-
 [MVVM-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/RxjavaRetrofitGithub
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin

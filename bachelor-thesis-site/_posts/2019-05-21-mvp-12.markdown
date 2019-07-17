@@ -32,19 +32,4 @@ Check this [page][github-page]{:target="_blank"} to view the complete repository
 
 <a href="https://www.androiddesignpatterns.com/2013/04/retaining-objects-across-config-changes.html" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
-This guideline was extracted from:
-<table id="guidelinelinks">
-  <tr>
-    <th>Id</th>
-    <th>Guideline</th>
-    <th>URL</th>
-  </tr>
-    <tr>
-      <td>109</td>
-      <td>A comment on MVP (Model View Presenter) from previous example: I found tricky to avoid leaks due to activities and fragments being recreated so I used a poor man solution: retain fragments.</td>
-     <td><a href="https://fernandocejas.com/2018/05/07/architecting-android-reloaded/" target="_blank">https://fernandocejas.com/2018/05/07/architecting-android-reloaded/</a></td>
-    </tr> 
-     
-</table>
-
 [github-page]: https://www.androiddesignpatterns.com/2013/04/retaining-objects-across-config-changes.html

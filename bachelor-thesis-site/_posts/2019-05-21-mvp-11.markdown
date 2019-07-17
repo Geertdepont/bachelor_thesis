@@ -32,20 +32,5 @@ Check out the [Github page][github-page]{:target="_blank"} to view the complete 
 
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
-This guideline was extracted from:
-<table id="guidelinelinks">
-  <tr>
-    <th>Id</th>
-    <th>Guideline</th>
-    <th>URL</th>
-  </tr>
-    <tr>
-      <td>215</td>
-      <td>How does a “ChildPresenter” communicate with its “ParentPresenter”? From my point of view such ParentChild relations are a code smell, because they introduce a direct coupling between both Parent and Child, which leads to code that is hard to read, hard to maintain, where changing requirement affects a lot of components (hence it’s a virtually impossible task in large systems) and last but not least introduces shared state that is hard to predict and even harder to reproduce and debug.</td>
-     <td><a href="http://hannesdorfmann.com/android/mosby3-mvi-4" target="_blank">http://hannesdorfmann.com/android/mosby3-mvi-4</a></td>
-    </tr> 
-     
-</table>
-
 [github-page]: https://github.com/Geertdepont/bachelor_thesis/tree/master/MVPLogin
 

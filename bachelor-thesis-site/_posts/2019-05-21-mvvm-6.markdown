@@ -35,18 +35,4 @@ Check this [page][architecture-example]{:target="_blank"} to view the complete r
 
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExamples" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
-This guideline was extracted from:
-<table id="guidelinelinks">
-  <tr>
-    <th>Id</th>
-    <th>Guideline</th>
-    <th>URL</th>
-  </tr>
-    <tr>
-      <td>170</td>
-      <td>Do not make reference to a database or an API directly in the ViewModel. Instead, create Repository for each VM — thus the code will be cleaner and less bulky.</td>
-     <td><a href="https://stfalcon.com/en/blog/post/android-mvvm" target="_blank">https://stfalcon.com/en/blog/post/android-mvvm</a></td>
-    </tr>    
-</table>
-
 [architecture-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/ArchitectureExamples

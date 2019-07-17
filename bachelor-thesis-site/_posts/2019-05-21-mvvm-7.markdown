@@ -36,24 +36,4 @@ Check this [page][MVVM-example]{:target="_blank"} to view the complete repositor
 
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/RxjavaRetrofitGithub" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
-
-This guideline was extracted from:
-<table id="guidelinelinks">
-  <tr>
-    <th>Id</th>
-    <th>Guideline</th>
-    <th>URL</th>
-  </tr>
-    <tr>
-      <td>225</td>
-      <td>[On MVVM] The View Model should not do any of the things the components above can do. The View Model should coordinate the process of creating view entities and put all the pieces together. After doing this we noticed several benefits: the most obvious one was that the view models have a much smaller size, everything was easier to test since each class has a more specific and narrow responsibility, it is more clear what are the inputs/outputs and what is expected from each class. Of course this also makes the whole presentation layer more understandable and readable.</td>
-     <td><a href="https://medium.com/insiden26/reactive-clean-architecture-with-android-architecture-components-685a6682e0ca" target="_blank">https://medium.com/insiden26/reactive-clean-architecture-with-android-architecture-components-685a6682e0ca</a></td>
-    </tr>   
-    <tr>
-      <td>224</td>
-      <td>In MVVM pattern, the ViewModel is the component that interacts with the views, this leads to often have big view models, especially when the screen is complex. We tried to simplify our view models delegating some responsibilities to other components: - Mappers and transformers: They transform the objects coming from the domain layer to view entities. - Providers: Sometimes we need something from the framework to build our view entity, for instance, we might need a specific string. We create the StringProvider to abstract the access to this resource. - Utilities: There is not much to say here, these are the classical utility classes that contain helper functions.</td>
-     <td><a href="https://medium.com/insiden26/reactive-clean-architecture-with-android-architecture-components-685a6682e0ca" target="_blank">https://medium.com/insiden26/reactive-clean-architecture-with-android-architecture-components-685a6682e0ca</a></td>
-    </tr>    
-</table>
-
 [MVVM-example]: https://github.com/Geertdepont/bachelor_thesis/tree/master/RxjavaRetrofitGithub

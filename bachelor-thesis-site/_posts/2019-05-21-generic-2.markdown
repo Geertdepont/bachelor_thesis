@@ -57,48 +57,5 @@ Check out the [Github page][boss-application]{:target="_blank"} to view the comp
 
 <a href="https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication" target="_blank"><button type="button" class="btn btn-primary btn-icon-right">Go to the github page</button></a>
 
-This guideline was extracted from:
-<table id="guidelinelinks">
-  <tr>
-    <th>Id</th>
-    <th>Guideline</th>
-    <th>URL</th>
-  </tr>
-    <tr>
-      <td>235</td>
-      <td>As Robert Martin, aka Uncle Bob, says, “Your architecture should scream the purpose of the app.” More technically said, business logic should be clearly separated and independent of the framework.</td>
-      <td><a href="https://five.agency/android-architecture-part-1-every-new-beginning-is-hard/" target="_blank"> https://five.agency/android-architecture-part-1-every-new-beginning-is-hard/</a></td>
-    </tr>
-    <tr>
-      <td>236</td>
-      <td>Satisfy a multitude of stakeholders: all interactions are separated in the classes/modules/components/whatever whose job is interactions, and that particular developer works only on those components while working on the UX part of the app.</td>
-      <td><a href="https://five.agency/android-architecture-part-1-every-new-beginning-is-hard/" target="_blank"> https://five.agency/android-architecture-part-1-every-new-beginning-is-hard/</a></td>
-    </tr>
-    <tr>
-      <td>210</td>
-      <td>Decoupled code makes it easy to focus your attention on specific issues without a lot of bloatware getting in the way</td>
-      <td><a href="https://medium.com/@dmilicic/a-detailed-guide-on-developing-android-apps-using-the-clean-architecture-pattern-d38d71e94029" target="_blank"> https://medium.com/@dmilicic/a-detailed-guide-on-developing-android-apps-using-the-clean-architecture-pattern-d38d71e94029</a></td>
-    </tr>
-    <tr>
-      <td>106</td>
-      <td>Feature switching: This is not really something that you must have, but in some cases it can be useful. Feature switching basically allows you to configure set of features/screens which should be enabled in the app, this could be done via local configuration or remotely (e.g Firebase Remote Config). I especially recommend to have remote feature switching if your application contains functionality dependent on external web services. If external API fails, dependent features in your app will stop working as well. In such situation you should disable broken feature ASAP to avoid annoying users. If you have a remote configuration setup you can just disable given feature in remote console, until the API starts working again.</td>
-      <td><a href="https://medium.com/stepstone-tech/considering-architecture-for-android-app-f7f0fabf680a" target="_blank"> https://medium.com/stepstone-tech/considering-architecture-for-android-app-f7f0fabf680a</a></td>
-    </tr>
-    <tr>
-      <td>232</td>
-      <td>It’s all about decoupling your business logic from the outside world (meaning frameworks, implementation details, etc.) and ending up with the maintainable, testable and with low technical debt application</td>
-      <td><a href="http://pguardiola.com/blog/clean-architecture-part-1/" target="_blank"> http://pguardiola.com/blog/clean-architecture-part-1/</a></td>
-    </tr>    
-    <tr>
-      <td>238</td>
-      <td>Run away from the real world (Android, DB, Internet…). We have already said that we want to scream what the app really does; that’s it. We want to emphasize business logic and leave framework details under the hood. This point should be even stronger: we would like to not only hide framework details but all the details related to the outside world.</td>
-      <td><a href="https://five.agency/android-architecture-part-1-every-new-beginning-is-hard/" target="_blank"> https://five.agency/android-architecture-part-1-every-new-beginning-is-hard/</a></td>
-    </tr>
-    <tr>
-      <td>239</td>
-      <td>Enable your components to be testable. You should unit test your app as much as possible and your architecture should allow you to do it. If you can’t unit test everything, you should at least cover your business logic with tests. Separation from the real world goes nicely with this. It’s easier to test your business logic if it is clearly separated from the rest of the app.</td>
-      <td><a href="https://five.agency/android-architecture-part-1-every-new-beginning-is-hard/" target="_blank"> https://five.agency/android-architecture-part-1-every-new-beginning-is-hard/</a></td>
-    </tr>
-</table>
 
 [boss-application]: https://github.com/Geertdepont/bachelor_thesis/tree/master/Bossapplication
